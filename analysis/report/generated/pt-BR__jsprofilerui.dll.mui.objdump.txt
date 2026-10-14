@@ -1,0 +1,189 @@
+
+/home/user/Win7IE-Decomp/bin/pt-BR/jsprofilerui.dll.mui:     file format pei-i386
+/home/user/Win7IE-Decomp/bin/pt-BR/jsprofilerui.dll.mui
+architecture: i386, flags 0x0000012f:
+HAS_RELOC, EXEC_P, HAS_LINENO, HAS_DEBUG, HAS_LOCALS, D_PAGED
+start address 0x00000000
+
+Characteristics 0x2102
+	executable
+	32 bit words
+	DLL
+
+Time/Date		Thu Jan  1 00:00:00 1970
+Magic			010b	(PE32)
+MajorLinkerVersion	11
+MinorLinkerVersion	0
+SizeOfCode		00000000
+SizeOfInitializedData	00002000
+SizeOfUninitializedData	00000000
+AddressOfEntryPoint	00000000
+BaseOfCode		00001000
+BaseOfData		00001000
+ImageBase		10000000
+SectionAlignment	00001000
+FileAlignment		00000200
+MajorOSystemVersion	6
+MinorOSystemVersion	3
+MajorImageVersion	6
+MinorImageVersion	3
+MajorSubsystemVersion	6
+MinorSubsystemVersion	0
+Win32Version		00000000
+SizeOfImage		00003000
+SizeOfHeaders		00000200
+CheckSum		0000357c
+Subsystem		00000002	(Windows GUI)
+DllCharacteristics	00000540
+					DYNAMIC_BASE
+					NX_COMPAT
+					NO_SEH
+SizeOfStackReserve	00100000
+SizeOfStackCommit	00001000
+SizeOfHeapReserve	00100000
+SizeOfHeapCommit	00001000
+LoaderFlags		00000000
+NumberOfRvaAndSizes	00000010
+
+The Data Directory
+Entry 0 00000000 00000000 Export Directory [.edata (or where ever we found it)]
+Entry 1 00000000 00000000 Import Directory [parts of .idata]
+Entry 2 00001000 00001f64 Resource Directory [.rsrc]
+Entry 3 00000000 00000000 Exception Directory [.pdata]
+Entry 4 00000000 00000000 Security Directory
+Entry 5 00000000 00000000 Base Relocation Directory [.reloc]
+Entry 6 00000000 00000000 Debug Directory
+Entry 7 00000000 00000000 Description Directory
+Entry 8 00000000 00000000 Special Directory
+Entry 9 00000000 00000000 Thread Storage Directory [.tls]
+Entry a 00000000 00000000 Load Configuration Directory
+Entry b 00000000 00000000 Bound Import Directory
+Entry c 00000000 00000000 Import Address Table Directory
+Entry d 00000000 00000000 Delay Import Directory
+Entry e 00000000 00000000 CLR Runtime Header
+Entry f 00000000 00000000 Reserved
+
+The .rsrc Resource Directory section:
+000  Type Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 1, IDs: 4
+010   Entry: name: [val: 80000508 len 3]: MUI, Value: 0x80000038
+038    Name Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+048     Entry: ID: 0x000001, Value: 0x80000148
+148      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+158       Entry: ID: 0x000416, Value: 0x000388
+388        Leaf: Addr: 0x001510, Size: 0x0000c0, Codepage: 1252
+018   Entry: ID: 0x000005, Value: 0x80000050
+050    Name Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 7
+060     Entry: ID: 0x000065, Value: 0x80000160
+160      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+170       Entry: ID: 0x000416, Value: 0x000398
+398        Leaf: Addr: 0x0015d0, Size: 0x000074, Codepage: 1252
+068     Entry: ID: 0x000066, Value: 0x80000178
+178      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+188       Entry: ID: 0x000416, Value: 0x0003a8
+3a8        Leaf: Addr: 0x001644, Size: 0x0000bc, Codepage: 1252
+070     Entry: ID: 0x00006e, Value: 0x80000190
+190      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+1a0       Entry: ID: 0x000416, Value: 0x0003b8
+3b8        Leaf: Addr: 0x001700, Size: 0x000076, Codepage: 1252
+078     Entry: ID: 0x00007d, Value: 0x800001a8
+1a8      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+1b8       Entry: ID: 0x000416, Value: 0x0003c8
+3c8        Leaf: Addr: 0x001778, Size: 0x0000e6, Codepage: 1252
+080     Entry: ID: 0x000080, Value: 0x800001c0
+1c0      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+1d0       Entry: ID: 0x000416, Value: 0x0003d8
+3d8        Leaf: Addr: 0x001860, Size: 0x0000d6, Codepage: 1252
+088     Entry: ID: 0x000081, Value: 0x800001d8
+1d8      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+1e8       Entry: ID: 0x000416, Value: 0x0003e8
+3e8        Leaf: Addr: 0x001938, Size: 0x00007a, Codepage: 1252
+090     Entry: ID: 0x000082, Value: 0x800001f0
+1f0      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+200       Entry: ID: 0x000416, Value: 0x0003f8
+3f8        Leaf: Addr: 0x0019b4, Size: 0x00006c, Codepage: 1252
+020   Entry: ID: 0x000006, Value: 0x80000098
+098    Name Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 14
+0a8     Entry: ID: 0x00005c, Value: 0x80000208
+208      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+218       Entry: ID: 0x000416, Value: 0x000408
+408        Leaf: Addr: 0x001a20, Size: 0x00008a, Codepage: 1252
+0b0     Entry: ID: 0x000086, Value: 0x80000220
+220      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+230       Entry: ID: 0x000416, Value: 0x000418
+418        Leaf: Addr: 0x001aac, Size: 0x000044, Codepage: 1252
+0b8     Entry: ID: 0x0000bc, Value: 0x80000238
+238      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+248       Entry: ID: 0x000416, Value: 0x000428
+428        Leaf: Addr: 0x001af0, Size: 0x000110, Codepage: 1252
+0c0     Entry: ID: 0x0000bd, Value: 0x80000250
+250      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+260       Entry: ID: 0x000416, Value: 0x000438
+438        Leaf: Addr: 0x001c00, Size: 0x0000ba, Codepage: 1252
+0c8     Entry: ID: 0x0000c3, Value: 0x80000268
+268      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+278       Entry: ID: 0x000416, Value: 0x000448
+448        Leaf: Addr: 0x001cbc, Size: 0x00002e, Codepage: 1252
+0d0     Entry: ID: 0x0000c4, Value: 0x80000280
+280      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+290       Entry: ID: 0x000416, Value: 0x000458
+458        Leaf: Addr: 0x001cec, Size: 0x0001c4, Codepage: 1252
+0d8     Entry: ID: 0x0000c5, Value: 0x80000298
+298      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+2a8       Entry: ID: 0x000416, Value: 0x000468
+468        Leaf: Addr: 0x001eb0, Size: 0x000042, Codepage: 1252
+0e0     Entry: ID: 0x0000c9, Value: 0x800002b0
+2b0      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+2c0       Entry: ID: 0x000416, Value: 0x000478
+478        Leaf: Addr: 0x001ef4, Size: 0x00015e, Codepage: 1252
+0e8     Entry: ID: 0x000139, Value: 0x800002c8
+2c8      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+2d8       Entry: ID: 0x000416, Value: 0x000488
+488        Leaf: Addr: 0x002054, Size: 0x0000f4, Codepage: 1252
+0f0     Entry: ID: 0x00013a, Value: 0x800002e0
+2e0      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+2f0       Entry: ID: 0x000416, Value: 0x000498
+498        Leaf: Addr: 0x002148, Size: 0x0001ee, Codepage: 1252
+0f8     Entry: ID: 0x00013b, Value: 0x800002f8
+2f8      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+308       Entry: ID: 0x000416, Value: 0x0004a8
+4a8        Leaf: Addr: 0x002338, Size: 0x000332, Codepage: 1252
+100     Entry: ID: 0x0001b6, Value: 0x80000310
+310      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+320       Entry: ID: 0x000416, Value: 0x0004b8
+4b8        Leaf: Addr: 0x00266c, Size: 0x0001f2, Codepage: 1252
+108     Entry: ID: 0x0001b7, Value: 0x80000328
+328      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+338       Entry: ID: 0x000416, Value: 0x0004c8
+4c8        Leaf: Addr: 0x002860, Size: 0x000204, Codepage: 1252
+110     Entry: ID: 0x0001f5, Value: 0x80000340
+340      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+350       Entry: ID: 0x000416, Value: 0x0004d8
+4d8        Leaf: Addr: 0x002a64, Size: 0x000108, Codepage: 1252
+028   Entry: ID: 0x000009, Value: 0x80000118
+118    Name Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+128     Entry: ID: 0x002328, Value: 0x80000358
+358      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+368       Entry: ID: 0x000416, Value: 0x0004e8
+4e8        Leaf: Addr: 0x002b6c, Size: 0x000028, Codepage: 1252
+030   Entry: ID: 0x000010, Value: 0x80000130
+130    Name Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+140     Entry: ID: 0x000001, Value: 0x80000370
+370      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+380       Entry: ID: 0x000416, Value: 0x0004f8
+4f8        Leaf: Addr: 0x002b94, Size: 0x0003d0, Codepage: 1252
+
+WARNING: Extra data in .rsrc section - it will be ignored by Windows:
+1f65  Type Table: Char: 1229210689, Time: 5858474e, Ver: 16720/17476, Num Names: 20041, IDs: 20551
+1f75   Entry: <corrupt string offset: 0x49444441>
+Corrupt .rsrc section detected!
+ String table starts at offset: 0x508
+ Resources start at offset: 0x510
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .rsrc         00002000  10001000  10001000  00000200  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+SYMBOL TABLE:
+no symbols
+
+

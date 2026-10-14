@@ -1,0 +1,1914 @@
+
+/home/user/Win7IE-Decomp/bin/DiagnosticsHub_is.dll:     file format pei-x86-64
+/home/user/Win7IE-Decomp/bin/DiagnosticsHub_is.dll
+architecture: i386:x86-64, flags 0x0000012f:
+HAS_RELOC, EXEC_P, HAS_LINENO, HAS_DEBUG, HAS_LOCALS, D_PAGED
+start address 0x0000000180008eb0
+
+Characteristics 0x2022
+	executable
+	large address aware
+	DLL
+
+Time/Date		Tue Dec 17 01:10:36 2019
+Magic			020b	(PE32+)
+MajorLinkerVersion	11
+MinorLinkerVersion	0
+SizeOfCode		000000000000a200
+SizeOfInitializedData	0000000000002400
+SizeOfUninitializedData	0000000000000000
+AddressOfEntryPoint	0000000000008eb0
+BaseOfCode		0000000000001000
+ImageBase		0000000180000000
+SectionAlignment	00001000
+FileAlignment		00000200
+MajorOSystemVersion	6
+MinorOSystemVersion	3
+MajorImageVersion	6
+MinorImageVersion	3
+MajorSubsystemVersion	6
+MinorSubsystemVersion	1
+Win32Version		00000000
+SizeOfImage		00011000
+SizeOfHeaders		00000400
+CheckSum		0000f244
+Subsystem		00000002	(Windows GUI)
+DllCharacteristics	00004160
+					HIGH_ENTROPY_VA
+					DYNAMIC_BASE
+					NX_COMPAT
+					GUARD_CF
+SizeOfStackReserve	0000000000040000
+SizeOfStackCommit	0000000000001000
+SizeOfHeapReserve	0000000000100000
+SizeOfHeapCommit	0000000000001000
+LoaderFlags		00000000
+NumberOfRvaAndSizes	00000010
+
+The Data Directory
+Entry 0 000000000000afc0 000000ae Export Directory [.edata (or where ever we found it)]
+Entry 1 000000000000e1c0 00000078 Import Directory [parts of .idata]
+Entry 2 000000000000f000 00000410 Resource Directory [.rsrc]
+Entry 3 000000000000d000 00000738 Exception Directory [.pdata]
+Entry 4 0000000000000000 00000000 Security Directory
+Entry 5 0000000000010000 0000032c Base Relocation Directory [.reloc]
+Entry 6 00000000000011e0 0000001c Debug Directory
+Entry 7 0000000000000000 00000000 Description Directory
+Entry 8 0000000000000000 00000000 Special Directory
+Entry 9 0000000000000000 00000000 Thread Storage Directory [.tls]
+Entry a 0000000000003330 00000094 Load Configuration Directory
+Entry b 0000000000000000 00000000 Bound Import Directory
+Entry c 000000000000e000 000001b8 Import Address Table Directory
+Entry d 0000000000000000 00000000 Delay Import Directory
+Entry e 0000000000000000 00000000 CLR Runtime Header
+Entry f 0000000000000000 00000000 Reserved
+
+There is an import table in .idata at 0x18000e1c0
+
+The Import Tables (interpreted .idata section contents)
+ vma:            Hint    Time      Forward  DLL       First
+                 Table   Stamp     Chain    Name      Thunk
+ 0000e1c0	0000e2f8 00000000 00000000 0000e554 0000e0c0
+
+	DLL Name: msvcrt.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	e548	  382  _initterm
+	e53a	  175  _amsg_exit
+	e52c	   86  _XcptFilter
+	e50e	   50  ?what@exception@@UEBAPEBDXZ
+	e4f6	   17  ??1exception@@UEAA@XZ
+	e4d8	   12  ??0exception@@QEAA@AEBV0@@Z
+	e4b8	   11  ??0exception@@QEAA@AEBQEBDH@Z
+	e498	   10  ??0exception@@QEAA@AEBQEBD@Z
+	e48e	 1171  memcpy
+	e478	   92  __CxxFrameHandler3
+	e462	   76  _CxxThrowException
+	e3f0	   21  ??3@YAXPEAX@Z
+	e44c	 1159  malloc
+	e444	 1101  free
+	e42c	   88  __C_specific_handler
+	e422	 1175  memset
+	e416	 1172  memcpy_s
+	e40a	  671  _purecall
+	e400	 1173  memmove
+	e560	   18  ??1type_info@@UEAA@XZ
+	e578	  487  _lock
+	e580	  834  _unlock
+	e58a	  124  __dllonexit
+	e456	  192  _callnewh
+	e598	  657  _onexit
+
+ 0000e1d4	0000e238 00000000 00000000 0000e734 0000e000
+
+	DLL Name: KERNEL32.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	e720	 1392  TerminateProcess
+	e70c	  527  GetCurrentProcess
+	e6ee	 1362  SetUnhandledExceptionFilter
+	e6d2	 1426  UnhandledExceptionFilter
+	e6be	 1212  RtlVirtualUnwind
+	e6a4	 1205  RtlLookupFunctionEntry
+	e690	 1198  RtlCaptureContext
+	e680	  761  GetTickCount
+	e666	  733  GetSystemTimeAsFileTime
+	e650	  532  GetCurrentThreadId
+	e63a	  528  GetCurrentProcessId
+	e620	 1072  QueryPerformanceCounter
+	e618	 1377  Sleep
+	e5fc	  848  InitializeCriticalSection
+	e5ea	 1092  RaiseException
+	e5d2	  262  DeleteCriticalSection
+	e5ba	  933  LeaveCriticalSection
+	e5a2	  297  EnterCriticalSection
+
+ 0000e1e8	0000e3c8 00000000 00000000 0000e756 0000e190
+
+	DLL Name: ole32.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	e742	   30  CoCreateInstance
+
+ 0000e1fc	0000e2d0 00000000 00000000 0000e760 0000e098
+
+	DLL Name: OLEAUT32.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	8000000000000004	    000000004  <none>
+	8000000000000006	    000000006  <none>
+	8000000000000007	    000000007  <none>
+	8000000000000002	    000000002  <none>
+
+ 0000e210	0000e3d8 00000000 00000000 0000e780 0000e1a0
+
+	DLL Name: tdh.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	e76e	   20  TdhGetProperty
+	e788	   22  TdhGetPropertySize
+
+ 0000e224	00000000 00000000 00000000 00000000 00000000
+
+There is an export table in .text at 0x18000afc0
+
+The Export Tables (interpreted .text section contents)
+
+Export Flags 			0
+Time/Date stamp 		5df80bdc
+Major/Minor 			0/0
+Name 				000000000000b010 DiagnosticsHub_is.dll
+Ordinal Base 			1
+Number in:
+	Export Address Table 		00000004
+	[Name Pointer/Ordinal] Table	00000004
+Table Addresses
+	Export Address Table 		000000000000afe8
+	Name Pointer Table 		000000000000aff8
+	Ordinal Table 			000000000000b008
+
+Export Address Table -- Ordinal Base 1
+	[   0] +base[   1] 3af0 Export RVA
+	[   1] +base[   2] 3b30 Export RVA
+	[   2] +base[   3] 38f0 Export RVA
+	[   3] +base[   4] 38f0 Export RVA
+
+[Ordinal/Name Pointer] Table
+	[   0] DllCanUnloadNow
+	[   1] DllGetClassObject
+	[   2] DllRegisterServer
+	[   3] DllUnregisterServer
+
+The Function Table (interpreted .pdata section contents)
+vma:			BeginAddress	 EndAddress	  UnwindData
+ 000000018000d000:	0000000180003410 00000001800034d8 000000018000a100
+ 000000018000d00c:	0000000180003540 00000001800035ba 000000018000a35c
+ 000000018000d018:	00000001800035d0 00000001800035f7 000000018000a0d0
+ 000000018000d024:	0000000180003620 000000018000368a 000000018000a0d8
+ 000000018000d030:	00000001800036c0 0000000180003723 000000018000a0ec
+ 000000018000d03c:	0000000180003740 0000000180003786 000000018000a0f8
+ 000000018000d048:	00000001800037a0 0000000180003803 000000018000a0ec
+ 000000018000d054:	0000000180003810 000000018000384f 000000018000a100
+ 000000018000d060:	0000000180003900 0000000180003a38 000000018000a10c
+ 000000018000d06c:	0000000180003a60 0000000180003ae1 000000018000a124
+ 000000018000d078:	0000000180003af0 0000000180003b22 000000018000a0d0
+ 000000018000d084:	0000000180003b30 0000000180003c61 000000018000a138
+ 000000018000d090:	0000000180003c70 0000000180003dad 000000018000a150
+ 000000018000d09c:	0000000180003e20 0000000180003e5e 000000018000a100
+ 000000018000d0a8:	0000000180003e64 0000000180003ebd 000000018000a1d4
+ 000000018000d0b4:	0000000180003ed0 0000000180003f1e 000000018000a1d4
+ 000000018000d0c0:	0000000180003f30 0000000180003fb6 000000018000a1d4
+ 000000018000d0cc:	0000000180003fd8 0000000180004182 000000018000a1e4
+ 000000018000d0d8:	0000000180004188 00000001800042cb 000000018000a2a8
+ 000000018000d0e4:	00000001800042d4 00000001800043d0 000000018000a1d4
+ 000000018000d0f0:	00000001800043d8 00000001800043e9 000000018000a35c
+ 000000018000d0fc:	00000001800043f0 0000000180004475 000000018000a364
+ 000000018000d108:	00000001800044a0 0000000180004531 000000018000a39c
+ 000000018000d114:	0000000180004558 00000001800045c9 000000018000a3b0
+ 000000018000d120:	00000001800045f0 0000000180004681 000000018000a39c
+ 000000018000d12c:	00000001800046b0 00000001800046e0 000000018000a100
+ 000000018000d138:	00000001800046f0 0000000180004720 000000018000a100
+ 000000018000d144:	0000000180004728 0000000180004745 000000018000a35c
+ 000000018000d150:	000000018000474c 00000001800047a0 000000018000a1d4
+ 000000018000d15c:	00000001800047a8 00000001800048b6 000000018000a124
+ 000000018000d168:	00000001800048bc 00000001800048cd 000000018000a35c
+ 000000018000d174:	00000001800048d4 0000000180004969 000000018000a100
+ 000000018000d180:	0000000180004970 0000000180004a73 000000018000a3e8
+ 000000018000d18c:	0000000180004a7c 0000000180004b1d 000000018000a4c0
+ 000000018000d198:	0000000180004b24 0000000180004b63 000000018000a35c
+ 000000018000d1a4:	0000000180004b90 0000000180004be3 000000018000a100
+ 000000018000d1b0:	0000000180004c80 0000000180004cfe 000000018000a4d4
+ 000000018000d1bc:	0000000180004d10 0000000180004d85 000000018000a39c
+ 000000018000d1c8:	0000000180004da0 0000000180004e24 000000018000a124
+ 000000018000d1d4:	0000000180004e70 0000000180004ead 000000018000a100
+ 000000018000d1e0:	0000000180004eb4 0000000180004ed4 000000018000a4e4
+ 000000018000d1ec:	0000000180004ef0 0000000180004fa8 000000018000a39c
+ 000000018000d1f8:	0000000180004fc0 0000000180005014 000000018000a124
+ 000000018000d204:	000000018000501c 0000000180005158 000000018000a50c
+ 000000018000d210:	000000018000516c 0000000180005194 000000018000a35c
+ 000000018000d21c:	0000000180005270 000000018000533d 000000018000a528
+ 000000018000d228:	0000000180005350 00000001800053c4 000000018000a528
+ 000000018000d234:	00000001800053d0 0000000180005444 000000018000a528
+ 000000018000d240:	0000000180005470 00000001800055e8 000000018000a534
+ 000000018000d24c:	00000001800055f0 00000001800056f0 000000018000a550
+ 000000018000d258:	00000001800056f8 00000001800057ac 000000018000a568
+ 000000018000d264:	00000001800057b4 0000000180005932 000000018000a57c
+ 000000018000d270:	0000000180005938 0000000180005a34 000000018000a5bc
+ 000000018000d27c:	0000000180005a3c 0000000180005b75 000000018000a100
+ 000000018000d288:	0000000180005ba8 0000000180005c47 000000018000a60c
+ 000000018000d294:	0000000180005c50 0000000180005d7d 000000018000a124
+ 000000018000d2a0:	0000000180005d84 0000000180005db4 000000018000a0d0
+ 000000018000d2ac:	0000000180005dbc 0000000180005e0f 000000018000a100
+ 000000018000d2b8:	0000000180005e18 0000000180005e80 000000018000a124
+ 000000018000d2c4:	0000000180005e88 0000000180005f8a 000000018000a61c
+ 000000018000d2d0:	0000000180005f90 000000018000602a 000000018000a6b8
+ 000000018000d2dc:	0000000180006030 0000000180006041 000000018000a35c
+ 000000018000d2e8:	0000000180006048 000000018000615a 000000018000a6cc
+ 000000018000d2f4:	0000000180006160 00000001800061e5 000000018000a714
+ 000000018000d300:	0000000180006210 0000000180006240 000000018000a100
+ 000000018000d30c:	0000000180006248 0000000180006336 000000018000a1d4
+ 000000018000d318:	000000018000633c 00000001800064ac 000000018000a138
+ 000000018000d324:	00000001800064b4 00000001800065cd 000000018000a74c
+ 000000018000d330:	00000001800065d4 0000000180006657 000000018000a804
+ 000000018000d33c:	0000000180006660 000000018000677b 000000018000a82c
+ 000000018000d348:	00000001800067a0 00000001800067d7 000000018000a86c
+ 000000018000d354:	00000001800067e0 0000000180006812 000000018000a100
+ 000000018000d360:	0000000180006820 0000000180006847 000000018000a0d0
+ 000000018000d36c:	0000000180006850 00000001800068ac 000000018000a0d0
+ 000000018000d378:	00000001800068b4 0000000180006acf 000000018000a878
+ 000000018000d384:	0000000180006af0 0000000180006b59 000000018000a1d4
+ 000000018000d390:	0000000180006b60 0000000180006bae 000000018000a0d0
+ 000000018000d39c:	0000000180006bb4 0000000180006e31 000000018000a100
+ 000000018000d3a8:	0000000180006e38 0000000180006faf 000000018000a8f0
+ 000000018000d3b4:	0000000180007024 0000000180007185 000000018000a50c
+ 000000018000d3c0:	00000001800071a8 00000001800072fe 000000018000a39c
+ 000000018000d3cc:	00000001800074b0 00000001800075e7 000000018000a95c
+ 000000018000d3d8:	00000001800075f0 0000000180007814 000000018000a974
+ 000000018000d3e4:	000000018000781c 00000001800078f0 000000018000a9e8
+ 000000018000d3f0:	00000001800078f8 0000000180007b22 000000018000aa58
+ 000000018000d3fc:	0000000180007b28 0000000180007f9d 000000018000ab10
+ 000000018000d408:	0000000180007fa4 00000001800080c6 000000018000a100
+ 000000018000d414:	00000001800080cc 00000001800080f7 000000018000a0d0
+ 000000018000d420:	0000000180008100 0000000180008239 000000018000a100
+ 000000018000d42c:	0000000180008240 00000001800082dc 000000018000a6b8
+ 000000018000d438:	00000001800082e4 0000000180008380 000000018000a6b8
+ 000000018000d444:	0000000180008388 0000000180008451 000000018000a0d8
+ 000000018000d450:	0000000180008458 0000000180008502 000000018000a35c
+ 000000018000d45c:	0000000180008508 00000001800085ef 000000018000a1d4
+ 000000018000d468:	00000001800085f8 0000000180008685 000000018000a124
+ 000000018000d474:	000000018000868c 00000001800086e3 000000018000abcc
+ 000000018000d480:	00000001800086ec 00000001800087da 000000018000ac10
+ 000000018000d48c:	00000001800087e0 0000000180008849 000000018000a0d0
+ 000000018000d498:	0000000180008900 0000000180008988 000000018000a138
+ 000000018000d4a4:	0000000180008990 00000001800089c1 000000018000a0d0
+ 000000018000d4b0:	0000000180008a28 0000000180008a49 000000018000a0d0
+ 000000018000d4bc:	0000000180008a50 0000000180008a88 000000018000a0d0
+ 000000018000d4c8:	0000000180008a90 0000000180008abb 000000018000a0d0
+ 000000018000d4d4:	0000000180008ac4 0000000180008ae5 000000018000a0d0
+ 000000018000d4e0:	0000000180008b10 0000000180008b49 000000018000a100
+ 000000018000d4ec:	0000000180008b50 0000000180008b7f 000000018000a100
+ 000000018000d4f8:	0000000180008b88 0000000180008ba8 000000018000ac88
+ 000000018000d504:	0000000180008bb0 0000000180008bd3 000000018000ac88
+ 000000018000d510:	0000000180008bdc 0000000180008bff 000000018000ac88
+ 000000018000d51c:	0000000180008c10 0000000180008c44 000000018000a35c
+ 000000018000d528:	0000000180008c4c 0000000180008ea0 000000018000ac90
+ 000000018000d534:	0000000180008eb0 0000000180008eed 000000018000a1d4
+ 000000018000d540:	0000000180008ef4 000000018000914e 000000018000acac
+ 000000018000d54c:	00000001800091a0 00000001800091d0 000000018000a100
+ 000000018000d558:	00000001800091d8 0000000180009276 000000018000ad58
+ 000000018000d564:	000000018000927c 0000000180009293 000000018000a35c
+ 000000018000d570:	00000001800092c4 00000001800092e1 000000018000a35c
+ 000000018000d57c:	00000001800092e8 000000018000934b 000000018000a0d0
+ 000000018000d588:	0000000180009440 000000018000948d 000000018000ad88
+ 000000018000d594:	00000001800094d4 00000001800095a4 000000018000adac
+ 000000018000d5a0:	00000001800095b8 00000001800095ec 000000018000a0d0
+ 000000018000d5ac:	0000000180009600 0000000180009771 000000018000adb8
+ 000000018000d5b8:	000000018000979c 000000018000982b 000000018000a138
+ 000000018000d5c4:	0000000180009840 000000018000988d 000000018000ad80
+ 000000018000d5d0:	0000000180009896 00000001800098b1 000000018000a1c4
+ 000000018000d5dc:	00000001800098dd 00000001800098f8 000000018000a298
+ 000000018000d5e8:	0000000180009918 0000000180009933 000000018000a34c
+ 000000018000d5f4:	000000018000995d 00000001800099a0 000000018000a4b0
+ 000000018000d600:	00000001800099a0 00000001800099c5 000000018000a4b0
+ 000000018000d60c:	00000001800099cb 00000001800099eb 000000018000a504
+ 000000018000d618:	0000000180009a2f 0000000180009a4a 000000018000a6a8
+ 000000018000d624:	0000000180009a80 0000000180009acf 000000018000a7f4
+ 000000018000d630:	0000000180009acf 0000000180009af4 000000018000a7f4
+ 000000018000d63c:	0000000180009afa 0000000180009b20 000000018000a504
+ 000000018000d648:	0000000180009b38 0000000180009b5b 000000018000a8e0
+ 000000018000d654:	0000000180009b61 0000000180009b84 000000018000a94c
+ 000000018000d660:	0000000180009b8a 0000000180009ba5 000000018000a9d8
+ 000000018000d66c:	0000000180009bab 0000000180009bc6 000000018000aa48
+ 000000018000d678:	0000000180009bd8 0000000180009bfe 000000018000ab00
+ 000000018000d684:	0000000180009c10 0000000180009c36 000000018000abbc
+ 000000018000d690:	0000000180009c4a 0000000180009c70 000000018000a504
+ 000000018000d69c:	0000000180009c82 0000000180009ca2 000000018000a504
+ 000000018000d6a8:	0000000180009cd4 0000000180009d28 000000018000a504
+ 000000018000d6b4:	0000000180009d28 0000000180009d7c 000000018000a504
+ 000000018000d6c0:	0000000180009d7c 0000000180009dd0 000000018000a504
+ 000000018000d6cc:	0000000180009dd0 0000000180009e2d 000000018000a504
+ 000000018000d6d8:	0000000180009e2d 0000000180009e81 000000018000a504
+ 000000018000d6e4:	0000000180009e81 0000000180009ed5 000000018000a504
+ 000000018000d6f0:	0000000180009ed5 0000000180009f29 000000018000a504
+ 000000018000d6fc:	0000000180009f29 0000000180009f86 000000018000a504
+ 000000018000d708:	0000000180009f86 0000000180009fa9 000000018000a504
+ 000000018000d714:	0000000180009faf 0000000180009fca 000000018000a504
+ 000000018000d720:	0000000180009fd0 0000000180009ff0 000000018000a504
+ 000000018000d72c:	000000018000a000 000000018000a059 000000018000a100
+
+Dump of .text
+ 000000018000a100 (rva: 0000a100): 0000000180003410 - 00000001800034d8
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a35c (rva: 0000a35c): 0000000180003540 - 00000001800035ba
+	Version: 1, Flags: none
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x28
+ 000000018000a0d0 (rva: 0000a0d0): 00000001800035d0 - 00000001800035f7
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbx
+ 000000018000a0d8 (rva: 0000a0d8): 0000000180003620 - 000000018000368a
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x15, Frame offset: 0x0, Frame reg: none
+	  pc+0x15: save rdi at rsp + 0x50
+	  pc+0x15: save rsi at rsp + 0x48
+	  pc+0x15: save rbx at rsp + 0x40
+	  pc+0x15: alloc small area: rsp = rsp - 0x30
+	  pc+0x11: push r14
+ 000000018000a0ec (rva: 0000a0ec): 00000001800036c0 - 0000000180003723
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x40
+	  pc+0x0a: alloc small area: rsp = rsp - 0x30
+	  pc+0x06: push rdi
+ 000000018000a0f8 (rva: 0000a0f8): 0000000180003740 - 0000000180003786
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x30
+	  pc+0x02: push rbx
+ 000000018000a0ec (rva: 0000a0ec): 00000001800037a0 - 0000000180003803
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x40
+	  pc+0x0a: alloc small area: rsp = rsp - 0x30
+	  pc+0x06: push rdi
+ 000000018000a100 (rva: 0000a100): 0000000180003810 - 000000018000384f
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a10c (rva: 0000a10c): 0000000180003900 - 0000000180003a38
+	Version: 1, Flags: none
+	Nbr codes: 10, Prologue size: 0x18, Frame offset: 0x0, Frame reg: none
+	  pc+0x18: save rsi at rsp + 0x50
+	  pc+0x18: save rbp at rsp + 0x48
+	  pc+0x18: save rbx at rsp + 0x40
+	  pc+0x18: alloc small area: rsp = rsp - 0x20
+	  pc+0x14: push r15
+	  pc+0x12: push r14
+	  pc+0x10: push rdi
+ 000000018000a124 (rva: 0000a124): 0000000180003a60 - 0000000180003ae1
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x14, Frame offset: 0x0, Frame reg: none
+	  pc+0x14: save rsi at rsp + 0x40
+	  pc+0x14: save rbp at rsp + 0x38
+	  pc+0x14: save rbx at rsp + 0x30
+	  pc+0x14: alloc small area: rsp = rsp - 0x20
+	  pc+0x10: push rdi
+ 000000018000a0d0 (rva: 0000a0d0): 0000000180003af0 - 0000000180003b22
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbx
+ 000000018000a138 (rva: 0000a138): 0000000180003b30 - 0000000180003c61
+	Version: 1, Flags: none
+	Nbr codes: 10, Prologue size: 0x19, Frame offset: 0x0, Frame reg: none
+	  pc+0x19: save rdi at rsp + 0x48
+	  pc+0x19: save rsi at rsp + 0x40
+	  pc+0x19: save rbp at rsp + 0x38
+	  pc+0x19: save rbx at rsp + 0x30
+	  pc+0x19: alloc small area: rsp = rsp - 0x20
+	  pc+0x15: push r14
+ 000000018000a150 (rva: 0000a150): 0000000180003c70 - 0000000180003dad
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 8, Prologue size: 0x26, Frame offset: 0x0, Frame reg: none
+	  pc+0x1e: alloc small area: rsp = rsp - 0x30
+	  pc+0x1a: push r15
+	  pc+0x18: push r14
+	  pc+0x16: push r13
+	  pc+0x14: push r12
+	  pc+0x12: push rdi
+	  pc+0x11: push rsi
+	  pc+0x10: push rbx
+	Handler: 000000018000936e.
+	User data:
+	  000: 80 30 00 00 ff ff ff ff 00 00 00 00 ff ff ff ff
+	  010: 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00
+	  020: 01 00 00 00 90 a1 00 00 40 00 00 00 00 00 00 00
+	  030: 00 00 00 00 96 98 00 00 38 00 00 00 70 3c 00 00
+	  040: ff ff ff ff c6 3c 00 00 00 00 00 00 02 3d 00 00
+	  050: ff ff ff ff 96 98 00 00 00 00 00 00
+ 000000018000a100 (rva: 0000a100): 0000000180003e20 - 0000000180003e5e
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a1d4 (rva: 0000a1d4): 0000000180003e64 - 0000000180003ebd
+	Version: 1, Flags: none
+	Nbr codes: 6, Prologue size: 0x0f, Frame offset: 0x0, Frame reg: none
+	  pc+0x0f: save rsi at rsp + 0x38
+	  pc+0x0f: save rbx at rsp + 0x30
+	  pc+0x0f: alloc small area: rsp = rsp - 0x20
+	  pc+0x0b: push rdi
+ 000000018000a1d4 also used for function at 0000000180003ed0
+ 000000018000a1d4 also used for function at 0000000180003f30
+ 000000018000a1e4 (rva: 0000a1e4): 0000000180003fd8 - 0000000180004182
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 8, Prologue size: 0x26, Frame offset: 0x0, Frame reg: none
+	  pc+0x1e: alloc small area: rsp = rsp - 0x30
+	  pc+0x1a: push r15
+	  pc+0x18: push r14
+	  pc+0x16: push r13
+	  pc+0x14: push r12
+	  pc+0x12: push rdi
+	  pc+0x11: push rsi
+	  pc+0x10: push rbx
+	Handler: 000000018000936e.
+	User data:
+	  000: 58 30 00 00 ff ff ff ff 00 00 00 00 00 00 00 00
+	  010: b7 98 00 00 01 00 00 00 c5 98 00 00 01 00 00 00
+	  020: d1 98 00 00 ff ff ff ff 00 00 00 00 00 00 00 00
+	  030: 03 00 00 00 04 00 00 00 01 00 00 00 3c a2 00 00
+	  040: 40 00 00 00 00 00 00 00 00 00 00 00 dd 98 00 00
+	  050: 38 00 00 00 d8 3f 00 00 ff ff ff ff 2c 40 00 00
+	  060: 00 00 00 00 3e 40 00 00 01 00 00 00 62 40 00 00
+	  070: 02 00 00 00 9e 40 00 00 03 00 00 00 e6 40 00 00
+	  080: 01 00 00 00 eb 40 00 00 00 00 00 00 f3 40 00 00
+	  090: ff ff ff ff dd 98 00 00 00 00 00 00
+ 000000018000a2a8 (rva: 0000a2a8): 0000000180004188 - 00000001800042cb
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 8, Prologue size: 0x26, Frame offset: 0x0, Frame reg: none
+	  pc+0x1e: alloc small area: rsp = rsp - 0x30
+	  pc+0x1a: push r15
+	  pc+0x18: push r14
+	  pc+0x16: push r13
+	  pc+0x14: push r12
+	  pc+0x12: push rdi
+	  pc+0x11: push rsi
+	  pc+0x10: push rbx
+	Handler: 000000018000936e.
+	User data:
+	  000: 30 30 00 00 ff ff ff ff 00 00 00 00 00 00 00 00
+	  010: fe 98 00 00 01 00 00 00 0c 99 00 00 ff ff ff ff
+	  020: 00 00 00 00 00 00 00 00 02 00 00 00 03 00 00 00
+	  030: 01 00 00 00 f8 a2 00 00 40 00 00 00 00 00 00 00
+	  040: 00 00 00 00 18 99 00 00 38 00 00 00 88 41 00 00
+	  050: ff ff ff ff db 41 00 00 00 00 00 00 ed 41 00 00
+	  060: 01 00 00 00 08 42 00 00 02 00 00 00 2f 42 00 00
+	  070: 01 00 00 00 34 42 00 00 00 00 00 00 3c 42 00 00
+	  080: ff ff ff ff 18 99 00 00 00 00 00 00
+ 000000018000a1d4 (rva: 0000a1d4): 00000001800042d4 - 00000001800043d0
+	Version: 1, Flags: none
+	Nbr codes: 6, Prologue size: 0x0f, Frame offset: 0x0, Frame reg: none
+	  pc+0x0f: save rsi at rsp + 0x38
+	  pc+0x0f: save rbx at rsp + 0x30
+	  pc+0x0f: alloc small area: rsp = rsp - 0x20
+	  pc+0x0b: push rdi
+ 000000018000a35c (rva: 0000a35c): 00000001800043d8 - 00000001800043e9
+	Version: 1, Flags: none
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x28
+ 000000018000a364 (rva: 0000a364): 00000001800043f0 - 0000000180004475
+	Version: 1, Flags: UNW_FLAG_UHANDLER
+	Nbr codes: 6, Prologue size: 0x1c, Frame offset: 0x0, Frame reg: none
+	  pc+0x1c: save rsi at rsp + 0x50
+	  pc+0x18: save rbx at rsp + 0x48
+	  pc+0x0c: alloc small area: rsp = rsp - 0x30
+	  pc+0x08: push rdi
+	Handler: 000000018000936e.
+	User data:
+	  000: 08 30 00 00 ff ff ff ff 39 99 00 00 f0 43 00 00
+	  010: ff ff ff ff 3a 44 00 00 00 00 00 00 5e 44 00 00
+	  020: ff ff ff ff
+ 000000018000a39c (rva: 0000a39c): 00000001800044a0 - 0000000180004531
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x15, Frame offset: 0x0, Frame reg: none
+	  pc+0x15: save rdi at rsp + 0x40
+	  pc+0x15: save rsi at rsp + 0x38
+	  pc+0x15: save rbx at rsp + 0x30
+	  pc+0x15: alloc small area: rsp = rsp - 0x20
+	  pc+0x11: push r14
+ 000000018000a3b0 (rva: 0000a3b0): 0000000180004558 - 00000001800045c9
+	Version: 1, Flags: UNW_FLAG_UHANDLER
+	Nbr codes: 6, Prologue size: 0x1c, Frame offset: 0x0, Frame reg: none
+	  pc+0x1c: save rsi at rsp + 0x50
+	  pc+0x18: save rbx at rsp + 0x48
+	  pc+0x0c: alloc small area: rsp = rsp - 0x30
+	  pc+0x08: push rdi
+	Handler: 000000018000936e.
+	User data:
+	  000: e0 2f 00 00 ff ff ff ff 4b 99 00 00 58 45 00 00
+	  010: ff ff ff ff 81 45 00 00 00 00 00 00 a5 45 00 00
+	  020: ff ff ff ff
+ 000000018000a39c (rva: 0000a39c): 00000001800045f0 - 0000000180004681
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x15, Frame offset: 0x0, Frame reg: none
+	  pc+0x15: save rdi at rsp + 0x40
+	  pc+0x15: save rsi at rsp + 0x38
+	  pc+0x15: save rbx at rsp + 0x30
+	  pc+0x15: alloc small area: rsp = rsp - 0x20
+	  pc+0x11: push r14
+ 000000018000a100 (rva: 0000a100): 00000001800046b0 - 00000001800046e0
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a100 also used for function at 00000001800046f0
+ 000000018000a35c (rva: 0000a35c): 0000000180004728 - 0000000180004745
+	Version: 1, Flags: none
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x28
+ 000000018000a1d4 (rva: 0000a1d4): 000000018000474c - 00000001800047a0
+	Version: 1, Flags: none
+	Nbr codes: 6, Prologue size: 0x0f, Frame offset: 0x0, Frame reg: none
+	  pc+0x0f: save rsi at rsp + 0x38
+	  pc+0x0f: save rbx at rsp + 0x30
+	  pc+0x0f: alloc small area: rsp = rsp - 0x20
+	  pc+0x0b: push rdi
+ 000000018000a124 (rva: 0000a124): 00000001800047a8 - 00000001800048b6
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x14, Frame offset: 0x0, Frame reg: none
+	  pc+0x14: save rsi at rsp + 0x40
+	  pc+0x14: save rbp at rsp + 0x38
+	  pc+0x14: save rbx at rsp + 0x30
+	  pc+0x14: alloc small area: rsp = rsp - 0x20
+	  pc+0x10: push rdi
+ 000000018000a35c (rva: 0000a35c): 00000001800048bc - 00000001800048cd
+	Version: 1, Flags: none
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x28
+ 000000018000a100 (rva: 0000a100): 00000001800048d4 - 0000000180004969
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a3e8 (rva: 0000a3e8): 0000000180004970 - 0000000180004a73
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 5, Prologue size: 0x20, Frame offset: 0x0, Frame reg: none
+	  pc+0x18: alloc small area: rsp = rsp - 0x38
+	  pc+0x14: push r14
+	  pc+0x12: push rdi
+	  pc+0x11: push rsi
+	  pc+0x10: push rbx
+	Handler: 000000018000936e.
+	User data:
+	  000: b8 2f 00 00 ff ff ff ff 00 00 00 00 ff ff ff ff
+	  010: 00 00 00 00 01 00 00 00 00 00 00 00 01 00 00 00
+	  020: 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 00
+	  030: 01 00 00 00 48 a4 00 00 02 00 00 00 02 00 00 00
+	  040: 03 00 00 00 01 00 00 00 5c a4 00 00 40 00 00 00
+	  050: 00 00 00 00 00 00 00 00 5d 99 00 00 38 00 00 00
+	  060: 40 00 00 00 00 00 00 00 00 00 00 00 a0 99 00 00
+	  070: 38 00 00 00 70 49 00 00 ff ff ff ff df 49 00 00
+	  080: 00 00 00 00 04 4a 00 00 ff ff ff ff 5d 99 00 00
+	  090: 00 00 00 00 6a 99 00 00 01 00 00 00 72 99 00 00
+	  0a0: 02 00 00 00 92 99 00 00 00 00 00 00 ad 99 00 00
+	  0b0: 03 00 00 00
+ 000000018000a4c0 (rva: 0000a4c0): 0000000180004a7c - 0000000180004b1d
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x18, Frame offset: 0x0, Frame reg: none
+	  pc+0x18: save rsi at rsp + 0x48
+	  pc+0x18: save rbp at rsp + 0x40
+	  pc+0x18: save rbx at rsp + 0x38
+	  pc+0x18: alloc small area: rsp = rsp - 0x20
+	  pc+0x14: push rdi
+ 000000018000a35c (rva: 0000a35c): 0000000180004b24 - 0000000180004b63
+	Version: 1, Flags: none
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x28
+ 000000018000a100 (rva: 0000a100): 0000000180004b90 - 0000000180004be3
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a4d4 (rva: 0000a4d4): 0000000180004c80 - 0000000180004cfe
+	Version: 1, Flags: none
+	Nbr codes: 6, Prologue size: 0x0f, Frame offset: 0x0, Frame reg: none
+	  pc+0x0f: save rsi at rsp + 0x48
+	  pc+0x0f: save rbx at rsp + 0x40
+	  pc+0x0f: alloc small area: rsp = rsp - 0x30
+	  pc+0x0b: push rdi
+ 000000018000a39c (rva: 0000a39c): 0000000180004d10 - 0000000180004d85
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x15, Frame offset: 0x0, Frame reg: none
+	  pc+0x15: save rdi at rsp + 0x40
+	  pc+0x15: save rsi at rsp + 0x38
+	  pc+0x15: save rbx at rsp + 0x30
+	  pc+0x15: alloc small area: rsp = rsp - 0x20
+	  pc+0x11: push r14
+ 000000018000a124 (rva: 0000a124): 0000000180004da0 - 0000000180004e24
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x14, Frame offset: 0x0, Frame reg: none
+	  pc+0x14: save rsi at rsp + 0x40
+	  pc+0x14: save rbp at rsp + 0x38
+	  pc+0x14: save rbx at rsp + 0x30
+	  pc+0x14: alloc small area: rsp = rsp - 0x20
+	  pc+0x10: push rdi
+ 000000018000a100 (rva: 0000a100): 0000000180004e70 - 0000000180004ead
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a4e4 (rva: 0000a4e4): 0000000180004eb4 - 0000000180004ed4
+	Version: 1, Flags: UNW_FLAG_EHANDLER
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x38
+	Handler: 00000001800092b8.
+	User data:
+	  000: 01 00 00 00 b8 4e 00 00 c6 4e 00 00 cb 99 00 00
+	  010: c6 4e 00 00
+ 000000018000a39c (rva: 0000a39c): 0000000180004ef0 - 0000000180004fa8
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x15, Frame offset: 0x0, Frame reg: none
+	  pc+0x15: save rdi at rsp + 0x40
+	  pc+0x15: save rsi at rsp + 0x38
+	  pc+0x15: save rbx at rsp + 0x30
+	  pc+0x15: alloc small area: rsp = rsp - 0x20
+	  pc+0x11: push r14
+ 000000018000a124 (rva: 0000a124): 0000000180004fc0 - 0000000180005014
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x14, Frame offset: 0x0, Frame reg: none
+	  pc+0x14: save rsi at rsp + 0x40
+	  pc+0x14: save rbp at rsp + 0x38
+	  pc+0x14: save rbx at rsp + 0x30
+	  pc+0x14: alloc small area: rsp = rsp - 0x20
+	  pc+0x10: push rdi
+ 000000018000a50c (rva: 0000a50c): 000000018000501c - 0000000180005158
+	Version: 1, Flags: none
+	Nbr codes: 12, Prologue size: 0x1d, Frame offset: 0x0, Frame reg: none
+	  pc+0x1d: save rdi at rsp + 0x58
+	  pc+0x1d: save rsi at rsp + 0x50
+	  pc+0x1d: save rbp at rsp + 0x48
+	  pc+0x1d: save rbx at rsp + 0x40
+	  pc+0x1d: alloc small area: rsp = rsp - 0x20
+	  pc+0x19: push r15
+	  pc+0x17: push r14
+	  pc+0x15: push r12
+ 000000018000a35c (rva: 0000a35c): 000000018000516c - 0000000180005194
+	Version: 1, Flags: none
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x28
+ 000000018000a528 (rva: 0000a528): 0000000180005270 - 000000018000533d
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rdi at rsp + 0x10
+	  pc+0x05: save rbx at rsp + 0x8
+ 000000018000a528 also used for function at 0000000180005350
+ 000000018000a528 also used for function at 00000001800053d0
+ 000000018000a534 (rva: 0000a534): 0000000180005470 - 00000001800055e8
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 8, Prologue size: 0x1f, Frame offset: 0x0, Frame reg: none
+	  pc+0x10: save rbx at rsp + 0xb0
+	  pc+0x10: alloc small area: rsp = rsp - 0x70
+	  pc+0x0c: push r15
+	  pc+0x0a: push r14
+	  pc+0x08: push rdi
+	  pc+0x07: push rsi
+	  pc+0x06: push rbp
+	Handler: 00000001800092c4.
+	User data:
+	  000: 60 00 00 00
+ 000000018000a550 (rva: 0000a550): 00000001800055f0 - 00000001800056f0
+	Version: 1, Flags: none
+	Nbr codes: 10, Prologue size: 0x18, Frame offset: 0x0, Frame reg: none
+	  pc+0x18: save rsi at rsp + 0x68
+	  pc+0x18: save rbp at rsp + 0x60
+	  pc+0x18: save rbx at rsp + 0x50
+	  pc+0x18: alloc small area: rsp = rsp - 0x30
+	  pc+0x14: push r15
+	  pc+0x12: push r14
+	  pc+0x10: push rdi
+ 000000018000a568 (rva: 0000a568): 00000001800056f8 - 00000001800057ac
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x13, Frame offset: 0x0, Frame reg: none
+	  pc+0x13: save rsi at rsp + 0x60
+	  pc+0x13: save rbx at rsp + 0x58
+	  pc+0x13: alloc small area: rsp = rsp - 0x30
+	  pc+0x0f: push r15
+	  pc+0x0d: push r14
+	  pc+0x0b: push rdi
+ 000000018000a57c (rva: 0000a57c): 00000001800057b4 - 0000000180005932
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 8, Prologue size: 0x2b, Frame offset: 0x0, Frame reg: none
+	  pc+0x1d: save rbx at rsp + 0xb0
+	  pc+0x11: alloc small area: rsp = rsp - 0x70
+	  pc+0x0a: push r15
+	  pc+0x08: push r14
+	  pc+0x06: push rdi
+	  pc+0x05: push rsi
+	  pc+0x04: push rbp
+	Handler: 000000018000979c.
+	User data:
+	  000: 10 32 00 00 6a 00 00 00 ff ff ff ff f1 99 00 00
+	  010: b4 57 00 00 ff ff ff ff f7 57 00 00 00 00 00 00
+	  020: ff 58 00 00 ff ff ff ff
+ 000000018000a5bc (rva: 0000a5bc): 0000000180005938 - 0000000180005a34
+	Version: 1, Flags: UNW_FLAG_UHANDLER
+	Nbr codes: 6, Prologue size: 0x18, Frame offset: 0x0, Frame reg: none
+	  pc+0x18: save rsi at rsp + 0x80
+	  pc+0x14: save rbx at rsp + 0x78
+	  pc+0x08: alloc small area: rsp = rsp - 0x60
+	  pc+0x04: push rdi
+	Handler: 000000018000936e.
+	User data:
+	  000: e8 31 00 00 ff ff ff ff 03 9a 00 00 00 00 00 00
+	  010: 0f 9a 00 00 38 59 00 00 ff ff ff ff 8f 59 00 00
+	  020: 00 00 00 00 a9 59 00 00 01 00 00 00 d4 59 00 00
+	  030: 00 00 00 00 1e 5a 00 00 ff ff ff ff
+ 000000018000a100 (rva: 0000a100): 0000000180005a3c - 0000000180005b75
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a60c (rva: 0000a60c): 0000000180005ba8 - 0000000180005c47
+	Version: 1, Flags: none
+	Nbr codes: 6, Prologue size: 0x10, Frame offset: 0x0, Frame reg: none
+	  pc+0x10: save rsi at rsp + 0x48
+	  pc+0x10: save rbx at rsp + 0x40
+	  pc+0x10: alloc small area: rsp = rsp - 0x30
+	  pc+0x0c: push rdi
+ 000000018000a124 (rva: 0000a124): 0000000180005c50 - 0000000180005d7d
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x14, Frame offset: 0x0, Frame reg: none
+	  pc+0x14: save rsi at rsp + 0x40
+	  pc+0x14: save rbp at rsp + 0x38
+	  pc+0x14: save rbx at rsp + 0x30
+	  pc+0x14: alloc small area: rsp = rsp - 0x20
+	  pc+0x10: push rdi
+ 000000018000a0d0 (rva: 0000a0d0): 0000000180005d84 - 0000000180005db4
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbx
+ 000000018000a100 (rva: 0000a100): 0000000180005dbc - 0000000180005e0f
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a124 (rva: 0000a124): 0000000180005e18 - 0000000180005e80
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x14, Frame offset: 0x0, Frame reg: none
+	  pc+0x14: save rsi at rsp + 0x40
+	  pc+0x14: save rbp at rsp + 0x38
+	  pc+0x14: save rbx at rsp + 0x30
+	  pc+0x14: alloc small area: rsp = rsp - 0x20
+	  pc+0x10: push rdi
+ 000000018000a61c (rva: 0000a61c): 0000000180005e88 - 0000000180005f8a
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 7, Prologue size: 0x24, Frame offset: 0x0, Frame reg: none
+	  pc+0x1c: alloc small area: rsp = rsp - 0x38
+	  pc+0x18: push r15
+	  pc+0x16: push r14
+	  pc+0x14: push r12
+	  pc+0x12: push rdi
+	  pc+0x11: push rsi
+	  pc+0x10: push rbx
+	Handler: 000000018000936e.
+	User data:
+	  000: c0 31 00 00 ff ff ff ff 00 00 00 00 00 00 00 00
+	  010: 21 9a 00 00 ff ff ff ff 00 00 00 00 00 00 00 00
+	  020: 01 00 00 00 02 00 00 00 01 00 00 00 64 a6 00 00
+	  030: 40 00 00 00 00 00 00 00 00 00 00 00 2f 9a 00 00
+	  040: 38 00 00 00 88 5e 00 00 ff ff ff ff d7 5e 00 00
+	  050: 00 00 00 00 e6 5e 00 00 01 00 00 00 fb 5e 00 00
+	  060: 00 00 00 00 03 5f 00 00 ff ff ff ff 2f 9a 00 00
+	  070: 00 00 00 00
+ 000000018000a6b8 (rva: 0000a6b8): 0000000180005f90 - 000000018000602a
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x14, Frame offset: 0x0, Frame reg: none
+	  pc+0x14: save rsi at rsp + 0x50
+	  pc+0x14: save rbp at rsp + 0x48
+	  pc+0x14: save rbx at rsp + 0x40
+	  pc+0x14: alloc small area: rsp = rsp - 0x30
+	  pc+0x10: push rdi
+ 000000018000a35c (rva: 0000a35c): 0000000180006030 - 0000000180006041
+	Version: 1, Flags: none
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x28
+ 000000018000a6cc (rva: 0000a6cc): 0000000180006048 - 000000018000615a
+	Version: 1, Flags: UNW_FLAG_UHANDLER
+	Nbr codes: 6, Prologue size: 0x1c, Frame offset: 0x0, Frame reg: none
+	  pc+0x1c: save rsi at rsp + 0x50
+	  pc+0x18: save rbx at rsp + 0x48
+	  pc+0x0c: alloc small area: rsp = rsp - 0x30
+	  pc+0x08: push rdi
+	Handler: 000000018000936e.
+	User data:
+	  000: 98 31 00 00 ff ff ff ff 50 9a 00 00 ff ff ff ff
+	  010: 5c 9a 00 00 48 60 00 00 ff ff ff ff 83 60 00 00
+	  020: 00 00 00 00 ff 60 00 00 01 00 00 00 47 61 00 00
+	  030: ff ff ff ff
+ 000000018000a714 (rva: 0000a714): 0000000180006160 - 00000001800061e5
+	Version: 1, Flags: UNW_FLAG_UHANDLER
+	Nbr codes: 6, Prologue size: 0x1c, Frame offset: 0x0, Frame reg: none
+	  pc+0x1c: save rsi at rsp + 0x50
+	  pc+0x18: save rbx at rsp + 0x48
+	  pc+0x0c: alloc small area: rsp = rsp - 0x30
+	  pc+0x08: push rdi
+	Handler: 000000018000936e.
+	User data:
+	  000: 70 31 00 00 ff ff ff ff 6e 9a 00 00 60 61 00 00
+	  010: ff ff ff ff aa 61 00 00 00 00 00 00 ce 61 00 00
+	  020: ff ff ff ff
+ 000000018000a100 (rva: 0000a100): 0000000180006210 - 0000000180006240
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a1d4 (rva: 0000a1d4): 0000000180006248 - 0000000180006336
+	Version: 1, Flags: none
+	Nbr codes: 6, Prologue size: 0x0f, Frame offset: 0x0, Frame reg: none
+	  pc+0x0f: save rsi at rsp + 0x38
+	  pc+0x0f: save rbx at rsp + 0x30
+	  pc+0x0f: alloc small area: rsp = rsp - 0x20
+	  pc+0x0b: push rdi
+ 000000018000a138 (rva: 0000a138): 000000018000633c - 00000001800064ac
+	Version: 1, Flags: none
+	Nbr codes: 10, Prologue size: 0x19, Frame offset: 0x0, Frame reg: none
+	  pc+0x19: save rdi at rsp + 0x48
+	  pc+0x19: save rsi at rsp + 0x40
+	  pc+0x19: save rbp at rsp + 0x38
+	  pc+0x19: save rbx at rsp + 0x30
+	  pc+0x19: alloc small area: rsp = rsp - 0x20
+	  pc+0x15: push r14
+ 000000018000a74c (rva: 0000a74c): 00000001800064b4 - 00000001800065cd
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 6, Prologue size: 0x22, Frame offset: 0x0, Frame reg: none
+	  pc+0x1a: alloc small area: rsp = rsp - 0x30
+	  pc+0x16: push r15
+	  pc+0x14: push r14
+	  pc+0x12: push rdi
+	  pc+0x11: push rsi
+	  pc+0x10: push rbx
+	Handler: 000000018000936e.
+	User data:
+	  000: 48 31 00 00 00 00 00 00 00 00 00 00 03 00 00 00
+	  010: 01 00 00 00 8c a7 00 00 02 00 00 00 02 00 00 00
+	  020: 03 00 00 00 01 00 00 00 a0 a7 00 00 40 00 00 00
+	  030: 00 00 00 00 00 00 00 00 80 9a 00 00 38 00 00 00
+	  040: 40 00 00 00 00 00 00 00 00 00 00 00 cf 9a 00 00
+	  050: 38 00 00 00 b4 64 00 00 ff ff ff ff 28 65 00 00
+	  060: 00 00 00 00 5b 65 00 00 ff ff ff ff 80 9a 00 00
+	  070: 00 00 00 00 8d 9a 00 00 01 00 00 00 95 9a 00 00
+	  080: 02 00 00 00 c1 9a 00 00 00 00 00 00 dc 9a 00 00
+	  090: 03 00 00 00
+ 000000018000a804 (rva: 0000a804): 00000001800065d4 - 0000000180006657
+	Version: 1, Flags: UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x13, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x30
+	  pc+0x06: push rbx
+	Handler: 000000018000936e.
+	User data:
+	  000: 20 31 00 00 ff ff ff ff fa 9a 00 00 d4 65 00 00
+	  010: ff ff ff ff ea 65 00 00 00 00 00 00
+ 000000018000a82c (rva: 0000a82c): 0000000180006660 - 000000018000677b
+	Version: 1, Flags: UNW_FLAG_UHANDLER
+	Nbr codes: 10, Prologue size: 0x1f, Frame offset: 0x0, Frame reg: none
+	  pc+0x1f: save rbp at rsp + 0x78
+	  pc+0x1b: save rbx at rsp + 0x70
+	  pc+0x0f: alloc small area: rsp = rsp - 0x40
+	  pc+0x0b: push r15
+	  pc+0x09: push r14
+	  pc+0x07: push r12
+	  pc+0x05: push rdi
+	  pc+0x04: push rsi
+	Handler: 000000018000936e.
+	User data:
+	  000: f8 30 00 00 ff ff ff ff 26 9b 00 00 60 66 00 00
+	  010: ff ff ff ff cc 66 00 00 00 00 00 00 3d 67 00 00
+	  020: ff ff ff ff
+ 000000018000a86c (rva: 0000a86c): 00000001800067a0 - 00000001800067d7
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0f, Frame offset: 0x0, Frame reg: none
+	  pc+0x0f: save rbx at rsp + 0x30
+	  pc+0x0f: alloc small area: rsp = rsp - 0x20
+	  pc+0x0b: push rdi
+ 000000018000a100 (rva: 0000a100): 00000001800067e0 - 0000000180006812
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a0d0 (rva: 0000a0d0): 0000000180006820 - 0000000180006847
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbx
+ 000000018000a0d0 also used for function at 0000000180006850
+ 000000018000a878 (rva: 0000a878): 00000001800068b4 - 0000000180006acf
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 6, Prologue size: 0x18, Frame offset: 0x0, Frame reg: none
+	  pc+0x18: save rsi at rsp + 0x68
+	  pc+0x14: save rbx at rsp + 0x60
+	  pc+0x08: alloc small area: rsp = rsp - 0x50
+	  pc+0x04: push rdi
+	Handler: 000000018000936e.
+	User data:
+	  000: d0 30 00 00 00 00 00 00 00 00 00 00 01 00 00 00
+	  010: 01 00 00 00 a4 a8 00 00 40 00 00 00 00 00 00 00
+	  020: 00 00 00 00 38 9b 00 00 48 00 00 00 b4 68 00 00
+	  030: ff ff ff ff d5 68 00 00 00 00 00 00 98 6a 00 00
+	  040: ff ff ff ff be 6a 00 00 00 00 00 00 45 9b 00 00
+	  050: 01 00 00 00
+ 000000018000a1d4 (rva: 0000a1d4): 0000000180006af0 - 0000000180006b59
+	Version: 1, Flags: none
+	Nbr codes: 6, Prologue size: 0x0f, Frame offset: 0x0, Frame reg: none
+	  pc+0x0f: save rsi at rsp + 0x38
+	  pc+0x0f: save rbx at rsp + 0x30
+	  pc+0x0f: alloc small area: rsp = rsp - 0x20
+	  pc+0x0b: push rdi
+ 000000018000a0d0 (rva: 0000a0d0): 0000000180006b60 - 0000000180006bae
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbx
+ 000000018000a100 (rva: 0000a100): 0000000180006bb4 - 0000000180006e31
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a8f0 (rva: 0000a8f0): 0000000180006e38 - 0000000180006faf
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 8, Prologue size: 0x1d, Frame offset: 0x0, Frame reg: none
+	  pc+0x1d: save rsi at rsp + 0x70
+	  pc+0x18: save rbx at rsp + 0x68
+	  pc+0x0a: alloc small area: rsp = rsp - 0x40
+	  pc+0x06: push r15
+	  pc+0x04: push r14
+	  pc+0x02: push rdi
+	Handler: 000000018000936e.
+	User data:
+	  000: a8 30 00 00 00 00 00 00 00 00 00 00 01 00 00 00
+	  010: 01 00 00 00 20 a9 00 00 40 00 00 00 00 00 00 00
+	  020: 00 00 00 00 61 9b 00 00 48 00 00 00 38 6e 00 00
+	  030: ff ff ff ff 5b 6e 00 00 00 00 00 00 6e 9b 00 00
+	  040: 01 00 00 00
+ 000000018000a50c (rva: 0000a50c): 0000000180007024 - 0000000180007185
+	Version: 1, Flags: none
+	Nbr codes: 12, Prologue size: 0x1d, Frame offset: 0x0, Frame reg: none
+	  pc+0x1d: save rdi at rsp + 0x58
+	  pc+0x1d: save rsi at rsp + 0x50
+	  pc+0x1d: save rbp at rsp + 0x48
+	  pc+0x1d: save rbx at rsp + 0x40
+	  pc+0x1d: alloc small area: rsp = rsp - 0x20
+	  pc+0x19: push r15
+	  pc+0x17: push r14
+	  pc+0x15: push r12
+ 000000018000a39c (rva: 0000a39c): 00000001800071a8 - 00000001800072fe
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x15, Frame offset: 0x0, Frame reg: none
+	  pc+0x15: save rdi at rsp + 0x40
+	  pc+0x15: save rsi at rsp + 0x38
+	  pc+0x15: save rbx at rsp + 0x30
+	  pc+0x15: alloc small area: rsp = rsp - 0x20
+	  pc+0x11: push r14
+ 000000018000a95c (rva: 0000a95c): 00000001800074b0 - 00000001800075e7
+	Version: 1, Flags: none
+	Nbr codes: 10, Prologue size: 0x18, Frame offset: 0x0, Frame reg: none
+	  pc+0x18: save rsi at rsp + 0x60
+	  pc+0x18: save rbp at rsp + 0x58
+	  pc+0x18: save rbx at rsp + 0x50
+	  pc+0x18: alloc small area: rsp = rsp - 0x30
+	  pc+0x14: push r15
+	  pc+0x12: push r14
+	  pc+0x10: push rdi
+ 000000018000a974 (rva: 0000a974): 00000001800075f0 - 0000000180007814
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 8, Prologue size: 0x1f, Frame offset: 0x0, Frame reg: none
+	  pc+0x1f: save rsi at rsp + 0xa0
+	  pc+0x1b: save rbx at rsp + 0x90
+	  pc+0x0f: alloc small area: rsp = rsp - 0x70
+	  pc+0x0b: push r15
+	  pc+0x09: push r14
+	  pc+0x07: push rdi
+	Handler: 000000018000936e.
+	User data:
+	  000: 00 33 00 00 00 00 00 00 00 00 00 00 01 00 00 00
+	  010: 01 00 00 00 a4 a9 00 00 08 00 00 00 c8 c2 00 00
+	  020: 00 00 00 00 8a 9b 00 00 38 00 00 00 f0 75 00 00
+	  030: ff ff ff ff 12 76 00 00 00 00 00 00 f5 77 00 00
+	  040: ff ff ff ff 8a 9b 00 00 00 00 00 00
+ 000000018000a9e8 (rva: 0000a9e8): 000000018000781c - 00000001800078f0
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 4, Prologue size: 0x26, Frame offset: 0x0, Frame reg: none
+	  pc+0x17: save rbx at rsp + 0x90
+	  pc+0x0b: alloc small area: rsp = rsp - 0x80
+	  pc+0x04: push rdi
+	Handler: 000000018000979c.
+	User data:
+	  000: d8 32 00 00 73 00 00 00 00 00 00 00 00 00 00 00
+	  010: 01 00 00 00 01 00 00 00 14 aa 00 00 08 00 00 00
+	  020: c8 c2 00 00 00 00 00 00 ab 9b 00 00 58 00 00 00
+	  030: 1c 78 00 00 ff ff ff ff 95 78 00 00 00 00 00 00
+	  040: c9 78 00 00 ff ff ff ff ab 9b 00 00 00 00 00 00
+ 000000018000aa58 (rva: 0000aa58): 00000001800078f8 - 0000000180007b22
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 7, Prologue size: 0x2d, Frame offset: 0x0, Frame reg: none
+	  pc+0x1b: save rsi at rsp + 0xe0
+	  pc+0x0f: alloc large area: rsp = rsp - 0xc0
+	  pc+0x08: push r15
+	  pc+0x06: push r14
+	  pc+0x04: push rdi
+	Handler: 000000018000979c.
+	User data:
+	  000: b0 32 00 00 b3 00 00 00 ff ff ff ff cc 9b 00 00
+	  010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	  020: 01 00 00 00 01 00 00 00 02 00 00 00 01 00 00 00
+	  030: a4 aa 00 00 08 00 00 00 c8 c2 00 00 00 00 00 00
+	  040: d8 9b 00 00 58 00 00 00 f8 78 00 00 ff ff ff ff
+	  050: 2b 7a 00 00 00 00 00 00 5f 7a 00 00 ff ff ff ff
+	  060: 76 7a 00 00 00 00 00 00 87 7a 00 00 01 00 00 00
+	  070: d6 7a 00 00 ff ff ff ff d8 9b 00 00 00 00 00 00
+	  080: e5 9b 00 00 02 00 00 00 f0 9b 00 00 00 00 00 00
+ 000000018000ab10 (rva: 0000ab10): 0000000180007b28 - 0000000180007f9d
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 9, Prologue size: 0x31, Frame offset: 0x0, Frame reg: none
+	  pc+0x1f: save rsi at rsp + 0x110
+	  pc+0x13: alloc large area: rsp = rsp - 0xe0
+	  pc+0x0c: push r15
+	  pc+0x0a: push r14
+	  pc+0x08: push r13
+	  pc+0x06: push r12
+	  pc+0x04: push rdi
+	Handler: 000000018000979c.
+	User data:
+	  000: 88 32 00 00 d3 00 00 00 ff ff ff ff 04 9c 00 00
+	  010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	  020: 01 00 00 00 01 00 00 00 02 00 00 00 01 00 00 00
+	  030: 60 ab 00 00 08 00 00 00 c8 c2 00 00 00 00 00 00
+	  040: 10 9c 00 00 58 00 00 00 28 7b 00 00 ff ff ff ff
+	  050: 85 7d 00 00 00 00 00 00 b9 7d 00 00 ff ff ff ff
+	  060: d0 7d 00 00 00 00 00 00 e1 7d 00 00 01 00 00 00
+	  070: 4d 7f 00 00 ff ff ff ff 10 9c 00 00 00 00 00 00
+	  080: 1d 9c 00 00 02 00 00 00 28 9c 00 00 00 00 00 00
+ 000000018000a100 (rva: 0000a100): 0000000180007fa4 - 00000001800080c6
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a0d0 (rva: 0000a0d0): 00000001800080cc - 00000001800080f7
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbx
+ 000000018000a100 (rva: 0000a100): 0000000180008100 - 0000000180008239
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a6b8 (rva: 0000a6b8): 0000000180008240 - 00000001800082dc
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x14, Frame offset: 0x0, Frame reg: none
+	  pc+0x14: save rsi at rsp + 0x50
+	  pc+0x14: save rbp at rsp + 0x48
+	  pc+0x14: save rbx at rsp + 0x40
+	  pc+0x14: alloc small area: rsp = rsp - 0x30
+	  pc+0x10: push rdi
+ 000000018000a6b8 also used for function at 00000001800082e4
+ 000000018000a0d8 (rva: 0000a0d8): 0000000180008388 - 0000000180008451
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x15, Frame offset: 0x0, Frame reg: none
+	  pc+0x15: save rdi at rsp + 0x50
+	  pc+0x15: save rsi at rsp + 0x48
+	  pc+0x15: save rbx at rsp + 0x40
+	  pc+0x15: alloc small area: rsp = rsp - 0x30
+	  pc+0x11: push r14
+ 000000018000a35c (rva: 0000a35c): 0000000180008458 - 0000000180008502
+	Version: 1, Flags: none
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x28
+ 000000018000a1d4 (rva: 0000a1d4): 0000000180008508 - 00000001800085ef
+	Version: 1, Flags: none
+	Nbr codes: 6, Prologue size: 0x0f, Frame offset: 0x0, Frame reg: none
+	  pc+0x0f: save rsi at rsp + 0x38
+	  pc+0x0f: save rbx at rsp + 0x30
+	  pc+0x0f: alloc small area: rsp = rsp - 0x20
+	  pc+0x0b: push rdi
+ 000000018000a124 (rva: 0000a124): 00000001800085f8 - 0000000180008685
+	Version: 1, Flags: none
+	Nbr codes: 8, Prologue size: 0x14, Frame offset: 0x0, Frame reg: none
+	  pc+0x14: save rsi at rsp + 0x40
+	  pc+0x14: save rbp at rsp + 0x38
+	  pc+0x14: save rbx at rsp + 0x30
+	  pc+0x14: alloc small area: rsp = rsp - 0x20
+	  pc+0x10: push rdi
+ 000000018000abcc (rva: 0000abcc): 000000018000868c - 00000001800086e3
+	Version: 1, Flags: UNW_FLAG_UHANDLER
+	Nbr codes: 4, Prologue size: 0x18, Frame offset: 0x0, Frame reg: none
+	  pc+0x18: save rbx at rsp + 0x50
+	  pc+0x0c: alloc small area: rsp = rsp - 0x30
+	  pc+0x08: push rdi
+	Handler: 000000018000936e.
+	User data:
+	  000: 60 32 00 00 ff ff ff ff 4a 9c 00 00 00 00 00 00
+	  010: 3c 9c 00 00 8c 86 00 00 ff ff ff ff a7 86 00 00
+	  020: 00 00 00 00 b9 86 00 00 01 00 00 00 c9 86 00 00
+	  030: 00 00 00 00
+ 000000018000ac10 (rva: 0000ac10): 00000001800086ec - 00000001800087da
+	Version: 1, Flags: UNW_FLAG_UHANDLER
+	Nbr codes: 6, Prologue size: 0x1c, Frame offset: 0x0, Frame reg: none
+	  pc+0x1c: save rsi at rsp + 0x58
+	  pc+0x18: save rbx at rsp + 0x50
+	  pc+0x0c: alloc small area: rsp = rsp - 0x30
+	  pc+0x08: push rdi
+	Handler: 000000018000936e.
+	User data:
+	  000: 38 32 00 00 ff ff ff ff 76 9c 00 00 00 00 00 00
+	  010: 82 9c 00 00 01 00 00 00 a2 9c 00 00 02 00 00 00
+	  020: ae 9c 00 00 03 00 00 00 be 9c 00 00 ec 86 00 00
+	  030: ff ff ff ff 16 87 00 00 00 00 00 00 2a 87 00 00
+	  040: 01 00 00 00 3b 87 00 00 02 00 00 00 4a 87 00 00
+	  050: 03 00 00 00 59 87 00 00 04 00 00 00 c7 87 00 00
+	  060: ff ff ff ff
+ 000000018000a0d0 (rva: 0000a0d0): 00000001800087e0 - 0000000180008849
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbx
+ 000000018000a138 (rva: 0000a138): 0000000180008900 - 0000000180008988
+	Version: 1, Flags: none
+	Nbr codes: 10, Prologue size: 0x19, Frame offset: 0x0, Frame reg: none
+	  pc+0x19: save rdi at rsp + 0x48
+	  pc+0x19: save rsi at rsp + 0x40
+	  pc+0x19: save rbp at rsp + 0x38
+	  pc+0x19: save rbx at rsp + 0x30
+	  pc+0x19: alloc small area: rsp = rsp - 0x20
+	  pc+0x15: push r14
+ 000000018000a0d0 (rva: 0000a0d0): 0000000180008990 - 00000001800089c1
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbx
+ 000000018000a0d0 also used for function at 0000000180008a28
+ 000000018000a0d0 also used for function at 0000000180008a50
+ 000000018000a0d0 also used for function at 0000000180008a90
+ 000000018000a0d0 also used for function at 0000000180008ac4
+ 000000018000a100 (rva: 0000a100): 0000000180008b10 - 0000000180008b49
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000a100 also used for function at 0000000180008b50
+ 000000018000ac88 (rva: 0000ac88): 0000000180008b88 - 0000000180008ba8
+	Version: 1, Flags: none
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x48
+ 000000018000ac88 also used for function at 0000000180008bb0
+ 000000018000ac88 also used for function at 0000000180008bdc
+ 000000018000a35c (rva: 0000a35c): 0000000180008c10 - 0000000180008c44
+	Version: 1, Flags: none
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x28
+ 000000018000ac90 (rva: 0000ac90): 0000000180008c4c - 0000000180008ea0
+	Version: 1, Flags: none
+	Nbr codes: 12, Prologue size: 0x1d, Frame offset: 0x0, Frame reg: none
+	  pc+0x1d: save r12 at rsp + 0x58
+	  pc+0x1d: save rdi at rsp + 0x50
+	  pc+0x1d: save rsi at rsp + 0x48
+	  pc+0x1d: save rbx at rsp + 0x40
+	  pc+0x1d: alloc small area: rsp = rsp - 0x20
+	  pc+0x19: push r15
+	  pc+0x17: push r14
+	  pc+0x15: push r13
+ 000000018000a1d4 (rva: 0000a1d4): 0000000180008eb0 - 0000000180008eed
+	Version: 1, Flags: none
+	Nbr codes: 6, Prologue size: 0x0f, Frame offset: 0x0, Frame reg: none
+	  pc+0x0f: save rsi at rsp + 0x38
+	  pc+0x0f: save rbx at rsp + 0x30
+	  pc+0x0f: alloc small area: rsp = rsp - 0x20
+	  pc+0x0b: push rdi
+ 000000018000acac (rva: 0000acac): 0000000180008ef4 - 000000018000914e
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 7, Prologue size: 0x1c, Frame offset: 0x0, Frame reg: none
+	  pc+0x1c: alloc large area: rsp = rsp - 0x140
+	  pc+0x15: push r15
+	  pc+0x13: push r14
+	  pc+0x11: push rdi
+	  pc+0x10: push rsi
+	  pc+0x0f: push rbx
+	Handler: 00000001800092b8.
+	User data:
+	  000: 09 00 00 00 58 8f 00 00 8a 8f 00 00 d4 9c 00 00
+	  010: 8a 8f 00 00 aa 8f 00 00 c4 8f 00 00 28 9d 00 00
+	  020: c4 8f 00 00 e4 8f 00 00 fe 8f 00 00 7c 9d 00 00
+	  030: fe 8f 00 00 26 90 00 00 35 90 00 00 d0 9d 00 00
+	  040: 35 90 00 00 4d 90 00 00 5c 90 00 00 2d 9e 00 00
+	  050: 5c 90 00 00 80 90 00 00 96 90 00 00 81 9e 00 00
+	  060: 96 90 00 00 b7 90 00 00 d1 90 00 00 d5 9e 00 00
+	  070: d1 90 00 00 fe 90 00 00 1f 91 00 00 29 9f 00 00
+	  080: 1f 91 00 00 20 8f 00 00 2f 91 00 00 86 9f 00 00
+	  090: 00 00 00 00
+ 000000018000a100 (rva: 0000a100): 00000001800091a0 - 00000001800091d0
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+ 000000018000ad58 (rva: 0000ad58): 00000001800091d8 - 0000000180009276
+	Version: 1, Flags: UNW_FLAG_UHANDLER
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+	Handler: 00000001800092b8.
+	User data:
+	  000: 01 00 00 00 19 92 00 00 5e 92 00 00 af 9f 00 00
+	  010: 00 00 00 00 00 00 00 00
+ 000000018000a35c (rva: 0000a35c): 000000018000927c - 0000000180009293
+	Version: 1, Flags: none
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x28
+ 000000018000a35c also used for function at 00000001800092c4
+ 000000018000a0d0 (rva: 0000a0d0): 00000001800092e8 - 000000018000934b
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbx
+ 000000018000ad88 (rva: 0000ad88): 0000000180009440 - 000000018000948d
+	Version: 1, Flags: UNW_FLAG_EHANDLER
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+	Handler: 00000001800092b8.
+	User data:
+	  000: 01 00 00 00 4d 94 00 00 80 94 00 00 d0 9f 00 00
+	  010: 80 94 00 00
+ 000000018000adac (rva: 0000adac): 00000001800094d4 - 00000001800095a4
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0d, Frame offset: 0x0, Frame reg: none
+	  pc+0x0d: save rbx at rsp + 0x48
+	  pc+0x0d: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rbp
+ 000000018000a0d0 (rva: 0000a0d0): 00000001800095b8 - 00000001800095ec
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbx
+ 000000018000adb8 (rva: 0000adb8): 0000000180009600 - 0000000180009771
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x0c, Frame offset: 0x0, Frame reg: none
+	  pc+0x0c: alloc large area: rsp = rsp - 0x88
+	User data:
+	  000: 00 00 00 00 ec 8a 00 00 00 00 00 00 e0 ad 00 00
+	  010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	  020: 02 00 00 00 f8 ad 00 00 20 ae 00 00 00 00 00 00
+	  030: 00 00 00 00 00 00 00 00 00 00 00 00 c8 c2 00 00
+	  040: 00 00 00 00 ff ff ff ff 00 00 00 00 18 00 00 00
+	  050: 28 8a 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	  060: 00 00 00 00 08 c2 00 00 00 00 00 00 ff ff ff ff
+	  070: 00 00 00 00 18 00 00 00 9e 93 00 00 00 00 00 00
+	  080: 00 00 00 00 00 00 00 00 00 00 00 00 28 c2 00 00
+	  090: 00 00 00 00 ff ff ff ff 00 00 00 00 18 00 00 00
+	  0a0: c4 8a 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	  0b0: 00 00 00 00 04 8b 00 00 00 00 00 00 90 ae 00 00
+	  0c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	  0d0: 03 00 00 00 b0 ae 00 00 48 ae 00 00 20 ae 00 00
+	  0e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	  0f0: 00 00 00 00 50 c2 00 00 00 00 00 00 ff ff ff ff
+	  100: 00 00 00 00 18 00 00 00 c4 8a 00 00 00 00 00 00
+	  110: 00 00 00 00 00 00 00 00 00 00 00 00 04 8b 00 00
+	  120: 00 00 00 00 f8 ae 00 00 00 00 00 00 00 00 00 00
+	  130: 00 00 00 00 00 00 00 00 03 00 00 00 18 af 00 00
+	  140: 48 ae 00 00 20 ae 00 00 00 00 00 00 00 00 00 00
+	  150: 00 00 00 00 00 00 00 00 00 00 00 00 78 c2 00 00
+	  160: 00 00 00 00 ff ff ff ff 00 00 00 00 18 00 00 00
+	  170: c4 8a 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	  180: 00 00 00 00 a0 c2 00 00 00 00 00 00 ff ff ff ff
+	  190: 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00
+	  1a0: 00 00 00 00 00 00 00 00 01 00 00 00 40 af 00 00
+	  1b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	  1c0: 00 00 00 00 68 af 00 00 00 00 00 00 00 00 00 00
+	  1d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	  1e0: 30 c0 00 80 01 00 00 00 80 c0 00 80 01 00 00 00
+	  1f0: f0 c0 00 80 01 00 00 00 00 00 00 00 00 00 00 00
+	  200: 00 00 00 00 dc 0b f8 5d 00 00 00 00 10 b0 00 00
+	  210: 01 00 00 00 04 00 00 00 04 00 00 00 e8 af 00 00
+	  220: f8 af 00 00 08 b0 00 00 f0 3a 00 00 30 3b 00 00
+	  230: f0 38 00 00 f0 38 00 00 26 b0 00 00 36 b0 00 00
+	  240: 48 b0 00 00 5a b0 00 00 00 00 01 00 02 00 03 00
+	  250: 44 69 61 67 6e 6f 73 74 69 63 73 48 75 62 5f 69
+	  260: 73 2e 64 6c 6c 00 44 6c 6c 43 61 6e 55 6e 6c 6f
+	  270: 61 64 4e 6f 77 00 44 6c 6c 47 65 74 43 6c 61 73
+	  280: 73 4f 62 6a 65 63 74 00 44 6c 6c 52 65 67 69 73
+	  290: 74 65 72 53 65 72 76 65 72 00 44 6c 6c 55 6e 72
+	  2a0: 65 67 69 73 74 65 72 53 65 72 76 65 72 00
+ 000000018000a138 (rva: 0000a138): 000000018000979c - 000000018000982b
+	Version: 1, Flags: none
+	Nbr codes: 10, Prologue size: 0x19, Frame offset: 0x0, Frame reg: none
+	  pc+0x19: save rdi at rsp + 0x48
+	  pc+0x19: save rsi at rsp + 0x40
+	  pc+0x19: save rbp at rsp + 0x38
+	  pc+0x19: save rbx at rsp + 0x30
+	  pc+0x19: alloc small area: rsp = rsp - 0x20
+	  pc+0x15: push r14
+ 000000018000ad80 (rva: 0000ad80): 0000000180009840 - 000000018000988d
+	Version: 1, Flags: none
+	Nbr codes: 1, Prologue size: 0x04, Frame offset: 0x0, Frame reg: none
+	  pc+0x04: alloc small area: rsp = rsp - 0x10
+ 000000018000a1c4 (rva: 0000a1c4): 0000000180009896 - 00000001800098b1
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rbp
+	Handler: 000000018000936e.
+	User data:
+	  000: 80 30 00 00
+ 000000018000a298 (rva: 0000a298): 00000001800098dd - 00000001800098f8
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rbp
+	Handler: 000000018000936e.
+	User data:
+	  000: 58 30 00 00
+ 000000018000a34c (rva: 0000a34c): 0000000180009918 - 0000000180009933
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rbp
+	Handler: 000000018000936e.
+	User data:
+	  000: 30 30 00 00
+ 000000018000a4b0 (rva: 0000a4b0): 000000018000995d - 00000001800099a0
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rbp
+	Handler: 000000018000936e.
+	User data:
+	  000: b8 2f 00 00
+ 000000018000a4b0 also used for function at 00000001800099a0
+ 000000018000a504 (rva: 0000a504): 00000001800099cb - 00000001800099eb
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbp
+ 000000018000a6a8 (rva: 0000a6a8): 0000000180009a2f - 0000000180009a4a
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rbp
+	Handler: 000000018000936e.
+	User data:
+	  000: c0 31 00 00
+ 000000018000a7f4 (rva: 0000a7f4): 0000000180009a80 - 0000000180009acf
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rbp
+	Handler: 000000018000936e.
+	User data:
+	  000: 48 31 00 00
+ 000000018000a7f4 also used for function at 0000000180009acf
+ 000000018000a504 (rva: 0000a504): 0000000180009afa - 0000000180009b20
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbp
+ 000000018000a8e0 (rva: 0000a8e0): 0000000180009b38 - 0000000180009b5b
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x30
+	  pc+0x06: push rbp
+	Handler: 000000018000936e.
+	User data:
+	  000: d0 30 00 00
+ 000000018000a94c (rva: 0000a94c): 0000000180009b61 - 0000000180009b84
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x30
+	  pc+0x06: push rbp
+	Handler: 000000018000936e.
+	User data:
+	  000: a8 30 00 00
+ 000000018000a9d8 (rva: 0000a9d8): 0000000180009b8a - 0000000180009ba5
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rbp
+	Handler: 000000018000936e.
+	User data:
+	  000: 00 33 00 00
+ 000000018000aa48 (rva: 0000aa48): 0000000180009bab - 0000000180009bc6
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x40
+	  pc+0x06: push rbp
+	Handler: 000000018000936e.
+	User data:
+	  000: d8 32 00 00
+ 000000018000ab00 (rva: 0000ab00): 0000000180009bd8 - 0000000180009bfe
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x40
+	  pc+0x06: push rbp
+	Handler: 000000018000936e.
+	User data:
+	  000: b0 32 00 00
+ 000000018000abbc (rva: 0000abbc): 0000000180009c10 - 0000000180009c36
+	Version: 1, Flags: UNW_FLAG_EHANDLER | UNW_FLAG_UHANDLER
+	Nbr codes: 2, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: alloc small area: rsp = rsp - 0x40
+	  pc+0x06: push rbp
+	Handler: 000000018000936e.
+	User data:
+	  000: 88 32 00 00
+ 000000018000a504 (rva: 0000a504): 0000000180009c4a - 0000000180009c70
+	Version: 1, Flags: none
+	Nbr codes: 2, Prologue size: 0x06, Frame offset: 0x0, Frame reg: none
+	  pc+0x06: alloc small area: rsp = rsp - 0x20
+	  pc+0x02: push rbp
+ 000000018000a504 also used for function at 0000000180009c82
+ 000000018000a504 also used for function at 0000000180009cd4
+ 000000018000a504 also used for function at 0000000180009d28
+ 000000018000a504 also used for function at 0000000180009d7c
+ 000000018000a504 also used for function at 0000000180009dd0
+ 000000018000a504 also used for function at 0000000180009e2d
+ 000000018000a504 also used for function at 0000000180009e81
+ 000000018000a504 also used for function at 0000000180009ed5
+ 000000018000a504 also used for function at 0000000180009f29
+ 000000018000a504 also used for function at 0000000180009f86
+ 000000018000a504 also used for function at 0000000180009faf
+ 000000018000a504 also used for function at 0000000180009fd0
+ 000000018000a100 (rva: 0000a100): 000000018000a000 - 000000018000a059
+	Version: 1, Flags: none
+	Nbr codes: 4, Prologue size: 0x0a, Frame offset: 0x0, Frame reg: none
+	  pc+0x0a: save rbx at rsp + 0x30
+	  pc+0x0a: alloc small area: rsp = rsp - 0x20
+	  pc+0x06: push rdi
+
+
+PE File Base Relocations (interpreted .reloc section contents)
+
+Virtual Address: 00001000 Chunk size 324 (0x144) Number of fixups 158
+	reloc    0 offset    8 [1008] DIR64
+	reloc    1 offset   10 [1010] DIR64
+	reloc    2 offset   18 [1018] DIR64
+	reloc    3 offset   20 [1020] DIR64
+	reloc    4 offset   28 [1028] DIR64
+	reloc    5 offset   40 [1040] DIR64
+	reloc    6 offset  228 [1228] DIR64
+	reloc    7 offset  238 [1238] DIR64
+	reloc    8 offset  248 [1248] DIR64
+	reloc    9 offset  258 [1258] DIR64
+	reloc   10 offset  268 [1268] DIR64
+	reloc   11 offset  278 [1278] DIR64
+	reloc   12 offset  288 [1288] DIR64
+	reloc   13 offset  298 [1298] DIR64
+	reloc   14 offset  2a8 [12a8] DIR64
+	reloc   15 offset  2b8 [12b8] DIR64
+	reloc   16 offset  2c8 [12c8] DIR64
+	reloc   17 offset  2d8 [12d8] DIR64
+	reloc   18 offset  2e8 [12e8] DIR64
+	reloc   19 offset  2f8 [12f8] DIR64
+	reloc   20 offset  308 [1308] DIR64
+	reloc   21 offset  318 [1318] DIR64
+	reloc   22 offset  328 [1328] DIR64
+	reloc   23 offset  338 [1338] DIR64
+	reloc   24 offset  348 [1348] DIR64
+	reloc   25 offset  358 [1358] DIR64
+	reloc   26 offset  368 [1368] DIR64
+	reloc   27 offset  378 [1378] DIR64
+	reloc   28 offset  388 [1388] DIR64
+	reloc   29 offset  398 [1398] DIR64
+	reloc   30 offset  3a8 [13a8] DIR64
+	reloc   31 offset  3b8 [13b8] DIR64
+	reloc   32 offset  3c8 [13c8] DIR64
+	reloc   33 offset  3d8 [13d8] DIR64
+	reloc   34 offset  3e8 [13e8] DIR64
+	reloc   35 offset  3f8 [13f8] DIR64
+	reloc   36 offset  408 [1408] DIR64
+	reloc   37 offset  418 [1418] DIR64
+	reloc   38 offset  428 [1428] DIR64
+	reloc   39 offset  438 [1438] DIR64
+	reloc   40 offset  448 [1448] DIR64
+	reloc   41 offset  458 [1458] DIR64
+	reloc   42 offset  468 [1468] DIR64
+	reloc   43 offset  478 [1478] DIR64
+	reloc   44 offset  488 [1488] DIR64
+	reloc   45 offset  498 [1498] DIR64
+	reloc   46 offset  4a8 [14a8] DIR64
+	reloc   47 offset  4b8 [14b8] DIR64
+	reloc   48 offset  4c8 [14c8] DIR64
+	reloc   49 offset  4d8 [14d8] DIR64
+	reloc   50 offset  4e8 [14e8] DIR64
+	reloc   51 offset  4f8 [14f8] DIR64
+	reloc   52 offset  508 [1508] DIR64
+	reloc   53 offset  518 [1518] DIR64
+	reloc   54 offset  528 [1528] DIR64
+	reloc   55 offset  538 [1538] DIR64
+	reloc   56 offset  548 [1548] DIR64
+	reloc   57 offset  558 [1558] DIR64
+	reloc   58 offset  568 [1568] DIR64
+	reloc   59 offset  578 [1578] DIR64
+	reloc   60 offset  588 [1588] DIR64
+	reloc   61 offset  598 [1598] DIR64
+	reloc   62 offset  5a8 [15a8] DIR64
+	reloc   63 offset  5b8 [15b8] DIR64
+	reloc   64 offset  5c8 [15c8] DIR64
+	reloc   65 offset  5d8 [15d8] DIR64
+	reloc   66 offset  5e8 [15e8] DIR64
+	reloc   67 offset  5f8 [15f8] DIR64
+	reloc   68 offset  608 [1608] DIR64
+	reloc   69 offset  618 [1618] DIR64
+	reloc   70 offset  628 [1628] DIR64
+	reloc   71 offset  638 [1638] DIR64
+	reloc   72 offset  648 [1648] DIR64
+	reloc   73 offset  658 [1658] DIR64
+	reloc   74 offset  668 [1668] DIR64
+	reloc   75 offset  678 [1678] DIR64
+	reloc   76 offset  688 [1688] DIR64
+	reloc   77 offset  698 [1698] DIR64
+	reloc   78 offset  6a8 [16a8] DIR64
+	reloc   79 offset  6b8 [16b8] DIR64
+	reloc   80 offset  b18 [1b18] DIR64
+	reloc   81 offset  b28 [1b28] DIR64
+	reloc   82 offset  b38 [1b38] DIR64
+	reloc   83 offset  b48 [1b48] DIR64
+	reloc   84 offset  b58 [1b58] DIR64
+	reloc   85 offset  b68 [1b68] DIR64
+	reloc   86 offset  b78 [1b78] DIR64
+	reloc   87 offset  b88 [1b88] DIR64
+	reloc   88 offset  b98 [1b98] DIR64
+	reloc   89 offset  ba8 [1ba8] DIR64
+	reloc   90 offset  bb8 [1bb8] DIR64
+	reloc   91 offset  bc8 [1bc8] DIR64
+	reloc   92 offset  bd8 [1bd8] DIR64
+	reloc   93 offset  be8 [1be8] DIR64
+	reloc   94 offset  bf8 [1bf8] DIR64
+	reloc   95 offset  c08 [1c08] DIR64
+	reloc   96 offset  c18 [1c18] DIR64
+	reloc   97 offset  c28 [1c28] DIR64
+	reloc   98 offset  c38 [1c38] DIR64
+	reloc   99 offset  c48 [1c48] DIR64
+	reloc  100 offset  c58 [1c58] DIR64
+	reloc  101 offset  c68 [1c68] DIR64
+	reloc  102 offset  c78 [1c78] DIR64
+	reloc  103 offset  c88 [1c88] DIR64
+	reloc  104 offset  c98 [1c98] DIR64
+	reloc  105 offset  ca8 [1ca8] DIR64
+	reloc  106 offset  cb8 [1cb8] DIR64
+	reloc  107 offset  cc8 [1cc8] DIR64
+	reloc  108 offset  cd8 [1cd8] DIR64
+	reloc  109 offset  ce8 [1ce8] DIR64
+	reloc  110 offset  cf8 [1cf8] DIR64
+	reloc  111 offset  d08 [1d08] DIR64
+	reloc  112 offset  d18 [1d18] DIR64
+	reloc  113 offset  d28 [1d28] DIR64
+	reloc  114 offset  d38 [1d38] DIR64
+	reloc  115 offset  d48 [1d48] DIR64
+	reloc  116 offset  d58 [1d58] DIR64
+	reloc  117 offset  d68 [1d68] DIR64
+	reloc  118 offset  d78 [1d78] DIR64
+	reloc  119 offset  d88 [1d88] DIR64
+	reloc  120 offset  d98 [1d98] DIR64
+	reloc  121 offset  da8 [1da8] DIR64
+	reloc  122 offset  db8 [1db8] DIR64
+	reloc  123 offset  dc8 [1dc8] DIR64
+	reloc  124 offset  dd8 [1dd8] DIR64
+	reloc  125 offset  de8 [1de8] DIR64
+	reloc  126 offset  df8 [1df8] DIR64
+	reloc  127 offset  e08 [1e08] DIR64
+	reloc  128 offset  e18 [1e18] DIR64
+	reloc  129 offset  e28 [1e28] DIR64
+	reloc  130 offset  e38 [1e38] DIR64
+	reloc  131 offset  e48 [1e48] DIR64
+	reloc  132 offset  e58 [1e58] DIR64
+	reloc  133 offset  e68 [1e68] DIR64
+	reloc  134 offset  e78 [1e78] DIR64
+	reloc  135 offset  e88 [1e88] DIR64
+	reloc  136 offset  e98 [1e98] DIR64
+	reloc  137 offset  ea8 [1ea8] DIR64
+	reloc  138 offset  eb8 [1eb8] DIR64
+	reloc  139 offset  ec8 [1ec8] DIR64
+	reloc  140 offset  ed8 [1ed8] DIR64
+	reloc  141 offset  ee8 [1ee8] DIR64
+	reloc  142 offset  ef8 [1ef8] DIR64
+	reloc  143 offset  f08 [1f08] DIR64
+	reloc  144 offset  f18 [1f18] DIR64
+	reloc  145 offset  f28 [1f28] DIR64
+	reloc  146 offset  f38 [1f38] DIR64
+	reloc  147 offset  f48 [1f48] DIR64
+	reloc  148 offset  f58 [1f58] DIR64
+	reloc  149 offset  f68 [1f68] DIR64
+	reloc  150 offset  f78 [1f78] DIR64
+	reloc  151 offset  f88 [1f88] DIR64
+	reloc  152 offset  f98 [1f98] DIR64
+	reloc  153 offset  fa8 [1fa8] DIR64
+	reloc  154 offset  fb8 [1fb8] DIR64
+	reloc  155 offset  fc8 [1fc8] DIR64
+	reloc  156 offset  fd8 [1fd8] DIR64
+	reloc  157 offset  fe8 [1fe8] DIR64
+
+Virtual Address: 00002000 Chunk size 364 (0x16c) Number of fixups 178
+	reloc    0 offset  510 [2510] DIR64
+	reloc    1 offset  518 [2518] DIR64
+	reloc    2 offset  530 [2530] DIR64
+	reloc    3 offset  538 [2538] DIR64
+	reloc    4 offset  540 [2540] DIR64
+	reloc    5 offset  548 [2548] DIR64
+	reloc    6 offset  550 [2550] DIR64
+	reloc    7 offset  5e0 [25e0] DIR64
+	reloc    8 offset  5f8 [25f8] DIR64
+	reloc    9 offset  618 [2618] DIR64
+	reloc   10 offset  620 [2620] DIR64
+	reloc   11 offset  640 [2640] DIR64
+	reloc   12 offset  648 [2648] DIR64
+	reloc   13 offset  650 [2650] DIR64
+	reloc   14 offset  658 [2658] DIR64
+	reloc   15 offset  660 [2660] DIR64
+	reloc   16 offset  668 [2668] DIR64
+	reloc   17 offset  670 [2670] DIR64
+	reloc   18 offset  678 [2678] DIR64
+	reloc   19 offset  680 [2680] DIR64
+	reloc   20 offset  688 [2688] DIR64
+	reloc   21 offset  690 [2690] DIR64
+	reloc   22 offset  698 [2698] DIR64
+	reloc   23 offset  6a0 [26a0] DIR64
+	reloc   24 offset  6a8 [26a8] DIR64
+	reloc   25 offset  6b0 [26b0] DIR64
+	reloc   26 offset  6b8 [26b8] DIR64
+	reloc   27 offset  6c0 [26c0] DIR64
+	reloc   28 offset  6c8 [26c8] DIR64
+	reloc   29 offset  6d0 [26d0] DIR64
+	reloc   30 offset  6d8 [26d8] DIR64
+	reloc   31 offset  6e0 [26e0] DIR64
+	reloc   32 offset  6e8 [26e8] DIR64
+	reloc   33 offset  6f0 [26f0] DIR64
+	reloc   34 offset  6f8 [26f8] DIR64
+	reloc   35 offset  700 [2700] DIR64
+	reloc   36 offset  708 [2708] DIR64
+	reloc   37 offset  710 [2710] DIR64
+	reloc   38 offset  718 [2718] DIR64
+	reloc   39 offset  720 [2720] DIR64
+	reloc   40 offset  728 [2728] DIR64
+	reloc   41 offset  730 [2730] DIR64
+	reloc   42 offset  738 [2738] DIR64
+	reloc   43 offset  740 [2740] DIR64
+	reloc   44 offset  748 [2748] DIR64
+	reloc   45 offset  750 [2750] DIR64
+	reloc   46 offset  758 [2758] DIR64
+	reloc   47 offset  760 [2760] DIR64
+	reloc   48 offset  768 [2768] DIR64
+	reloc   49 offset  770 [2770] DIR64
+	reloc   50 offset  778 [2778] DIR64
+	reloc   51 offset  780 [2780] DIR64
+	reloc   52 offset  788 [2788] DIR64
+	reloc   53 offset  790 [2790] DIR64
+	reloc   54 offset  798 [2798] DIR64
+	reloc   55 offset  7a0 [27a0] DIR64
+	reloc   56 offset  7a8 [27a8] DIR64
+	reloc   57 offset  7b0 [27b0] DIR64
+	reloc   58 offset  7b8 [27b8] DIR64
+	reloc   59 offset  7c0 [27c0] DIR64
+	reloc   60 offset  7c8 [27c8] DIR64
+	reloc   61 offset  7d0 [27d0] DIR64
+	reloc   62 offset  7d8 [27d8] DIR64
+	reloc   63 offset  7e0 [27e0] DIR64
+	reloc   64 offset  7e8 [27e8] DIR64
+	reloc   65 offset  7f0 [27f0] DIR64
+	reloc   66 offset  7f8 [27f8] DIR64
+	reloc   67 offset  800 [2800] DIR64
+	reloc   68 offset  808 [2808] DIR64
+	reloc   69 offset  810 [2810] DIR64
+	reloc   70 offset  818 [2818] DIR64
+	reloc   71 offset  820 [2820] DIR64
+	reloc   72 offset  828 [2828] DIR64
+	reloc   73 offset  830 [2830] DIR64
+	reloc   74 offset  838 [2838] DIR64
+	reloc   75 offset  840 [2840] DIR64
+	reloc   76 offset  848 [2848] DIR64
+	reloc   77 offset  850 [2850] DIR64
+	reloc   78 offset  870 [2870] DIR64
+	reloc   79 offset  878 [2878] DIR64
+	reloc   80 offset  898 [2898] DIR64
+	reloc   81 offset  8a0 [28a0] DIR64
+	reloc   82 offset  8a8 [28a8] DIR64
+	reloc   83 offset  8b0 [28b0] DIR64
+	reloc   84 offset  8b8 [28b8] DIR64
+	reloc   85 offset  8c0 [28c0] DIR64
+	reloc   86 offset  8c8 [28c8] DIR64
+	reloc   87 offset  8d0 [28d0] DIR64
+	reloc   88 offset  8d8 [28d8] DIR64
+	reloc   89 offset  8e0 [28e0] DIR64
+	reloc   90 offset  8e8 [28e8] DIR64
+	reloc   91 offset  8f0 [28f0] DIR64
+	reloc   92 offset  8f8 [28f8] DIR64
+	reloc   93 offset  900 [2900] DIR64
+	reloc   94 offset  908 [2908] DIR64
+	reloc   95 offset  910 [2910] DIR64
+	reloc   96 offset  918 [2918] DIR64
+	reloc   97 offset  920 [2920] DIR64
+	reloc   98 offset  928 [2928] DIR64
+	reloc   99 offset  930 [2930] DIR64
+	reloc  100 offset  938 [2938] DIR64
+	reloc  101 offset  940 [2940] DIR64
+	reloc  102 offset  948 [2948] DIR64
+	reloc  103 offset  950 [2950] DIR64
+	reloc  104 offset  958 [2958] DIR64
+	reloc  105 offset  960 [2960] DIR64
+	reloc  106 offset  968 [2968] DIR64
+	reloc  107 offset  970 [2970] DIR64
+	reloc  108 offset  978 [2978] DIR64
+	reloc  109 offset  980 [2980] DIR64
+	reloc  110 offset  988 [2988] DIR64
+	reloc  111 offset  990 [2990] DIR64
+	reloc  112 offset  9a0 [29a0] DIR64
+	reloc  113 offset  9b8 [29b8] DIR64
+	reloc  114 offset  9d8 [29d8] DIR64
+	reloc  115 offset  9e0 [29e0] DIR64
+	reloc  116 offset  a00 [2a00] DIR64
+	reloc  117 offset  a08 [2a08] DIR64
+	reloc  118 offset  a10 [2a10] DIR64
+	reloc  119 offset  a18 [2a18] DIR64
+	reloc  120 offset  a20 [2a20] DIR64
+	reloc  121 offset  a28 [2a28] DIR64
+	reloc  122 offset  a30 [2a30] DIR64
+	reloc  123 offset  a38 [2a38] DIR64
+	reloc  124 offset  a40 [2a40] DIR64
+	reloc  125 offset  a48 [2a48] DIR64
+	reloc  126 offset  a50 [2a50] DIR64
+	reloc  127 offset  a58 [2a58] DIR64
+	reloc  128 offset  a60 [2a60] DIR64
+	reloc  129 offset  a68 [2a68] DIR64
+	reloc  130 offset  a70 [2a70] DIR64
+	reloc  131 offset  a78 [2a78] DIR64
+	reloc  132 offset  a80 [2a80] DIR64
+	reloc  133 offset  a88 [2a88] DIR64
+	reloc  134 offset  a90 [2a90] DIR64
+	reloc  135 offset  a98 [2a98] DIR64
+	reloc  136 offset  aa0 [2aa0] DIR64
+	reloc  137 offset  aa8 [2aa8] DIR64
+	reloc  138 offset  ab0 [2ab0] DIR64
+	reloc  139 offset  ab8 [2ab8] DIR64
+	reloc  140 offset  ac0 [2ac0] DIR64
+	reloc  141 offset  ac8 [2ac8] DIR64
+	reloc  142 offset  ad0 [2ad0] DIR64
+	reloc  143 offset  ad8 [2ad8] DIR64
+	reloc  144 offset  ae0 [2ae0] DIR64
+	reloc  145 offset  ae8 [2ae8] DIR64
+	reloc  146 offset  af0 [2af0] DIR64
+	reloc  147 offset  af8 [2af8] DIR64
+	reloc  148 offset  b00 [2b00] DIR64
+	reloc  149 offset  b08 [2b08] DIR64
+	reloc  150 offset  b10 [2b10] DIR64
+	reloc  151 offset  b18 [2b18] DIR64
+	reloc  152 offset  b20 [2b20] DIR64
+	reloc  153 offset  b28 [2b28] DIR64
+	reloc  154 offset  b30 [2b30] DIR64
+	reloc  155 offset  b38 [2b38] DIR64
+	reloc  156 offset  b40 [2b40] DIR64
+	reloc  157 offset  b48 [2b48] DIR64
+	reloc  158 offset  b50 [2b50] DIR64
+	reloc  159 offset  b58 [2b58] DIR64
+	reloc  160 offset  b60 [2b60] DIR64
+	reloc  161 offset  b70 [2b70] DIR64
+	reloc  162 offset  b90 [2b90] DIR64
+	reloc  163 offset  b98 [2b98] DIR64
+	reloc  164 offset  bb8 [2bb8] DIR64
+	reloc  165 offset  bc0 [2bc0] DIR64
+	reloc  166 offset  bc8 [2bc8] DIR64
+	reloc  167 offset  bd0 [2bd0] DIR64
+	reloc  168 offset  be0 [2be0] DIR64
+	reloc  169 offset  bf8 [2bf8] DIR64
+	reloc  170 offset  c48 [2c48] DIR64
+	reloc  171 offset  c90 [2c90] DIR64
+	reloc  172 offset  e60 [2e60] DIR64
+	reloc  173 offset  e78 [2e78] DIR64
+	reloc  174 offset  eb8 [2eb8] DIR64
+	reloc  175 offset  ec0 [2ec0] DIR64
+	reloc  176 offset  ee8 [2ee8] DIR64
+	reloc  177 offset    0 [2000] ABSOLUTE
+
+Virtual Address: 00003000 Chunk size 16 (0x10) Number of fixups 4
+	reloc    0 offset  388 [3388] DIR64
+	reloc    1 offset  3a0 [33a0] DIR64
+	reloc    2 offset  3b0 [33b0] DIR64
+	reloc    3 offset    0 [3000] ABSOLUTE
+
+Virtual Address: 0000a000 Chunk size 16 (0x10) Number of fixups 4
+	reloc    0 offset  fa0 [afa0] DIR64
+	reloc    1 offset  fa8 [afa8] DIR64
+	reloc    2 offset  fb0 [afb0] DIR64
+	reloc    3 offset    0 [a000] ABSOLUTE
+
+Virtual Address: 0000c000 Chunk size 80 (0x50) Number of fixups 36
+	reloc    0 offset   20 [c020] DIR64
+	reloc    1 offset   30 [c030] DIR64
+	reloc    2 offset   38 [c038] DIR64
+	reloc    3 offset   40 [c040] DIR64
+	reloc    4 offset   48 [c048] DIR64
+	reloc    5 offset   60 [c060] DIR64
+	reloc    6 offset   68 [c068] DIR64
+	reloc    7 offset   70 [c070] DIR64
+	reloc    8 offset   80 [c080] DIR64
+	reloc    9 offset   88 [c088] DIR64
+	reloc   10 offset   90 [c090] DIR64
+	reloc   11 offset   98 [c098] DIR64
+	reloc   12 offset   b0 [c0b0] DIR64
+	reloc   13 offset   b8 [c0b8] DIR64
+	reloc   14 offset   c0 [c0c0] DIR64
+	reloc   15 offset   d0 [c0d0] DIR64
+	reloc   16 offset   e0 [c0e0] DIR64
+	reloc   17 offset   f0 [c0f0] DIR64
+	reloc   18 offset   f8 [c0f8] DIR64
+	reloc   19 offset  100 [c100] DIR64
+	reloc   20 offset  108 [c108] DIR64
+	reloc   21 offset  120 [c120] DIR64
+	reloc   22 offset  128 [c128] DIR64
+	reloc   23 offset  130 [c130] DIR64
+	reloc   24 offset  140 [c140] DIR64
+	reloc   25 offset  158 [c158] DIR64
+	reloc   26 offset  1a8 [c1a8] DIR64
+	reloc   27 offset  1f0 [c1f0] DIR64
+	reloc   28 offset  1f8 [c1f8] DIR64
+	reloc   29 offset  200 [c200] DIR64
+	reloc   30 offset  208 [c208] DIR64
+	reloc   31 offset  228 [c228] DIR64
+	reloc   32 offset  250 [c250] DIR64
+	reloc   33 offset  278 [c278] DIR64
+	reloc   34 offset  2a0 [c2a0] DIR64
+	reloc   35 offset  2c8 [c2c8] DIR64
+
+Virtual Address: 0000e000 Chunk size 12 (0xc) Number of fixups 2
+	reloc    0 offset  1b8 [e1b8] DIR64
+	reloc    1 offset    0 [e000] ABSOLUTE
+
+There is a debug directory in .text at 0x1800011e0
+
+Type                Size     Rva      Offset
+  2        CodeView 0000002e 000033c4 000027c4
+(format RSDS signature e7592bb78c4c4ad09b4078b504087787 age 1 pdb DiagnosticsHub_is.pdb)
+
+The .rsrc Resource Directory section:
+000  Type Table: Char: 0, Time: 00000000, Ver: 0/0, Num Names: 0, IDs: 1
+010   Entry: ID: 0x000010, Value: 0x80000018
+018    Name Table: Char: 0, Time: 00000000, Ver: 0/0, Num Names: 0, IDs: 1
+028     Entry: ID: 0x000001, Value: 0x80000030
+030      Language Table: Char: 0, Time: 00000000, Ver: 0/0, Num Names: 0, IDs: 1
+040       Entry: ID: 0x000409, Value: 0x000048
+048        Leaf: Addr: 0x00f060, Size: 0x0003ac, Codepage: 0
+ Resources start at offset: 0x60
+
+Sections:
+Idx Name          Size      VMA               LMA               File off  Algn
+  0 .text         0000a06e  0000000180001000  0000000180001000  00000400  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000400  000000018000c000  000000018000c000  0000a600  2**4
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .pdata        00000738  000000018000d000  000000018000d000  0000aa00  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .idata        0000079e  000000018000e000  000000018000e000  0000b200  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .rsrc         00000410  000000018000f000  000000018000f000  0000ba00  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .reloc        0000032c  0000000180010000  0000000180010000  0000c000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+SYMBOL TABLE:
+no symbols
+
+

@@ -1,0 +1,119 @@
+
+/home/user/Win7IE-Decomp/bin/pt-BR/iexplore.exe.mui:     file format pei-i386
+/home/user/Win7IE-Decomp/bin/pt-BR/iexplore.exe.mui
+architecture: i386, flags 0x0000012f:
+HAS_RELOC, EXEC_P, HAS_LINENO, HAS_DEBUG, HAS_LOCALS, D_PAGED
+start address 0x00000000
+
+Characteristics 0x2102
+	executable
+	32 bit words
+	DLL
+
+Time/Date		Thu Jan  1 00:00:00 1970
+Magic			010b	(PE32)
+MajorLinkerVersion	11
+MinorLinkerVersion	0
+SizeOfCode		00000000
+SizeOfInitializedData	00001400
+SizeOfUninitializedData	00000000
+AddressOfEntryPoint	00000000
+BaseOfCode		00001000
+BaseOfData		00001000
+ImageBase		10000000
+SectionAlignment	00001000
+FileAlignment		00000200
+MajorOSystemVersion	6
+MinorOSystemVersion	3
+MajorImageVersion	6
+MinorImageVersion	3
+MajorSubsystemVersion	6
+MinorSubsystemVersion	0
+Win32Version		00000000
+SizeOfImage		00003000
+SizeOfHeaders		00000200
+CheckSum		00001659
+Subsystem		00000002	(Windows GUI)
+DllCharacteristics	00000540
+					DYNAMIC_BASE
+					NX_COMPAT
+					NO_SEH
+SizeOfStackReserve	00100000
+SizeOfStackCommit	00001000
+SizeOfHeapReserve	00100000
+SizeOfHeapCommit	00001000
+LoaderFlags		00000000
+NumberOfRvaAndSizes	00000010
+
+The Data Directory
+Entry 0 00000000 00000000 Export Directory [.edata (or where ever we found it)]
+Entry 1 00000000 00000000 Import Directory [parts of .idata]
+Entry 2 00001000 0000136c Resource Directory [.rsrc]
+Entry 3 00000000 00000000 Exception Directory [.pdata]
+Entry 4 00000000 00000000 Security Directory
+Entry 5 00000000 00000000 Base Relocation Directory [.reloc]
+Entry 6 00000000 00000000 Debug Directory
+Entry 7 00000000 00000000 Description Directory
+Entry 8 00000000 00000000 Special Directory
+Entry 9 00000000 00000000 Thread Storage Directory [.tls]
+Entry a 00000000 00000000 Load Configuration Directory
+Entry b 00000000 00000000 Bound Import Directory
+Entry c 00000000 00000000 Import Address Table Directory
+Entry d 00000000 00000000 Delay Import Directory
+Entry e 00000000 00000000 CLR Runtime Header
+Entry f 00000000 00000000 Reserved
+
+The .rsrc Resource Directory section:
+000  Type Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 1, IDs: 3
+010   Entry: name: [val: 800001c0 len 3]: MUI, Value: 0x80000030
+030    Name Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+040     Entry: ID: 0x000001, Value: 0x800000a8
+0a8      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+0b8       Entry: ID: 0x000416, Value: 0x000150
+150        Leaf: Addr: 0x0011c8, Size: 0x0000c0, Codepage: 1252
+018   Entry: ID: 0x000006, Value: 0x80000048
+048    Name Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 4
+058     Entry: ID: 0x000023, Value: 0x800000c0
+0c0      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+0d0       Entry: ID: 0x000416, Value: 0x000160
+160        Leaf: Addr: 0x001288, Size: 0x00002a, Codepage: 1252
+060     Entry: ID: 0x00002c, Value: 0x800000d8
+0d8      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+0e8       Entry: ID: 0x000416, Value: 0x000170
+170        Leaf: Addr: 0x0012b4, Size: 0x000158, Codepage: 1252
+068     Entry: ID: 0x00002d, Value: 0x800000f0
+0f0      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+100       Entry: ID: 0x000416, Value: 0x000180
+180        Leaf: Addr: 0x00140c, Size: 0x000590, Codepage: 1252
+070     Entry: ID: 0x00002e, Value: 0x80000108
+108      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+118       Entry: ID: 0x000416, Value: 0x000190
+190        Leaf: Addr: 0x00199c, Size: 0x000042, Codepage: 1252
+020   Entry: ID: 0x00000b, Value: 0x80000078
+078    Name Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+088     Entry: ID: 0x000001, Value: 0x80000120
+120      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+130       Entry: ID: 0x000416, Value: 0x0001a0
+1a0        Leaf: Addr: 0x0019e0, Size: 0x000388, Codepage: 1252
+028   Entry: ID: 0x000010, Value: 0x80000090
+090    Name Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+0a0     Entry: ID: 0x000001, Value: 0x80000138
+138      Language Table: Char: 0, Time: 00000000, Ver: 4/0, Num Names: 0, IDs: 1
+148       Entry: ID: 0x000416, Value: 0x0001b0
+1b0        Leaf: Addr: 0x001d68, Size: 0x000604, Codepage: 1252
+
+WARNING: Extra data in .rsrc section - it will be ignored by Windows:
+136d  Type Table: Char: 1229210689, Time: 5858474e, Ver: 16720/17476, Num Names: 20041, IDs: 20551
+137d   Entry: <corrupt string offset: 0x49444441>
+Corrupt .rsrc section detected!
+ String table starts at offset: 0x1c0
+ Resources start at offset: 0x1c8
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .rsrc         00001400  10001000  10001000  00000200  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+SYMBOL TABLE:
+no symbols
+
+
