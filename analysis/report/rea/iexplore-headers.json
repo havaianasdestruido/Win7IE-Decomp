@@ -1,0 +1,14 @@
+{
+  "code": "VALIDATION_ERROR",
+  "message": "Invalid option: expected one of \"file_headers\"|\"section_headers\"|\"symbols\"|\"relocations\"|\"dwarf\"|\"disassemble\"|\"disassemble_all\"\n\nDetails: [\n  {\n    \"code\": \"invalid_value\",\n    \"values\": [\n      \"file_headers\",\n      \"section_headers\",\n      \"symbols\",\n      \"relocations\",\n      \"dwarf\",\n      \"disassemble\",\n      \"disassemble_all\"\n    ],\n    \"path\": [\n      \"operation\"\n    ],\n    \"message\": \"Invalid option: expected one of \\\"file_headers\\\"|\\\"section_headers\\\"|\\\"symbols\\\"|\\\"relocations\\\"|\\\"dwarf\\\"|\\\"disassemble\\\"|\\\"disassemble_all\\\"\"\n  }\n]",
+  "fieldErrors": [
+    {
+      "code": "invalid_value",
+      "missing": false,
+      "path": "operation",
+      "expected": "",
+      "received": "",
+      "message": "Invalid option: expected one of \"file_headers\"|\"section_headers\"|\"symbols\"|\"relocations\"|\"dwarf\"|\"disassemble\"|\"disassemble_all\""
+    }
+  ]
+}
