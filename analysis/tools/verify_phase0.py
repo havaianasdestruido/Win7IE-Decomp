@@ -25,6 +25,7 @@ def main() -> int:
     hashes = json.loads((GEN / "hashes.json").read_text(encoding="utf-8"))
     inventory = json.loads((GEN / "inventory.json").read_text(encoding="utf-8"))
     pe_struct = json.loads((GEN / "pe-struct.json").read_text(encoding="utf-8"))
+    rsds = json.loads((GEN / "debug-rsds.json").read_text(encoding="utf-8"))
     failures: list[str] = []
 
     if len(files) != 57:
@@ -57,6 +58,12 @@ def main() -> int:
         failures.append(f"pe-struct.json has {len(pe_struct)} images, expected 49")
     if len(inventory) != 57:
         failures.append(f"inventory.json has {len(inventory)} rows, expected 57")
+    if len(rsds) != 29:
+        failures.append(f"debug-rsds.json has {len(rsds)} PDB records, expected 29")
+    kinds = {item["kind"] for item in inventory}
+    expected_kinds = {"PE/COFF", "XML", "RTF", "ICO", "UTF-16LE text", "text"}
+    if kinds != expected_kinds:
+        failures.append(f"inventory kinds {sorted(kinds)} != {sorted(expected_kinds)}")
 
     src_dirs = [path for path in (ROOT / "src").iterdir() if path.is_dir()]
     if len(src_dirs) != 49:
