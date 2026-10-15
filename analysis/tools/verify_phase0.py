@@ -20,6 +20,41 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def index_by_path(rows: list[dict], label: str, failures: list[str]) -> dict[str, dict]:
+    mapping: dict[str, dict] = {}
+    for item in rows:
+        path = item.get("path")
+        if not path:
+            failures.append(f"{label} row missing path")
+            continue
+        if path in mapping:
+            failures.append(f"{label} duplicate path: {path}")
+            continue
+        mapping[path] = item
+    return mapping
+
+
+def expect_hashes(mapping: dict[str, dict], live_hashes: dict[str, str], label: str, failures: list[str], required: set[str] | None = None) -> None:
+    paths = set(mapping)
+    if required is not None and paths != required:
+        missing = sorted(required - paths)
+        extra = sorted(paths - required)
+        if missing:
+            failures.append(f"{label} missing paths: {missing[:5]}")
+        if extra:
+            failures.append(f"{label} extra paths: {extra[:5]}")
+    for rel, rec in mapping.items():
+        digest = rec.get("sha256")
+        if digest is None:
+            failures.append(f"{label} missing sha256: {rel}")
+            continue
+        live = live_hashes.get(rel)
+        if live is None:
+            failures.append(f"{label} path not in bin/: {rel}")
+        elif digest != live:
+            failures.append(f"{label} hash mismatch: {rel}")
+
+
 def main() -> int:
     files = sorted(path for path in BIN.rglob("*") if path.is_file())
     hashes = json.loads((GEN / "hashes.json").read_text(encoding="utf-8"))
@@ -34,32 +69,25 @@ def main() -> int:
     if total != 30_617_822:
         failures.append(f"bin/ totals {total} bytes, expected 30617822")
 
-    lock = {item["path"]: item for item in hashes}
     live = {path.relative_to(ROOT).as_posix(): path for path in files}
-    if set(lock) != set(live):
-        failures.append("hashes.json path set does not match bin/")
+    live_hashes = {rel: sha256_file(path) for rel, path in live.items()}
+    pe_paths = {rel for rel, path in live.items() if path.read_bytes()[:2] == b"MZ"}
+    code_paths = {rel for rel in pe_paths if not rel.endswith(".mui")}
 
-    pe_count = 0
-    for rel, path in live.items():
-        digest = sha256_file(path)
-        rec = lock.get(rel)
-        if rec is None:
-            continue
-        if rec["sha256"] != digest:
-            failures.append(f"hash mismatch: {rel}")
-        if rec["size"] != path.stat().st_size:
-            failures.append(f"size mismatch: {rel}")
-        if path.read_bytes()[:2] == b"MZ":
-            pe_count += 1
+    lock = index_by_path(hashes, "hashes.json", failures)
+    expect_hashes(lock, live_hashes, "hashes.json", failures, set(live))
 
-    if pe_count != 49:
-        failures.append(f"PE/COFF count {pe_count}, expected 49")
-    if len(pe_struct) != 49:
-        failures.append(f"pe-struct.json has {len(pe_struct)} images, expected 49")
-    if len(inventory) != 57:
-        failures.append(f"inventory.json has {len(inventory)} rows, expected 57")
-    if len(rsds) != 29:
-        failures.append(f"debug-rsds.json has {len(rsds)} PDB records, expected 29")
+    inv_map = index_by_path(inventory, "inventory.json", failures)
+    expect_hashes(inv_map, live_hashes, "inventory.json", failures, set(live))
+
+    pe_map = index_by_path(pe_struct, "pe-struct.json", failures)
+    expect_hashes(pe_map, live_hashes, "pe-struct.json", failures, pe_paths)
+
+    rsds_map = index_by_path(rsds, "debug-rsds.json", failures)
+    expect_hashes(rsds_map, live_hashes, "debug-rsds.json", failures, code_paths)
+
+    if len(pe_paths) != 49:
+        failures.append(f"PE/COFF count {len(pe_paths)}, expected 49")
     kinds = {item["kind"] for item in inventory}
     expected_kinds = {"PE/COFF", "XML", "RTF", "ICO", "UTF-16LE text", "text"}
     if kinds != expected_kinds:
@@ -77,7 +105,7 @@ def main() -> int:
         for item in failures:
             print(f"  - {item}")
         return 1
-    print("ok: Phase 0 coverage 57/57 files, 49/49 PE images, hashes match, ledgers present")
+    print("ok: Phase 0 coverage 57/57 files, 49/49 PE images, generated records match live hashes, ledgers present")
     return 0
 
 
