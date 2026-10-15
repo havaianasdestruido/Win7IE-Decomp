@@ -32,15 +32,15 @@
 
 ## Data directories (non-empty)
 
-| Name | RVA | Size |
-|---|---|---:|
-| `Import` | `0x136a8` | 0x104 |
-| `Resource` | `0x15000` | 0x650e0 |
-| `Exception` | `0x12000` | 0x8ac |
-| `BaseReloc` | `0x7b000` | 0x49c |
-| `Debug` | `0x1170` | 0x1c |
-| `LoadConfig` | `0x3fe0` | 0x94 |
-| `IAT` | `0x13000` | 0x6a0 |
+| Name | Address | Kind | Size |
+|---|---|---|---:|
+| `Import` | `0x136a8` | RVA | 0x104 |
+| `Resource` | `0x15000` | RVA | 0x650e0 |
+| `Exception` | `0x12000` | RVA | 0x8ac |
+| `BaseReloc` | `0x7b000` | RVA | 0x49c |
+| `Debug` | `0x1170` | RVA | 0x1c |
+| `LoadConfig` | `0x3fe0` | RVA | 0x94 |
+| `IAT` | `0x13000` | RVA | 0x6a0 |
 
 ## Static imports
 

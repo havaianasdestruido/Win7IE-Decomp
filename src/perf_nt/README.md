@@ -32,17 +32,17 @@
 
 ## Data directories (non-empty)
 
-| Name | RVA | Size |
-|---|---|---:|
-| `Export` | `0x153a60` | 0xa0 |
-| `Import` | `0x165670` | 0xb4 |
-| `Resource` | `0x167000` | 0x420 |
-| `Exception` | `0x15a000` | 0xad64 |
-| `BaseReloc` | `0x168000` | 0x2d9c |
-| `Debug` | `0x1090` | 0x1c |
-| `LoadConfig` | `0x2be70` | 0x94 |
-| `IAT` | `0x165000` | 0x670 |
-| `DelayImport` | `0x153680` | 0xa0 |
+| Name | Address | Kind | Size |
+|---|---|---|---:|
+| `Export` | `0x153a60` | RVA | 0xa0 |
+| `Import` | `0x165670` | RVA | 0xb4 |
+| `Resource` | `0x167000` | RVA | 0x420 |
+| `Exception` | `0x15a000` | RVA | 0xad64 |
+| `BaseReloc` | `0x168000` | RVA | 0x2d9c |
+| `Debug` | `0x1090` | RVA | 0x1c |
+| `LoadConfig` | `0x2be70` | RVA | 0x94 |
+| `IAT` | `0x165000` | RVA | 0x670 |
+| `DelayImport` | `0x153680` | RVA | 0xa0 |
 
 ## Static imports
 

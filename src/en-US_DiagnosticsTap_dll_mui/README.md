@@ -27,9 +27,9 @@
 
 ## Data directories (non-empty)
 
-| Name | RVA | Size |
-|---|---|---:|
-| `Resource` | `0x1000` | 0x26d0 |
+| Name | Address | Kind | Size |
+|---|---|---|---:|
+| `Resource` | `0x1000` | RVA | 0x26d0 |
 
 ## Static imports
 

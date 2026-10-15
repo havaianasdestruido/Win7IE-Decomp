@@ -29,15 +29,15 @@
 
 ## Data directories (non-empty)
 
-| Name | RVA | Size |
-|---|---|---:|
-| `Import` | `0x3f7c4` | 0x57 |
-| `Resource` | `0x40000` | 0x13e88 |
-| `Security` | `0x54000` | 0x3cd0 |
-| `BaseReloc` | `0x54000` | 0xc |
-| `Debug` | `0x3f74c` | 0x1c |
-| `IAT` | `0x2000` | 0x8 |
-| `CLR` | `0x2008` | 0x48 |
+| Name | Address | Kind | Size |
+|---|---|---|---:|
+| `Import` | `0x3f7c4` | RVA | 0x57 |
+| `Resource` | `0x40000` | RVA | 0x13e88 |
+| `Security` | `0x54000` | file offset | 0x3cd0 |
+| `BaseReloc` | `0x54000` | RVA | 0xc |
+| `Debug` | `0x3f74c` | RVA | 0x1c |
+| `IAT` | `0x2000` | RVA | 0x8 |
+| `CLR` | `0x2008` | RVA | 0x48 |
 
 ## Static imports
 

@@ -14,81 +14,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 3925920,
           "size": 885
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 4126288,
           "size": 100
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4132864,
           "size": 1088
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 4001792,
           "size": 119544
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 4136960,
           "size": 31632
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 4304,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 680256,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 4124672,
           "size": 1616
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -1999,81 +2015,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 626784,
           "size": 101
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 676872,
           "size": 100
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 684032,
           "size": 1120
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 651264,
           "size": 22944
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 688128,
           "size": 3812
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 7760,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 65856,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 675840,
           "size": 1024
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -3225,81 +3257,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 256240,
           "size": 120
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 287680,
           "size": 120
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 290816,
           "size": 1168
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 274432,
           "size": 9144
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 294912,
           "size": 1304
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 5184,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 31872,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 286720,
           "size": 952
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -4377,81 +4425,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 44992,
           "size": 174
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 57792,
           "size": 120
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 61440,
           "size": 1040
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 53248,
           "size": 1848
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 65536,
           "size": 812
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 4576,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 13104,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 57344,
           "size": 440
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -5029,81 +5093,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 217328,
           "size": 192
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 243216,
           "size": 180
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 249856,
           "size": 10152
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 229376,
           "size": 8340
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 262144,
           "size": 1488
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 5600,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 26688,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 241664,
           "size": 1544
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -6767,81 +6847,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 812224,
           "size": 174
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 880096,
           "size": 380
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 892928,
           "size": 537776
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 851968,
           "size": 21312
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 1433600,
           "size": 4576
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 7952,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 96880,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 876544,
           "size": 3544
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -10425,81 +10521,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 4704,
           "size": 57
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 16448,
           "size": 40
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 20480,
           "size": 10944712
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 12288,
           "size": 24
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 10969088,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 4112,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 4176,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 16384,
           "size": 56
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -10700,81 +10812,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 336736,
           "size": 184
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 366352,
           "size": 200
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 372736,
           "size": 9200
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 352256,
           "size": 11364
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 385024,
           "size": 1844
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 5808,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 33872,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 364544,
           "size": 1800
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -12686,81 +12814,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 62636,
           "size": 392
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 386384,
           "size": 140
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 397312,
           "size": 1072
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 364544,
           "size": 17100
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 401408,
           "size": 2260
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 301180,
           "size": 56
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 60384,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 385024,
           "size": 1352
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 299876,
           "size": 256
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -14558,81 +14702,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 59584,
           "size": 113
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 70512,
           "size": 180
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 73728,
           "size": 1056
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 65536,
           "size": 2604
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 77824,
           "size": 376
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 4208,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 9280,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 69632,
           "size": 880
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -15613,81 +15773,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 1831776,
           "size": 116
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 1860624,
           "size": 120
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 1867776,
           "size": 6072
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 1847296,
           "size": 11460
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 1875968,
           "size": 1548
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 5040,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 156736,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 1859584,
           "size": 1032
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -16845,81 +17021,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 204096,
           "size": 110
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 217896,
           "size": 140
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 221184,
           "size": 4576
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 208896,
           "size": 6648
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 229376,
           "size": 1196
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 5056,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 24944,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 217088,
           "size": 800
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -17837,81 +18029,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 159008,
           "size": 160
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 176832,
           "size": 200
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 180224,
           "size": 1032
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 167936,
           "size": 5916
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 184320,
           "size": 1440
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 5072,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 23904,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 176128,
           "size": 696
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -18713,81 +18921,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 9936
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -18864,81 +19088,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 3176
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -19015,81 +19255,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 60680
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -19166,81 +19422,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 1404
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -19317,81 +19589,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 28612
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -19468,81 +19756,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 1448
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -19619,81 +19923,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 4604
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -19770,81 +20090,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 15240
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -19921,81 +20257,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 7496
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -20072,81 +20424,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 29820
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -20221,87 +20589,104 @@
       ],
       "checksum": 361295,
       "clr_directory": {
+        "address_kind": "rva",
         "name": "CLR",
         "rva": 8200,
         "size": 72
       },
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 260036,
           "size": 87
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 262144,
           "size": 81544
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 344064,
           "size": 15568
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 344064,
           "size": 12
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 259916,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 8192,
           "size": 8
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 8200,
           "size": 72
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -20426,81 +20811,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 717856,
           "size": 165
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 753304,
           "size": 360
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 765952,
           "size": 190688
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 724992,
           "size": 21996
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 958464,
           "size": 6000
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 8976,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 65952,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 749568,
           "size": 3728
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -24269,81 +24670,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 79528,
           "size": 260
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 86016,
           "size": 413920
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 73728,
           "size": 2220
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 503808,
           "size": 1180
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 4464,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 16352,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 77824,
           "size": 1696
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -26096,81 +26513,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 25256,
           "size": 160
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 28672,
           "size": 208048
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 20480,
           "size": 456
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 237568,
           "size": 48
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 4224,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 4976,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 24576,
           "size": 672
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -26940,81 +27373,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 16192,
           "size": 190
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 750400,
           "size": 140
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 757760,
           "size": 1080
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 741376,
           "size": 6024
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 761856,
           "size": 59088
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 700044,
           "size": 56
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 13920,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 749568,
           "size": 824
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 695544,
           "size": 288
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -29122,81 +29571,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 29400,
           "size": 160
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 36864,
           "size": 776264
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 24576,
           "size": 1188
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 801792,
           "size": 8584
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 815104,
           "size": 96
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 18112,
           "size": 56
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 9728,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 28672,
           "size": 720
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 17936,
           "size": 64
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -30078,81 +30543,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 402352,
           "size": 134
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 428536,
           "size": 260
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 438272,
           "size": 133352
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 409600,
           "size": 14628
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 573440,
           "size": 2828
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 4288,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 35008,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 425984,
           "size": 2552
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -32779,81 +33260,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 128960,
           "size": 112
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 144496,
           "size": 200
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 151552,
           "size": 1048
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 135168,
           "size": 5712
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 155648,
           "size": 948
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 4192,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 15872,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 143360,
           "size": 1136
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -34082,81 +34579,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 185552,
           "size": 84
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 202832,
           "size": 240
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 212992,
           "size": 427512
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 192512,
           "size": 7068
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 643072,
           "size": 1364
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 5296,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 18848,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 200704,
           "size": 2120
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -36348,81 +36861,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 316080,
           "size": 163
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 316244,
           "size": 100
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 376832,
           "size": 1048
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 372736,
           "size": 2820
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 385024,
           "size": 15944
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 380928,
           "size": 25664
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 62384,
           "size": 56
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 313744,
           "size": 112
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 61440,
           "size": 824
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -37414,81 +37943,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 409984,
           "size": 89
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 436872,
           "size": 340
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 446464,
           "size": 782824
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 421888,
           "size": 12288
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 1232896,
           "size": 1524
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 5696,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 31440,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 434176,
           "size": 2688
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -40208,81 +40753,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 486656,
           "size": 160
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 486816,
           "size": 120
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 536576,
           "size": 5968
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 516096,
           "size": 18432
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 526336,
           "size": 15936
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 544768,
           "size": 5236
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 341904,
           "size": 56
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 414480,
           "size": 112
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 339968,
           "size": 1680
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 486328,
           "size": 96
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -42150,81 +42711,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 81008,
           "size": 168
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 81176,
           "size": 80
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 106496,
           "size": 1064
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 102400,
           "size": 2256
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 89600,
           "size": 15968
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 110592,
           "size": 1724
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 54112,
           "size": 56
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 78720,
           "size": 112
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 53248,
           "size": 744
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -43144,81 +43721,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 1391200,
           "size": 160
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 1463920,
           "size": 180
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 1470464,
           "size": 1056
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 1417216,
           "size": 44388
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 1474560,
           "size": 11676
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 4240,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 179824,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 1462272,
           "size": 1648
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 1390208,
           "size": 160
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -45156,81 +45749,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 131552,
           "size": 160
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 148104,
           "size": 140
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 151552,
           "size": 19728
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 139264,
           "size": 5172
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 172032,
           "size": 924
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 4176,
           "size": 28
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 15424,
           "size": 148
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 147456,
           "size": 648
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -46007,81 +46616,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 9936
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -46158,81 +46783,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 3436
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -46309,81 +46950,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 70516
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -46460,81 +47117,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 1404
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -46611,81 +47284,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 31352
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -46762,81 +47451,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 1516
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -46913,81 +47618,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 4972
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -47064,81 +47785,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 16876
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -47215,81 +47952,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 8036
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -47366,81 +48119,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 4096,
           "size": 32508
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0
@@ -47517,81 +48286,97 @@
       "clr_directory": null,
       "data_directories": [
         {
+          "address_kind": "rva",
           "name": "Export",
           "rva": 29840,
           "size": 1872
         },
         {
+          "address_kind": "rva",
           "name": "Import",
           "rva": 280152,
           "size": 140
         },
         {
+          "address_kind": "rva",
           "name": "Resource",
           "rva": 286720,
           "size": 1024
         },
         {
+          "address_kind": "rva",
           "name": "Exception",
           "rva": 266240,
           "size": 8664
         },
         {
+          "address_kind": "file_offset",
           "name": "Security",
           "rva": 277504,
           "size": 8584
         },
         {
+          "address_kind": "rva",
           "name": "BaseReloc",
           "rva": 290816,
           "size": 516
         },
         {
+          "address_kind": "rva",
           "name": "Debug",
           "rva": 242068,
           "size": 56
         },
         {
+          "address_kind": "rva",
           "name": "Architecture",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "GlobalPtr",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "TLS",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "LoadConfig",
           "rva": 240480,
           "size": 112
         },
         {
+          "address_kind": "rva",
           "name": "BoundImport",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "IAT",
           "rva": 278528,
           "size": 1624
         },
         {
+          "address_kind": "rva",
           "name": "DelayImport",
           "rva": 240644,
           "size": 192
         },
         {
+          "address_kind": "rva",
           "name": "CLR",
           "rva": 0,
           "size": 0
         },
         {
+          "address_kind": "rva",
           "name": "Reserved",
           "rva": 0,
           "size": 0

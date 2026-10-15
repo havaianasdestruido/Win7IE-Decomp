@@ -32,18 +32,18 @@
 
 ## Data directories (non-empty)
 
-| Name | RVA | Size |
-|---|---|---:|
-| `Export` | `0x76d00` | 0xa0 |
-| `Import` | `0x76da0` | 0x78 |
-| `Resource` | `0x83000` | 0x1750 |
-| `Exception` | `0x7e000` | 0x4800 |
-| `Security` | `0x80800` | 0x3e40 |
-| `BaseReloc` | `0x85000` | 0x1474 |
-| `Debug` | `0x53790` | 0x38 |
-| `LoadConfig` | `0x65310` | 0x70 |
-| `IAT` | `0x53000` | 0x690 |
-| `DelayImport` | `0x76bb8` | 0x60 |
+| Name | Address | Kind | Size |
+|---|---|---|---:|
+| `Export` | `0x76d00` | RVA | 0xa0 |
+| `Import` | `0x76da0` | RVA | 0x78 |
+| `Resource` | `0x83000` | RVA | 0x1750 |
+| `Exception` | `0x7e000` | RVA | 0x4800 |
+| `Security` | `0x80800` | file offset | 0x3e40 |
+| `BaseReloc` | `0x85000` | RVA | 0x1474 |
+| `Debug` | `0x53790` | RVA | 0x38 |
+| `LoadConfig` | `0x65310` | RVA | 0x70 |
+| `IAT` | `0x53000` | RVA | 0x690 |
+| `DelayImport` | `0x76bb8` | RVA | 0x60 |
 
 ## Static imports
 
