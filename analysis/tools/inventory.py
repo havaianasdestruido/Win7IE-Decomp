@@ -453,6 +453,27 @@ def emit_ledgers(pe_records: list[dict]) -> None:
         write_text(directory / "interfaces.h", render_interfaces_h(item))
 
 
+def debug_rsds_index(pe_records: list[dict]) -> list[dict]:
+    rows: list[dict] = []
+    for item in pe_records:
+        image: PeImage = item["_image"]
+        for record in image.debug:
+            if not record.pdb_path:
+                continue
+            rows.append(
+                {
+                    "path": item["path"],
+                    "pdb": record.pdb_path,
+                    "guid": record.guid,
+                    "age": record.age,
+                    "type": record.type_name,
+                    "rva": f"0x{record.rva:x}",
+                    "size": record.size,
+                }
+            )
+    return rows
+
+
 def public_pe_struct(pe_records: list[dict]) -> list[dict]:
     payload = []
     for item in pe_records:
@@ -477,6 +498,7 @@ def main() -> int:
     write_json(GEN / "hashes.json", hashes)
     write_json(GEN / "dependencies.json", edges)
     write_json(GEN / "pe-struct.json", public_pe_struct(pe_records))
+    write_json(GEN / "debug-rsds.json", debug_rsds_index(pe_records))
     write_text(REPORT / "inventory.md", render_inventory_md(files))
     write_text(REPORT / "api-map.md", render_api_map_md(pe_records))
     write_text(REPORT / "dependencies.md", render_dependencies_md(pe_records, edges))
