@@ -1,7 +1,7 @@
 [
   {
+    "kind": "static",
     "source": "bin/D3DCompiler_47.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "CryptAcquireContextW",
       "CryptCreateHash",
@@ -15,11 +15,12 @@
       "RegOpenKeyExW",
       "RegQueryValueExA",
       "RegQueryValueExW"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/D3DCompiler_47.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "CloseHandle",
       "CopyFileExW",
@@ -63,6 +64,7 @@
       "LoadLibraryExW",
       "LocalAlloc",
       "LocalFree",
+      "lstrcmpiA",
       "MapViewOfFile",
       "MapViewOfFileEx",
       "MultiByteToWideChar",
@@ -87,20 +89,13 @@
       "VirtualAlloc",
       "VirtualFree",
       "WideCharToMultiByte",
-      "WriteFile",
-      "lstrcmpiA"
-    ]
+      "WriteFile"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/D3DCompiler_47.dll",
-    "target": "RPCRT4.dll",
-    "symbols": [
-      "UuidCreate"
-    ]
-  },
-  {
-    "source": "bin/D3DCompiler_47.dll",
-    "target": "msvcrt.dll",
     "symbols": [
       "??1type_info@@UEAA@XZ",
       "??2@YAPEAX_K@Z",
@@ -108,8 +103,6 @@
       "??_U@YAPEAX_K@Z",
       "??_V@YAXPEAX@Z",
       "?terminate@@YAXXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
       "__C_specific_handler",
       "__CxxFrameHandler3",
       "__dllonexit",
@@ -119,6 +112,7 @@
       "_clearfp",
       "_close",
       "_controlfp",
+      "_CxxThrowException",
       "_finite",
       "_fpclass",
       "_get_osfhandle",
@@ -152,6 +146,7 @@
       "_write",
       "_wsopen",
       "_wsplitpath_s",
+      "_XcptFilter",
       "acos",
       "asin",
       "atan",
@@ -219,11 +214,20 @@
       "wcsncpy_s",
       "wcsrchr",
       "wcstol"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/D3DCompiler_47.dll",
+    "symbols": [
+      "UuidCreate"
+    ],
+    "target": "RPCRT4.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/DiagnosticsHub.DataWarehouse.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "CloseHandle",
       "CloseThreadpool",
@@ -255,10 +259,10 @@
       "FreeEnvironmentStringsW",
       "FreeLibrary",
       "GetACP",
-      "GetCPInfo",
       "GetCommandLineA",
       "GetConsoleCP",
       "GetConsoleMode",
+      "GetCPInfo",
       "GetCurrentProcess",
       "GetCurrentProcessId",
       "GetCurrentThreadId",
@@ -322,10 +326,10 @@
       "SetHandleCount",
       "SetLastError",
       "SetStdHandle",
-      "SetThreadStackGuarantee",
       "SetThreadpoolThreadMaximum",
       "SetThreadpoolThreadMinimum",
       "SetThreadpoolWait",
+      "SetThreadStackGuarantee",
       "SetUnhandledExceptionFilter",
       "SizeofResource",
       "Sleep",
@@ -340,42 +344,52 @@
       "WideCharToMultiByte",
       "WriteConsoleW",
       "WriteFile"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/DiagnosticsHub.DataWarehouse.dll",
-    "target": "OLEAUT32.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/DiagnosticsHub.DataWarehouse.dll",
-    "target": "USER32.dll",
-    "symbols": [
-      "UnregisterClassA"
-    ]
-  },
-  {
-    "source": "bin/DiagnosticsHub.DataWarehouse.dll",
-    "target": "ole32.dll",
     "symbols": [
       "CLSIDFromString",
       "CoCreateGuid"
-    ]
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/DiagnosticsHub.DataWarehouse.dll",
+    "symbols": [
+      "ordinal:149",
+      "ordinal:150",
+      "ordinal:2",
+      "ordinal:4",
+      "ordinal:6",
+      "ordinal:7"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/DiagnosticsHub.DataWarehouse.dll",
+    "symbols": [
+      "UnregisterClassA"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/DiagnosticsHub.ScriptedSandboxPlugin.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "RegCloseKey",
       "RegOpenKeyExW",
       "RegQueryValueExW"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/DiagnosticsHub.ScriptedSandboxPlugin.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "CloseHandle",
       "CompareStringOrdinal",
@@ -395,10 +409,10 @@
       "FreeEnvironmentStringsW",
       "FreeLibrary",
       "GetACP",
-      "GetCPInfo",
       "GetCommandLineA",
       "GetConsoleCP",
       "GetConsoleMode",
+      "GetCPInfo",
       "GetCurrentProcess",
       "GetCurrentProcessId",
       "GetCurrentThreadId",
@@ -465,18 +479,38 @@
       "WideCharToMultiByte",
       "WriteConsoleW",
       "WriteFile"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/DiagnosticsHub.ScriptedSandboxPlugin.dll",
-    "target": "OLEAUT32.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
+      "CLSIDFromString",
+      "CoCreateGuid",
+      "CoCreateInstance",
+      "StringFromGUID2"
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/DiagnosticsHub.ScriptedSandboxPlugin.dll",
-    "target": "USER32.dll",
+    "symbols": [
+      "ordinal:149",
+      "ordinal:150",
+      "ordinal:2",
+      "ordinal:313",
+      "ordinal:4",
+      "ordinal:6",
+      "ordinal:7",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/DiagnosticsHub.ScriptedSandboxPlugin.dll",
     "symbols": [
       "CallWindowProcW",
       "CreateWindowExW",
@@ -489,21 +523,12 @@
       "RegisterClassExW",
       "SetWindowLongPtrW",
       "UnregisterClassA"
-    ]
+    ],
+    "target": "USER32.dll"
   },
   {
-    "source": "bin/DiagnosticsHub.ScriptedSandboxPlugin.dll",
-    "target": "ole32.dll",
-    "symbols": [
-      "CLSIDFromString",
-      "CoCreateGuid",
-      "CoCreateInstance",
-      "StringFromGUID2"
-    ]
-  },
-  {
+    "kind": "static",
     "source": "bin/DiagnosticsHub_is.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "DeleteCriticalSection",
       "EnterCriticalSection",
@@ -523,18 +548,12 @@
       "Sleep",
       "TerminateProcess",
       "UnhandledExceptionFilter"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/DiagnosticsHub_is.dll",
-    "target": "OLEAUT32.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/DiagnosticsHub_is.dll",
-    "target": "msvcrt.dll",
     "symbols": [
       "??0exception@@QEAA@AEBQEBD@Z",
       "??0exception@@QEAA@AEBQEBDH@Z",
@@ -543,44 +562,58 @@
       "??1type_info@@UEAA@XZ",
       "??3@YAXPEAX@Z",
       "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
       "__C_specific_handler",
       "__CxxFrameHandler3",
       "__dllonexit",
       "_amsg_exit",
       "_callnewh",
+      "_CxxThrowException",
       "_initterm",
       "_lock",
       "_onexit",
       "_purecall",
       "_unlock",
+      "_XcptFilter",
       "free",
       "malloc",
       "memcpy",
       "memcpy_s",
       "memmove",
       "memset"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/DiagnosticsHub_is.dll",
-    "target": "ole32.dll",
     "symbols": [
       "CoCreateInstance"
-    ]
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/DiagnosticsHub_is.dll",
-    "target": "tdh.dll",
+    "symbols": [
+      "ordinal:2",
+      "ordinal:4",
+      "ordinal:6",
+      "ordinal:7"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/DiagnosticsHub_is.dll",
     "symbols": [
       "TdhGetProperty",
       "TdhGetPropertySize"
-    ]
+    ],
+    "target": "tdh.dll"
   },
   {
+    "kind": "static",
     "source": "bin/DiagnosticsTap.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "AddAce",
       "CopySid",
@@ -610,11 +643,12 @@
       "RegQueryInfoKeyW",
       "RegSetValueExW",
       "SetSecurityDescriptorDacl"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/DiagnosticsTap.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "CloseHandle",
       "CompareStringOrdinal",
@@ -661,6 +695,7 @@
       "LocalAlloc",
       "LocalFree",
       "LockResource",
+      "lstrcmpiW",
       "MultiByteToWideChar",
       "OpenProcess",
       "OutputDebugStringA",
@@ -682,28 +717,117 @@
       "VirtualAlloc",
       "VirtualFree",
       "WaitForSingleObject",
-      "WriteFile",
-      "lstrcmpiW"
-    ]
+      "WriteFile"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/DiagnosticsTap.dll",
-    "target": "OLEAUT32.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
+      "??0exception@@QEAA@AEBQEBD@Z",
+      "??0exception@@QEAA@AEBQEBDH@Z",
+      "??0exception@@QEAA@AEBV0@@Z",
+      "??0exception@@QEAA@XZ",
+      "??1exception@@UEAA@XZ",
+      "??1type_info@@UEAA@XZ",
+      "??3@YAXPEAX@Z",
+      "??8type_info@@QEBAHAEBV0@@Z",
+      "??_V@YAXPEAX@Z",
+      "?terminate@@YAXXZ",
+      "?what@exception@@UEBAPEBDXZ",
+      "__C_specific_handler",
+      "__CxxFrameHandler3",
+      "__dllonexit",
+      "_amsg_exit",
+      "_callnewh",
+      "_CxxThrowException",
+      "_errno",
+      "_initterm",
+      "_lock",
+      "_onexit",
+      "_purecall",
+      "_unlock",
+      "_vscwprintf",
+      "_wfopen_s",
+      "_XcptFilter",
+      "calloc",
+      "fclose",
+      "fgetws",
+      "free",
+      "iswalpha",
+      "malloc",
+      "memcmp",
+      "memcpy",
+      "memcpy_s",
+      "memmove",
+      "memmove_s",
+      "memset",
+      "realloc",
+      "swprintf_s",
+      "vswprintf_s",
+      "wcscat_s",
+      "wcschr",
+      "wcscmp",
+      "wcscpy_s",
+      "wcsncpy_s"
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/DiagnosticsTap.dll",
-    "target": "SHLWAPI.dll",
+    "symbols": [
+      "CoCreateInstance",
+      "CoTaskMemAlloc",
+      "CoTaskMemFree",
+      "CoTaskMemRealloc",
+      "StringFromGUID2"
+    ],
+    "target": "ole32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/DiagnosticsTap.dll",
+    "symbols": [
+      "ordinal:10",
+      "ordinal:149",
+      "ordinal:150",
+      "ordinal:161",
+      "ordinal:162",
+      "ordinal:163",
+      "ordinal:186",
+      "ordinal:2",
+      "ordinal:277",
+      "ordinal:4",
+      "ordinal:6",
+      "ordinal:7",
+      "ordinal:8",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/DiagnosticsTap.dll",
     "symbols": [
       "PathGetCharTypeW",
       "PathRemoveFileSpecW"
-    ]
+    ],
+    "target": "SHLWAPI.dll"
   },
   {
+    "kind": "static",
     "source": "bin/DiagnosticsTap.dll",
-    "target": "USER32.dll",
+    "symbols": [
+      "CoInternetCombineUrlEx",
+      "CreateUri"
+    ],
+    "target": "urlmon.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/DiagnosticsTap.dll",
     "symbols": [
       "CallWindowProcW",
       "CharNextW",
@@ -725,82 +849,12 @@
       "SetWindowLongPtrW",
       "TranslateMessage",
       "UnregisterClassA"
-    ]
+    ],
+    "target": "USER32.dll"
   },
   {
-    "source": "bin/DiagnosticsTap.dll",
-    "target": "msvcrt.dll",
-    "symbols": [
-      "??0exception@@QEAA@AEBQEBD@Z",
-      "??0exception@@QEAA@AEBQEBDH@Z",
-      "??0exception@@QEAA@AEBV0@@Z",
-      "??0exception@@QEAA@XZ",
-      "??1exception@@UEAA@XZ",
-      "??1type_info@@UEAA@XZ",
-      "??3@YAXPEAX@Z",
-      "??8type_info@@QEBAHAEBV0@@Z",
-      "??_V@YAXPEAX@Z",
-      "?terminate@@YAXXZ",
-      "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
-      "__C_specific_handler",
-      "__CxxFrameHandler3",
-      "__dllonexit",
-      "_amsg_exit",
-      "_callnewh",
-      "_errno",
-      "_initterm",
-      "_lock",
-      "_onexit",
-      "_purecall",
-      "_unlock",
-      "_vscwprintf",
-      "_wfopen_s",
-      "calloc",
-      "fclose",
-      "fgetws",
-      "free",
-      "iswalpha",
-      "malloc",
-      "memcmp",
-      "memcpy",
-      "memcpy_s",
-      "memmove",
-      "memmove_s",
-      "memset",
-      "realloc",
-      "swprintf_s",
-      "vswprintf_s",
-      "wcscat_s",
-      "wcschr",
-      "wcscmp",
-      "wcscpy_s",
-      "wcsncpy_s"
-    ]
-  },
-  {
-    "source": "bin/DiagnosticsTap.dll",
-    "target": "ole32.dll",
-    "symbols": [
-      "CoCreateInstance",
-      "CoTaskMemAlloc",
-      "CoTaskMemFree",
-      "CoTaskMemRealloc",
-      "StringFromGUID2"
-    ]
-  },
-  {
-    "source": "bin/DiagnosticsTap.dll",
-    "target": "urlmon.dll",
-    "symbols": [
-      "CoInternetCombineUrlEx",
-      "CreateUri"
-    ]
-  },
-  {
+    "kind": "static",
     "source": "bin/F12.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "CopySid",
       "EventRegister",
@@ -820,11 +874,12 @@
       "RegQueryInfoKeyW",
       "RegQueryValueExW",
       "RegSetValueExW"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12.dll",
-    "target": "GDI32.dll",
     "symbols": [
       "BitBlt",
       "CombineRgn",
@@ -850,11 +905,29 @@
       "SetBkColor",
       "SetLayout",
       "SetTextColor"
-    ]
+    ],
+    "target": "GDI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12.dll",
-    "target": "KERNEL32.dll",
+    "symbols": [
+      "CreateUri",
+      "ordinal:325",
+      "ordinal:463",
+      "ordinal:518",
+      "ordinal:519",
+      "ordinal:526",
+      "ordinal:527",
+      "ordinal:528",
+      "ordinal:58",
+      "ordinal:791"
+    ],
+    "target": "iertutil.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/F12.dll",
     "symbols": [
       "ActivateActCtx",
       "CloseHandle",
@@ -924,6 +997,9 @@
       "LoadResource",
       "LocalFree",
       "LockResource",
+      "lstrcmpiW",
+      "lstrcmpW",
+      "lstrlenW",
       "MoveFileW",
       "MulDiv",
       "MultiByteToWideChar",
@@ -953,60 +1029,198 @@
       "WaitForMultipleObjects",
       "WaitForSingleObject",
       "WideCharToMultiByte",
-      "WriteFile",
-      "lstrcmpW",
-      "lstrcmpiW",
-      "lstrlenW"
-    ]
+      "WriteFile"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12.dll",
-    "target": "MSIMG32.dll",
     "symbols": [
       "AlphaBlend"
-    ]
+    ],
+    "target": "MSIMG32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12.dll",
-    "target": "OLEACC.dll",
+    "symbols": [
+      "??0exception@@QEAA@AEBQEBD@Z",
+      "??0exception@@QEAA@AEBQEBDH@Z",
+      "??0exception@@QEAA@AEBV0@@Z",
+      "??0exception@@QEAA@XZ",
+      "??1exception@@UEAA@XZ",
+      "??1type_info@@UEAA@XZ",
+      "??3@YAXPEAX@Z",
+      "??8type_info@@QEBAHAEBV0@@Z",
+      "??_V@YAXPEAX@Z",
+      "?terminate@@YAXXZ",
+      "?what@exception@@UEBAPEBDXZ",
+      "__C_specific_handler",
+      "__CxxFrameHandler3",
+      "__dllonexit",
+      "__RTDynamicCast",
+      "_amsg_exit",
+      "_callnewh",
+      "_CxxThrowException",
+      "_errno",
+      "_get_doserrno",
+      "_initterm",
+      "_lock",
+      "_onexit",
+      "_purecall",
+      "_unlock",
+      "_vscwprintf",
+      "_wcsicmp",
+      "_wcslwr_s",
+      "_wcstoui64",
+      "_wfopen_s",
+      "_wtmpnam_s",
+      "_wtol",
+      "_XcptFilter",
+      "calloc",
+      "difftime",
+      "fclose",
+      "feof",
+      "fflush",
+      "fputws",
+      "fread",
+      "free",
+      "fseek",
+      "ftell",
+      "fwrite",
+      "iswalpha",
+      "malloc",
+      "memcmp",
+      "memcpy",
+      "memcpy_s",
+      "memmove",
+      "memmove_s",
+      "memset",
+      "realloc",
+      "strncpy_s",
+      "swprintf_s",
+      "time",
+      "vswprintf_s",
+      "wcscat_s",
+      "wcschr",
+      "wcscmp",
+      "wcscpy_s",
+      "wcsncpy_s",
+      "wcsstr"
+    ],
+    "target": "msvcrt.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/F12.dll",
+    "symbols": [
+      "CLSIDFromProgID",
+      "CLSIDFromString",
+      "CoCreateGuid",
+      "CoCreateInstance",
+      "CoGetClassObject",
+      "CoInitializeEx",
+      "CoSetProxyBlanket",
+      "CoTaskMemAlloc",
+      "CoTaskMemFree",
+      "CoTaskMemRealloc",
+      "CoUninitialize",
+      "CreateStreamOnHGlobal",
+      "IIDFromString",
+      "OleInitialize",
+      "OleLockRunning",
+      "OleUninitialize",
+      "StringFromCLSID",
+      "StringFromGUID2"
+    ],
+    "target": "ole32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/F12.dll",
     "symbols": [
       "CreateStdAccessibleObject",
       "LresultFromObject",
       "ObjectFromLresult"
-    ]
+    ],
+    "target": "OLEACC.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12.dll",
-    "target": "OLEAUT32.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
+      "ordinal:10",
+      "ordinal:12",
+      "ordinal:146",
+      "ordinal:149",
+      "ordinal:15",
+      "ordinal:150",
+      "ordinal:16",
+      "ordinal:161",
+      "ordinal:162",
+      "ordinal:163",
+      "ordinal:186",
+      "ordinal:19",
+      "ordinal:2",
+      "ordinal:20",
+      "ordinal:21",
+      "ordinal:22",
+      "ordinal:27",
+      "ordinal:277",
+      "ordinal:313",
+      "ordinal:314",
+      "ordinal:37",
+      "ordinal:38",
+      "ordinal:4",
+      "ordinal:40",
+      "ordinal:41",
+      "ordinal:420",
+      "ordinal:6",
+      "ordinal:7",
+      "ordinal:77",
+      "ordinal:8",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12.dll",
-    "target": "SHELL32.dll",
     "symbols": [
       "SHCreateDirectoryExW",
       "SHGetKnownFolderPath",
       "SHGetSpecialFolderPathW"
-    ]
+    ],
+    "target": "SHELL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12.dll",
-    "target": "SHLWAPI.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)",
       "PathFileExistsW",
       "PathFindFileNameW",
       "PathGetCharTypeW",
       "PathIsDirectoryW",
       "PathIsRelativeW",
-      "StrStrIW"
-    ]
+      "StrStrIW",
+      "ordinal:176",
+      "ordinal:219"
+    ],
+    "target": "SHLWAPI.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12.dll",
-    "target": "USER32.dll",
+    "symbols": [
+      "ordinal:111",
+      "ordinal:458"
+    ],
+    "target": "urlmon.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/F12.dll",
     "symbols": [
       "AdjustWindowRectEx",
       "AllowSetForegroundWindow",
@@ -1127,8 +1341,8 @@
       "SetWindowLongW",
       "SetWindowPlacement",
       "SetWindowPos",
-      "SetWindowTextW",
       "SetWindowsHookExW",
+      "SetWindowTextW",
       "ShowWindow",
       "SystemParametersInfoW",
       "TrackPopupMenuEx",
@@ -1139,161 +1353,59 @@
       "UpdateLayeredWindow",
       "UpdateWindow",
       "WindowFromPoint"
-    ]
+    ],
+    "target": "USER32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12.dll",
-    "target": "UxTheme.dll",
     "symbols": [
       "IsCompositionActive"
-    ]
+    ],
+    "target": "UxTheme.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12.dll",
-    "target": "VERSION.dll",
     "symbols": [
       "GetFileVersionInfoSizeW",
       "GetFileVersionInfoW",
       "VerQueryValueW"
-    ]
+    ],
+    "target": "VERSION.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12.dll",
-    "target": "WindowsCodecs.dll",
-    "symbols": [
-      "WICConvertBitmapSource"
-    ]
-  },
-  {
-    "source": "bin/F12.dll",
-    "target": "XmlLite.dll",
-    "symbols": [
-      "CreateXmlReader",
-      "CreateXmlWriter"
-    ]
-  },
-  {
-    "source": "bin/F12.dll",
-    "target": "iertutil.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)",
-      "CreateUri"
-    ]
-  },
-  {
-    "source": "bin/F12.dll",
-    "target": "msvcrt.dll",
-    "symbols": [
-      "??0exception@@QEAA@AEBQEBD@Z",
-      "??0exception@@QEAA@AEBQEBDH@Z",
-      "??0exception@@QEAA@AEBV0@@Z",
-      "??0exception@@QEAA@XZ",
-      "??1exception@@UEAA@XZ",
-      "??1type_info@@UEAA@XZ",
-      "??3@YAXPEAX@Z",
-      "??8type_info@@QEBAHAEBV0@@Z",
-      "??_V@YAXPEAX@Z",
-      "?terminate@@YAXXZ",
-      "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
-      "__C_specific_handler",
-      "__CxxFrameHandler3",
-      "__RTDynamicCast",
-      "__dllonexit",
-      "_amsg_exit",
-      "_callnewh",
-      "_errno",
-      "_get_doserrno",
-      "_initterm",
-      "_lock",
-      "_onexit",
-      "_purecall",
-      "_unlock",
-      "_vscwprintf",
-      "_wcsicmp",
-      "_wcslwr_s",
-      "_wcstoui64",
-      "_wfopen_s",
-      "_wtmpnam_s",
-      "_wtol",
-      "calloc",
-      "difftime",
-      "fclose",
-      "feof",
-      "fflush",
-      "fputws",
-      "fread",
-      "free",
-      "fseek",
-      "ftell",
-      "fwrite",
-      "iswalpha",
-      "malloc",
-      "memcmp",
-      "memcpy",
-      "memcpy_s",
-      "memmove",
-      "memmove_s",
-      "memset",
-      "realloc",
-      "strncpy_s",
-      "swprintf_s",
-      "time",
-      "vswprintf_s",
-      "wcscat_s",
-      "wcschr",
-      "wcscmp",
-      "wcscpy_s",
-      "wcsncpy_s",
-      "wcsstr"
-    ]
-  },
-  {
-    "source": "bin/F12.dll",
-    "target": "ole32.dll",
-    "symbols": [
-      "CLSIDFromProgID",
-      "CLSIDFromString",
-      "CoCreateGuid",
-      "CoCreateInstance",
-      "CoGetClassObject",
-      "CoInitializeEx",
-      "CoSetProxyBlanket",
-      "CoTaskMemAlloc",
-      "CoTaskMemFree",
-      "CoTaskMemRealloc",
-      "CoUninitialize",
-      "CreateStreamOnHGlobal",
-      "IIDFromString",
-      "OleInitialize",
-      "OleLockRunning",
-      "OleUninitialize",
-      "StringFromCLSID",
-      "StringFromGUID2"
-    ]
-  },
-  {
-    "source": "bin/F12.dll",
-    "target": "urlmon.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/F12.dll",
-    "target": "wer.dll",
     "symbols": [
       "WerReportAddFile",
       "WerReportCloseHandle",
       "WerReportCreate",
       "WerReportSetParameter",
       "WerReportSubmit"
-    ]
+    ],
+    "target": "wer.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/F12.dll",
+    "symbols": [
+      "WICConvertBitmapSource"
+    ],
+    "target": "WindowsCodecs.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/F12.dll",
+    "symbols": [
+      "CreateXmlReader",
+      "CreateXmlWriter"
+    ],
+    "target": "XmlLite.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/F12Resources.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "DisableThreadLibraryCalls",
       "GetCurrentProcessId",
@@ -1301,11 +1413,12 @@
       "GetSystemTimeAsFileTime",
       "GetTickCount",
       "QueryPerformanceCounter"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12Tools.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "AddAce",
       "CopySid",
@@ -1336,19 +1449,22 @@
       "RegQueryValueExW",
       "RegSetValueExW",
       "SetSecurityDescriptorDacl"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12Tools.dll",
-    "target": "COMCTL32.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)",
-      "InitCommonControlsEx"
-    ]
+      "InitCommonControlsEx",
+      "ordinal:410",
+      "ordinal:413"
+    ],
+    "target": "COMCTL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12Tools.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "ActivateActCtx",
       "CloseHandle",
@@ -1397,6 +1513,7 @@
       "LocalAlloc",
       "LocalFree",
       "LockResource",
+      "lstrcmpiW",
       "MultiByteToWideChar",
       "OutputDebugStringA",
       "QueryPerformanceCounter",
@@ -1415,37 +1532,127 @@
       "UnhandledExceptionFilter",
       "VirtualAlloc",
       "VirtualFree",
-      "WaitForSingleObject",
-      "lstrcmpiW"
-    ]
+      "WaitForSingleObject"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12Tools.dll",
-    "target": "OLEAUT32.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
+      "??0exception@@QEAA@AEBQEBD@Z",
+      "??0exception@@QEAA@AEBQEBDH@Z",
+      "??0exception@@QEAA@AEBV0@@Z",
+      "??0exception@@QEAA@XZ",
+      "??1exception@@UEAA@XZ",
+      "??1type_info@@UEAA@XZ",
+      "??3@YAXPEAX@Z",
+      "??8type_info@@QEBAHAEBV0@@Z",
+      "??_V@YAXPEAX@Z",
+      "?terminate@@YAXXZ",
+      "?what@exception@@UEBAPEBDXZ",
+      "__C_specific_handler",
+      "__CxxFrameHandler3",
+      "__dllonexit",
+      "_amsg_exit",
+      "_callnewh",
+      "_CxxThrowException",
+      "_errno",
+      "_initterm",
+      "_lock",
+      "_onexit",
+      "_purecall",
+      "_unlock",
+      "_vscwprintf",
+      "_wcslwr_s",
+      "_XcptFilter",
+      "calloc",
+      "free",
+      "iswalpha",
+      "malloc",
+      "memcmp",
+      "memcpy",
+      "memcpy_s",
+      "memmove",
+      "memmove_s",
+      "memset",
+      "realloc",
+      "swprintf_s",
+      "vswprintf_s",
+      "wcscat_s",
+      "wcschr",
+      "wcscpy_s",
+      "wcsncmp",
+      "wcsncpy_s",
+      "wcsrchr",
+      "wcsstr"
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12Tools.dll",
-    "target": "SHELL32.dll",
+    "symbols": [
+      "CoCreateInstance",
+      "CoGetInterfaceAndReleaseStream",
+      "CoInitializeEx",
+      "CoMarshalInterThreadInterfaceInStream",
+      "CoRegisterMessageFilter",
+      "CoTaskMemAlloc",
+      "CoTaskMemFree",
+      "CoTaskMemRealloc",
+      "CoUninitialize",
+      "StringFromGUID2"
+    ],
+    "target": "ole32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/F12Tools.dll",
+    "symbols": [
+      "ordinal:10",
+      "ordinal:12",
+      "ordinal:146",
+      "ordinal:149",
+      "ordinal:150",
+      "ordinal:161",
+      "ordinal:162",
+      "ordinal:163",
+      "ordinal:186",
+      "ordinal:2",
+      "ordinal:277",
+      "ordinal:314",
+      "ordinal:4",
+      "ordinal:6",
+      "ordinal:7",
+      "ordinal:8",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/F12Tools.dll",
     "symbols": [
       "SHGetSpecialFolderPathW"
-    ]
+    ],
+    "target": "SHELL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12Tools.dll",
-    "target": "SHLWAPI.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)",
       "PathFileExistsW",
       "PathGetCharTypeW",
-      "PathRemoveFileSpecW"
-    ]
+      "PathRemoveFileSpecW",
+      "ordinal:176",
+      "ordinal:219"
+    ],
+    "target": "SHLWAPI.dll"
   },
   {
+    "kind": "static",
     "source": "bin/F12Tools.dll",
-    "target": "USER32.dll",
     "symbols": [
       "AllowSetForegroundWindow",
       "AttachThreadInput",
@@ -1485,79 +1692,63 @@
       "TranslateAcceleratorW",
       "TranslateMessage",
       "UnregisterClassA"
-    ]
+    ],
+    "target": "USER32.dll"
   },
   {
-    "source": "bin/F12Tools.dll",
-    "target": "msvcrt.dll",
-    "symbols": [
-      "??0exception@@QEAA@AEBQEBD@Z",
-      "??0exception@@QEAA@AEBQEBDH@Z",
-      "??0exception@@QEAA@AEBV0@@Z",
-      "??0exception@@QEAA@XZ",
-      "??1exception@@UEAA@XZ",
-      "??1type_info@@UEAA@XZ",
-      "??3@YAXPEAX@Z",
-      "??8type_info@@QEBAHAEBV0@@Z",
-      "??_V@YAXPEAX@Z",
-      "?terminate@@YAXXZ",
-      "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
-      "__C_specific_handler",
-      "__CxxFrameHandler3",
-      "__dllonexit",
-      "_amsg_exit",
-      "_callnewh",
-      "_errno",
-      "_initterm",
-      "_lock",
-      "_onexit",
-      "_purecall",
-      "_unlock",
-      "_vscwprintf",
-      "_wcslwr_s",
-      "calloc",
-      "free",
-      "iswalpha",
-      "malloc",
-      "memcmp",
-      "memcpy",
-      "memcpy_s",
-      "memmove",
-      "memmove_s",
-      "memset",
-      "realloc",
-      "swprintf_s",
-      "vswprintf_s",
-      "wcscat_s",
-      "wcschr",
-      "wcscpy_s",
-      "wcsncmp",
-      "wcsncpy_s",
-      "wcsrchr",
-      "wcsstr"
-    ]
-  },
-  {
-    "source": "bin/F12Tools.dll",
-    "target": "ole32.dll",
-    "symbols": [
-      "CoCreateInstance",
-      "CoGetInterfaceAndReleaseStream",
-      "CoInitializeEx",
-      "CoMarshalInterThreadInterfaceInStream",
-      "CoRegisterMessageFilter",
-      "CoTaskMemAlloc",
-      "CoTaskMemFree",
-      "CoTaskMemRealloc",
-      "CoUninitialize",
-      "StringFromGUID2"
-    ]
-  },
-  {
+    "kind": "static",
     "source": "bin/IEShims.dll",
-    "target": "KERNEL32.dll",
+    "symbols": [
+      "RegCloseKey",
+      "RegCreateKeyExW",
+      "RegEnumKeyExW",
+      "RegEnumValueW",
+      "RegGetValueW",
+      "RegOpenKeyExW",
+      "RegQueryInfoKeyW",
+      "RegQueryValueExW",
+      "RegSetValueExW"
+    ],
+    "target": "api-ms-win-downlevel-advapi32-l1-1-0.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/IEShims.dll",
+    "symbols": [
+      "PathFindFileNameW",
+      "PathGetArgsW",
+      "PathIsUNCW",
+      "PathSkipRootW",
+      "StrCmpCW",
+      "StrCmpICA",
+      "StrCmpICW",
+      "StrCmpIW",
+      "StrCmpNCW",
+      "StrCmpNICW",
+      "StrDupW"
+    ],
+    "target": "api-ms-win-downlevel-shlwapi-l1-1-0.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/IEShims.dll",
+    "symbols": [
+      "ordinal:101",
+      "ordinal:134",
+      "ordinal:137",
+      "ordinal:170",
+      "ordinal:45",
+      "ordinal:50",
+      "ordinal:58",
+      "ordinal:751",
+      "ordinal:791",
+      "ordinal:916"
+    ],
+    "target": "iertutil.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/IEShims.dll",
     "symbols": [
       "CloseHandle",
       "CopyFileExW",
@@ -1616,6 +1807,7 @@
       "LoadLibraryW",
       "LocalAlloc",
       "LocalFree",
+      "lstrcmpiW",
       "MapViewOfFile",
       "MultiByteToWideChar",
       "OpenEventW",
@@ -1647,61 +1839,21 @@
       "VirtualQuery",
       "WaitForSingleObject",
       "WaitForSingleObjectEx",
-      "WideCharToMultiByte",
-      "lstrcmpiW"
-    ]
+      "WideCharToMultiByte"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/IEShims.dll",
-    "target": "api-ms-win-downlevel-advapi32-l1-1-0.dll",
-    "symbols": [
-      "RegCloseKey",
-      "RegCreateKeyExW",
-      "RegEnumKeyExW",
-      "RegEnumValueW",
-      "RegGetValueW",
-      "RegOpenKeyExW",
-      "RegQueryInfoKeyW",
-      "RegQueryValueExW",
-      "RegSetValueExW"
-    ]
-  },
-  {
-    "source": "bin/IEShims.dll",
-    "target": "api-ms-win-downlevel-shlwapi-l1-1-0.dll",
-    "symbols": [
-      "PathFindFileNameW",
-      "PathGetArgsW",
-      "PathIsUNCW",
-      "PathSkipRootW",
-      "StrCmpCW",
-      "StrCmpICA",
-      "StrCmpICW",
-      "StrCmpIW",
-      "StrCmpNCW",
-      "StrCmpNICW",
-      "StrDupW"
-    ]
-  },
-  {
-    "source": "bin/IEShims.dll",
-    "target": "iertutil.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/IEShims.dll",
-    "target": "msvcrt.dll",
     "symbols": [
       "??1type_info@@UEAA@XZ",
       "?terminate@@YAXXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
       "__C_specific_handler",
       "__CxxFrameHandler3",
       "__dllonexit",
       "_amsg_exit",
+      "_CxxThrowException",
       "_initterm",
       "_lock",
       "_onexit",
@@ -1713,6 +1865,7 @@
       "_wcslwr",
       "_wcsnicmp",
       "_wfopen",
+      "_XcptFilter",
       "calloc",
       "fclose",
       "fputws",
@@ -1735,19 +1888,102 @@
       "wcsspn",
       "wcsstr",
       "wcstok_s"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/IEShims.dll",
-    "target": "ntdll.dll",
     "symbols": [
       "NtQueryObject",
       "RtlNtStatusToDosError"
-    ]
+    ],
+    "target": "ntdll.dll"
   },
   {
+    "kind": "delay-load",
+    "source": "bin/IEShims.dll",
+    "symbols": [
+      "DecryptFileW",
+      "EncryptFileW"
+    ],
+    "target": "ADVAPI32.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/IEShims.dll",
+    "symbols": [
+      "CoCreateInstance",
+      "CoInitializeEx",
+      "CoTaskMemAlloc",
+      "CoTaskMemFree",
+      "CoUninitialize",
+      "StringFromGUID2"
+    ],
+    "target": "api-ms-win-downlevel-ole32-l1-1-0.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/IEShims.dll",
+    "symbols": [
+      "SspiPromptForCredentialsA",
+      "SspiPromptForCredentialsW"
+    ],
+    "target": "credui.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/IEShims.dll",
+    "symbols": [
+      "WNetGetConnectionW"
+    ],
+    "target": "MPR.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/IEShims.dll",
+    "symbols": [
+      "ordinal:2",
+      "ordinal:6",
+      "ordinal:8",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/IEShims.dll",
+    "symbols": [
+      "ShellExecuteExW",
+      "SHGetDesktopFolder",
+      "SHGetFolderPathW"
+    ],
+    "target": "SHELL32.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/IEShims.dll",
+    "symbols": [
+      "AllowSetForegroundWindow",
+      "EnumChildWindows",
+      "GetActiveWindow",
+      "GetAncestor",
+      "GetClassNameW",
+      "GetForegroundWindow",
+      "GetGUIThreadInfo",
+      "GetParent",
+      "GetPropW",
+      "GetWindowLongW",
+      "GetWindowThreadProcessId",
+      "IsChild",
+      "SetLayeredWindowAttributes",
+      "SetWindowLongPtrW"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/JSProfilerCore.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "RegCloseKey",
       "RegCreateKeyExW",
@@ -1756,11 +1992,20 @@
       "RegOpenKeyExW",
       "RegQueryInfoKeyW",
       "RegSetValueExW"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/JSProfilerCore.dll",
-    "target": "KERNEL32.dll",
+    "symbols": [
+      "CreateUri"
+    ],
+    "target": "iertutil.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/JSProfilerCore.dll",
     "symbols": [
       "DeleteCriticalSection",
       "DeleteFileW",
@@ -1790,6 +2035,7 @@
       "LeaveCriticalSection",
       "LoadLibraryExW",
       "LoadResource",
+      "lstrcmpiW",
       "MultiByteToWideChar",
       "OutputDebugStringA",
       "QueryPerformanceCounter",
@@ -1801,43 +2047,13 @@
       "SizeofResource",
       "Sleep",
       "TerminateProcess",
-      "UnhandledExceptionFilter",
-      "lstrcmpiW"
-    ]
+      "UnhandledExceptionFilter"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/JSProfilerCore.dll",
-    "target": "OLEAUT32.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/JSProfilerCore.dll",
-    "target": "USER32.dll",
-    "symbols": [
-      "CharNextW",
-      "UnregisterClassA"
-    ]
-  },
-  {
-    "source": "bin/JSProfilerCore.dll",
-    "target": "WINMM.dll",
-    "symbols": [
-      "timeBeginPeriod",
-      "timeEndPeriod"
-    ]
-  },
-  {
-    "source": "bin/JSProfilerCore.dll",
-    "target": "iertutil.dll",
-    "symbols": [
-      "CreateUri"
-    ]
-  },
-  {
-    "source": "bin/JSProfilerCore.dll",
-    "target": "msvcrt.dll",
     "symbols": [
       "??0exception@@QEAA@AEBQEBDH@Z",
       "??0exception@@QEAA@AEBV0@@Z",
@@ -1846,8 +2062,6 @@
       "??3@YAXPEAX@Z",
       "??_V@YAXPEAX@Z",
       "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
       "__C_specific_handler",
       "__CxxFrameHandler3",
       "__dllonexit",
@@ -1855,6 +2069,7 @@
       "_aligned_malloc",
       "_amsg_exit",
       "_callnewh",
+      "_CxxThrowException",
       "_errno",
       "_initterm",
       "_lock",
@@ -1862,6 +2077,7 @@
       "_purecall",
       "_unlock",
       "_wfopen_s",
+      "_XcptFilter",
       "calloc",
       "fclose",
       "fread",
@@ -1875,21 +2091,57 @@
       "realloc",
       "wcsncmp",
       "wcsncpy_s"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/JSProfilerCore.dll",
-    "target": "ole32.dll",
     "symbols": [
       "CoCreateInstance",
       "CoTaskMemAlloc",
       "CoTaskMemFree",
       "CoTaskMemRealloc"
-    ]
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/JSProfilerCore.dll",
+    "symbols": [
+      "ordinal:15",
+      "ordinal:16",
+      "ordinal:2",
+      "ordinal:23",
+      "ordinal:24",
+      "ordinal:277",
+      "ordinal:6",
+      "ordinal:8",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/JSProfilerCore.dll",
+    "symbols": [
+      "CharNextW",
+      "UnregisterClassA"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/JSProfilerCore.dll",
+    "symbols": [
+      "timeBeginPeriod",
+      "timeEndPeriod"
+    ],
+    "target": "WINMM.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/MemoryAnalyzer.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "CloseHandle",
       "CloseThreadpool",
@@ -1948,35 +2200,12 @@
       "VirtualAlloc",
       "VirtualFree",
       "WideCharToMultiByte"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/MemoryAnalyzer.dll",
-    "target": "OLEAUT32.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/MemoryAnalyzer.dll",
-    "target": "USER32.dll",
-    "symbols": [
-      "CallWindowProcW",
-      "CreateWindowExW",
-      "DefWindowProcW",
-      "DestroyWindow",
-      "GetClassInfoExW",
-      "GetWindowLongPtrW",
-      "LoadCursorW",
-      "PostMessageW",
-      "RegisterClassExW",
-      "SetWindowLongPtrW",
-      "UnregisterClassA"
-    ]
-  },
-  {
-    "source": "bin/MemoryAnalyzer.dll",
-    "target": "msvcrt.dll",
     "symbols": [
       "??0exception@@QEAA@AEBQEBD@Z",
       "??0exception@@QEAA@AEBQEBDH@Z",
@@ -1987,14 +2216,13 @@
       "??_V@YAXPEAX@Z",
       "?terminate@@YAXXZ",
       "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
       "__C_specific_handler",
       "__CxxFrameHandler3",
-      "__RTDynamicCast",
       "__dllonexit",
+      "__RTDynamicCast",
       "_amsg_exit",
       "_callnewh",
+      "_CxxThrowException",
       "_errno",
       "_initterm",
       "_lock",
@@ -2005,6 +2233,7 @@
       "_vscwprintf",
       "_wcstoi64",
       "_wcstoui64",
+      "_XcptFilter",
       "clock",
       "free",
       "malloc",
@@ -2025,18 +2254,53 @@
       "wcsncpy_s",
       "wcsstr",
       "wcstod"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/MemoryAnalyzer.dll",
-    "target": "ole32.dll",
     "symbols": [
       "CoCreateInstance"
-    ]
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/MemoryAnalyzer.dll",
+    "symbols": [
+      "ordinal:10",
+      "ordinal:161",
+      "ordinal:162",
+      "ordinal:2",
+      "ordinal:6",
+      "ordinal:7",
+      "ordinal:8",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/MemoryAnalyzer.dll",
+    "symbols": [
+      "CallWindowProcW",
+      "CreateWindowExW",
+      "DefWindowProcW",
+      "DestroyWindow",
+      "GetClassInfoExW",
+      "GetWindowLongPtrW",
+      "LoadCursorW",
+      "PostMessageW",
+      "RegisterClassExW",
+      "SetWindowLongPtrW",
+      "UnregisterClassA"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/Timeline.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "DeleteCriticalSection",
       "EnterCriticalSection",
@@ -2071,33 +2335,12 @@
       "Sleep",
       "TerminateProcess",
       "UnhandledExceptionFilter"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/Timeline.dll",
-    "target": "OLEAUT32.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/Timeline.dll",
-    "target": "SHLWAPI.dll",
-    "symbols": [
-      "PathFileExistsW",
-      "PathGetCharTypeW"
-    ]
-  },
-  {
-    "source": "bin/Timeline.dll",
-    "target": "USER32.dll",
-    "symbols": [
-      "UnregisterClassA"
-    ]
-  },
-  {
-    "source": "bin/Timeline.dll",
-    "target": "msvcrt.dll",
     "symbols": [
       "??0exception@@QEAA@AEBQEBD@Z",
       "??0exception@@QEAA@AEBQEBDH@Z",
@@ -2108,13 +2351,12 @@
       "??_V@YAXPEAX@Z",
       "?terminate@@YAXXZ",
       "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
       "__C_specific_handler",
       "__CxxFrameHandler3",
       "__dllonexit",
       "_amsg_exit",
       "_callnewh",
+      "_CxxThrowException",
       "_initterm",
       "_lock",
       "_onexit",
@@ -2127,6 +2369,7 @@
       "_wcslwr_s",
       "_wcstoi64",
       "_wtoi",
+      "_XcptFilter",
       "floor",
       "free",
       "iswalpha",
@@ -2146,18 +2389,54 @@
       "wcsnlen",
       "wcsstr",
       "wcstol"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/Timeline.dll",
-    "target": "ole32.dll",
     "symbols": [
       "CoCreateInstance"
-    ]
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/Timeline.dll",
+    "symbols": [
+      "ordinal:10",
+      "ordinal:149",
+      "ordinal:150",
+      "ordinal:161",
+      "ordinal:162",
+      "ordinal:2",
+      "ordinal:6",
+      "ordinal:7",
+      "ordinal:8",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/Timeline.dll",
+    "symbols": [
+      "PathFileExistsW",
+      "PathGetCharTypeW"
+    ],
+    "target": "SHLWAPI.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/Timeline.dll",
+    "symbols": [
+      "UnregisterClassA"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/Timeline_is.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "DeleteCriticalSection",
       "EnterCriticalSection",
@@ -2189,46 +2468,12 @@
       "Sleep",
       "TerminateProcess",
       "UnhandledExceptionFilter"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/Timeline_is.dll",
-    "target": "OLEAUT32.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/Timeline_is.dll",
-    "target": "RPCRT4.dll",
-    "symbols": [
-      "UuidFromStringW"
-    ]
-  },
-  {
-    "source": "bin/Timeline_is.dll",
-    "target": "SHLWAPI.dll",
-    "symbols": [
-      "SHCreateStreamOnFileEx"
-    ]
-  },
-  {
-    "source": "bin/Timeline_is.dll",
-    "target": "USER32.dll",
-    "symbols": [
-      "UnregisterClassA"
-    ]
-  },
-  {
-    "source": "bin/Timeline_is.dll",
-    "target": "XmlLite.dll",
-    "symbols": [
-      "CreateXmlReader"
-    ]
-  },
-  {
-    "source": "bin/Timeline_is.dll",
-    "target": "msvcrt.dll",
     "symbols": [
       "??0exception@@QEAA@AEBQEBD@Z",
       "??0exception@@QEAA@AEBQEBDH@Z",
@@ -2237,13 +2482,12 @@
       "??1type_info@@UEAA@XZ",
       "??3@YAXPEAX@Z",
       "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
       "__C_specific_handler",
       "__CxxFrameHandler3",
       "__dllonexit",
       "_amsg_exit",
       "_callnewh",
+      "_CxxThrowException",
       "_initterm",
       "_lock",
       "_onexit",
@@ -2253,6 +2497,7 @@
       "_vscwprintf",
       "_wcsicmp",
       "_wtoi",
+      "_XcptFilter",
       "free",
       "malloc",
       "memcpy",
@@ -2266,33 +2511,81 @@
       "wcsncpy_s",
       "wcsstr",
       "wcstoul"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/Timeline_is.dll",
-    "target": "ole32.dll",
     "symbols": [
       "CoCreateInstance"
-    ]
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/Timeline_is.dll",
-    "target": "tdh.dll",
+    "symbols": [
+      "ordinal:10",
+      "ordinal:176",
+      "ordinal:2",
+      "ordinal:8",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/Timeline_is.dll",
+    "symbols": [
+      "UuidFromStringW"
+    ],
+    "target": "RPCRT4.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/Timeline_is.dll",
+    "symbols": [
+      "SHCreateStreamOnFileEx"
+    ],
+    "target": "SHLWAPI.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/Timeline_is.dll",
     "symbols": [
       "TdhGetProperty",
       "TdhGetPropertySize"
-    ]
+    ],
+    "target": "tdh.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/Timeline_is.dll",
+    "symbols": [
+      "UnregisterClassA"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/Timeline_is.dll",
+    "symbols": [
+      "CreateXmlReader"
+    ],
+    "target": "XmlLite.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/iediagcmd.exe",
-    "target": "mscoree.dll",
     "symbols": [
       "_CorExeMain"
-    ]
+    ],
+    "target": "mscoree.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "EventRegister",
       "EventUnregister",
@@ -2304,11 +2597,12 @@
       "RegOpenKeyExW",
       "RegQueryInfoKeyW",
       "RegSetValueExW"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "GDI32.dll",
     "symbols": [
       "BitBlt",
       "CreateBitmap",
@@ -2346,24 +2640,57 @@
       "SetWorldTransform",
       "StretchBlt",
       "TextOutW"
-    ]
+    ],
+    "target": "GDI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "IEFRAME.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)",
       "IEAssociateThreadWithTab",
       "IECancelSaveFile",
       "IEGetWriteableFolderPath",
       "IEIsProtectedModeProcess",
       "IESaveFile",
-      "IEShowSaveFileDialog"
-    ]
+      "IEShowSaveFileDialog",
+      "ordinal:318",
+      "ordinal:319",
+      "ordinal:320"
+    ],
+    "target": "IEFRAME.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "KERNEL32.dll",
+    "symbols": [
+      "ordinal:347",
+      "ordinal:453",
+      "ordinal:457",
+      "ordinal:458",
+      "ordinal:518",
+      "ordinal:519",
+      "ordinal:575",
+      "ordinal:576",
+      "ordinal:61",
+      "ordinal:64",
+      "ordinal:65",
+      "ordinal:650",
+      "ordinal:651",
+      "ordinal:654",
+      "ordinal:655",
+      "ordinal:656",
+      "ordinal:657",
+      "ordinal:660",
+      "ordinal:68",
+      "ordinal:681",
+      "ordinal:70",
+      "ordinal:791"
+    ],
+    "target": "iertutil.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/iedvtool.dll",
     "symbols": [
       "ActivateActCtx",
       "CloseHandle",
@@ -2428,6 +2755,10 @@
       "LocalAlloc",
       "LocalFree",
       "LockResource",
+      "lstrcmpA",
+      "lstrcmpiA",
+      "lstrcmpiW",
+      "lstrcmpW",
       "MulDiv",
       "MultiByteToWideChar",
       "OutputDebugStringA",
@@ -2455,57 +2786,155 @@
       "VirtualQuery",
       "WaitForSingleObject",
       "WideCharToMultiByte",
-      "WriteFile",
-      "lstrcmpA",
-      "lstrcmpW",
-      "lstrcmpiA",
-      "lstrcmpiW"
-    ]
+      "WriteFile"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "MSHTML.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
+      "ordinal:127"
+    ],
+    "target": "MSHTML.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "MSIMG32.dll",
     "symbols": [
       "GradientFill",
       "TransparentBlt"
-    ]
+    ],
+    "target": "MSIMG32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "OLEACC.dll",
+    "symbols": [
+      "??1type_info@@UEAA@XZ",
+      "?terminate@@YAXXZ",
+      "__C_specific_handler",
+      "__CxxFrameHandler3",
+      "__dllonexit",
+      "_amsg_exit",
+      "_CxxThrowException",
+      "_errno",
+      "_initterm",
+      "_itow_s",
+      "_lock",
+      "_onexit",
+      "_purecall",
+      "_unlock",
+      "_vscwprintf",
+      "_vsnwprintf",
+      "_wcsicmp",
+      "_wcslwr_s",
+      "_wcsnicmp",
+      "_wfopen_s",
+      "_XcptFilter",
+      "atan2",
+      "calloc",
+      "cos",
+      "fclose",
+      "floor",
+      "fputs",
+      "fputws",
+      "free",
+      "iswalpha",
+      "iswascii",
+      "iswdigit",
+      "iswspace",
+      "malloc",
+      "memcpy_s",
+      "memmove_s",
+      "memset",
+      "realloc",
+      "sin",
+      "sprintf_s",
+      "sqrt",
+      "strchr",
+      "strtoul",
+      "swprintf_s",
+      "toupper",
+      "vswprintf_s",
+      "wcschr",
+      "wcscmp",
+      "wcscspn",
+      "wcsncmp",
+      "wcsncpy_s",
+      "wcsrchr",
+      "wcsspn",
+      "wcsstr",
+      "wcstol"
+    ],
+    "target": "msvcrt.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/iedvtool.dll",
+    "symbols": [
+      "CoCreateInstance",
+      "CoGetInterfaceAndReleaseStream",
+      "CoInitializeEx",
+      "CoMarshalInterThreadInterfaceInStream",
+      "CoTaskMemAlloc",
+      "CoTaskMemFree",
+      "CoTaskMemRealloc",
+      "CoUninitialize",
+      "CreateStreamOnHGlobal",
+      "OleInitialize",
+      "OleUninitialize",
+      "StringFromGUID2"
+    ],
+    "target": "ole32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/iedvtool.dll",
     "symbols": [
       "CreateStdAccessibleObject",
       "LresultFromObject"
-    ]
+    ],
+    "target": "OLEACC.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "OLEAUT32.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
+      "ordinal:10",
+      "ordinal:112",
+      "ordinal:12",
+      "ordinal:149",
+      "ordinal:150",
+      "ordinal:16",
+      "ordinal:2",
+      "ordinal:25",
+      "ordinal:277",
+      "ordinal:313",
+      "ordinal:314",
+      "ordinal:4",
+      "ordinal:6",
+      "ordinal:7",
+      "ordinal:8",
+      "ordinal:84",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "SHELL32.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)",
       "SHGetFolderPathW",
-      "SHGetKnownFolderPath"
-    ]
+      "SHGetKnownFolderPath",
+      "ordinal:171"
+    ],
+    "target": "SHELL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "SHLWAPI.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)",
       "PathFindExtensionW",
       "PathFindFileNameW",
       "PathRemoveFileSpecW",
@@ -2520,12 +2949,35 @@
       "StrStrIW",
       "StrStrW",
       "StrToIntW",
-      "UrlCanonicalizeW"
-    ]
+      "UrlCanonicalizeW",
+      "ordinal:158",
+      "ordinal:176",
+      "ordinal:2",
+      "ordinal:219",
+      "ordinal:225"
+    ],
+    "target": "SHLWAPI.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "USER32.dll",
+    "symbols": [
+      "CoInternetCombineIUri",
+      "CoInternetCreateZoneManager",
+      "CoInternetIsFeatureEnabled",
+      "CreateUri",
+      "GetMarkOfTheWeb",
+      "UrlMkSetSessionOption",
+      "ordinal:423",
+      "ordinal:446",
+      "ordinal:447",
+      "ordinal:449"
+    ],
+    "target": "urlmon.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/iedvtool.dll",
     "symbols": [
       "AllowSetForegroundWindow",
       "AppendMenuW",
@@ -2596,8 +3048,8 @@
       "GetWindowRect",
       "GetWindowTextW",
       "GetWindowThreadProcessId",
-      "InSendMessageEx",
       "InflateRect",
+      "InSendMessageEx",
       "IntersectRect",
       "InvalidateRect",
       "IsChild",
@@ -2653,8 +3105,8 @@
       "SetWindowLongW",
       "SetWindowPlacement",
       "SetWindowPos",
-      "SetWindowTextW",
       "SetWindowsHookExW",
+      "SetWindowTextW",
       "ShowCaret",
       "ShowWindow",
       "SystemParametersInfoW",
@@ -2667,18 +3119,20 @@
       "UpdateWindow",
       "ValidateRect",
       "WindowFromPoint"
-    ]
+    ],
+    "target": "USER32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "UxTheme.dll",
     "symbols": [
       "IsThemeActive"
-    ]
+    ],
+    "target": "UxTheme.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iedvtool.dll",
-    "target": "WININET.dll",
     "symbols": [
       "DeleteUrlCacheEntryW",
       "FindFirstUrlCacheEntryW",
@@ -2694,110 +3148,12 @@
       "ReadUrlCacheEntryStream",
       "RetrieveUrlCacheEntryStreamW",
       "UnlockUrlCacheEntryStream"
-    ]
+    ],
+    "target": "WININET.dll"
   },
   {
-    "source": "bin/iedvtool.dll",
-    "target": "iertutil.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/iedvtool.dll",
-    "target": "msvcrt.dll",
-    "symbols": [
-      "??1type_info@@UEAA@XZ",
-      "?terminate@@YAXXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
-      "__C_specific_handler",
-      "__CxxFrameHandler3",
-      "__dllonexit",
-      "_amsg_exit",
-      "_errno",
-      "_initterm",
-      "_itow_s",
-      "_lock",
-      "_onexit",
-      "_purecall",
-      "_unlock",
-      "_vscwprintf",
-      "_vsnwprintf",
-      "_wcsicmp",
-      "_wcslwr_s",
-      "_wcsnicmp",
-      "_wfopen_s",
-      "atan2",
-      "calloc",
-      "cos",
-      "fclose",
-      "floor",
-      "fputs",
-      "fputws",
-      "free",
-      "iswalpha",
-      "iswascii",
-      "iswdigit",
-      "iswspace",
-      "malloc",
-      "memcpy_s",
-      "memmove_s",
-      "memset",
-      "realloc",
-      "sin",
-      "sprintf_s",
-      "sqrt",
-      "strchr",
-      "strtoul",
-      "swprintf_s",
-      "toupper",
-      "vswprintf_s",
-      "wcschr",
-      "wcscmp",
-      "wcscspn",
-      "wcsncmp",
-      "wcsncpy_s",
-      "wcsrchr",
-      "wcsspn",
-      "wcsstr",
-      "wcstol"
-    ]
-  },
-  {
-    "source": "bin/iedvtool.dll",
-    "target": "ole32.dll",
-    "symbols": [
-      "CoCreateInstance",
-      "CoGetInterfaceAndReleaseStream",
-      "CoInitializeEx",
-      "CoMarshalInterThreadInterfaceInStream",
-      "CoTaskMemAlloc",
-      "CoTaskMemFree",
-      "CoTaskMemRealloc",
-      "CoUninitialize",
-      "CreateStreamOnHGlobal",
-      "OleInitialize",
-      "OleUninitialize",
-      "StringFromGUID2"
-    ]
-  },
-  {
-    "source": "bin/iedvtool.dll",
-    "target": "urlmon.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)",
-      "CoInternetCombineIUri",
-      "CoInternetCreateZoneManager",
-      "CoInternetIsFeatureEnabled",
-      "CreateUri",
-      "GetMarkOfTheWeb",
-      "UrlMkSetSessionOption"
-    ]
-  },
-  {
+    "kind": "static",
     "source": "bin/ieinstal.exe",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "AddMandatoryAce",
       "AllocateAndInitializeSid",
@@ -2839,22 +3195,37 @@
       "SetKernelObjectSecurity",
       "SetSecurityDescriptorDacl",
       "SetSecurityDescriptorSacl"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/ieinstal.exe",
-    "target": "AUTHZ.dll",
     "symbols": [
       "AuthzAccessCheck",
       "AuthzFreeContext",
       "AuthzFreeResourceManager",
       "AuthzInitializeContextFromSid",
       "AuthzInitializeResourceManager"
-    ]
+    ],
+    "target": "AUTHZ.dll"
   },
   {
+    "kind": "static",
     "source": "bin/ieinstal.exe",
-    "target": "KERNEL32.dll",
+    "symbols": [
+      "ordinal:134",
+      "ordinal:172",
+      "ordinal:200",
+      "ordinal:201",
+      "ordinal:650",
+      "ordinal:658"
+    ],
+    "target": "iertutil.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/ieinstal.exe",
     "symbols": [
       "ActivateActCtx",
       "CloseHandle",
@@ -2907,6 +3278,9 @@
       "LoadLibraryW",
       "LocalAlloc",
       "LocalFree",
+      "lstrcmpA",
+      "lstrcmpiA",
+      "lstrcmpiW",
       "MultiByteToWideChar",
       "OpenProcess",
       "QueryPerformanceCounter",
@@ -2928,60 +3302,15 @@
       "VirtualProtect",
       "VirtualQuery",
       "WaitForSingleObject",
-      "WideCharToMultiByte",
-      "lstrcmpA",
-      "lstrcmpiA",
-      "lstrcmpiW"
-    ]
+      "WideCharToMultiByte"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/ieinstal.exe",
-    "target": "OLEAUT32.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/ieinstal.exe",
-    "target": "RPCRT4.dll",
-    "symbols": [
-      "RpcStringFreeW",
-      "UuidCreate",
-      "UuidToStringW"
-    ]
-  },
-  {
-    "source": "bin/ieinstal.exe",
-    "target": "USER32.dll",
-    "symbols": [
-      "CharNextW",
-      "LoadStringW",
-      "PostQuitMessage"
-    ]
-  },
-  {
-    "source": "bin/ieinstal.exe",
-    "target": "WINTRUST.dll",
-    "symbols": [
-      "CryptCATAdminAcquireContext",
-      "CryptCATAdminAddCatalog",
-      "CryptCATAdminReleaseCatalogContext",
-      "CryptCATAdminReleaseContext"
-    ]
-  },
-  {
-    "source": "bin/ieinstal.exe",
-    "target": "iertutil.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/ieinstal.exe",
-    "target": "msvcrt.dll",
     "symbols": [
       "?terminate@@YAXXZ",
-      "_XcptFilter",
       "__C_specific_handler",
       "__dllonexit",
       "__set_app_type",
@@ -3001,6 +3330,7 @@
       "_wcmdln",
       "_wcsnicmp",
       "_wtoi",
+      "_XcptFilter",
       "exit",
       "iscntrl",
       "iswalpha",
@@ -3012,21 +3342,23 @@
       "wcschr",
       "wcsrchr",
       "wcstok"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/ieinstal.exe",
-    "target": "ntdll.dll",
     "symbols": [
       "NtFreeVirtualMemory",
       "RtlCaptureContext",
       "RtlLookupFunctionEntry",
       "RtlVirtualUnwind"
-    ]
+    ],
+    "target": "ntdll.dll"
   },
   {
+    "kind": "static",
     "source": "bin/ieinstal.exe",
-    "target": "ole32.dll",
     "symbols": [
       "CLSIDFromString",
       "CoCreateInstance",
@@ -3042,22 +3374,78 @@
       "CoTaskMemFree",
       "CoUninitialize",
       "StringFromGUID2"
-    ]
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/ieinstal.exe",
-    "target": "urlmon.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)",
+      "ordinal:163",
+      "ordinal:186",
+      "ordinal:2",
+      "ordinal:442",
+      "ordinal:443",
+      "ordinal:6",
+      "ordinal:7"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/ieinstal.exe",
+    "symbols": [
+      "RpcStringFreeW",
+      "UuidCreate",
+      "UuidToStringW"
+    ],
+    "target": "RPCRT4.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/ieinstal.exe",
+    "symbols": [
       "CoInternetCreateSecurityManager",
       "CoInternetSetFeatureEnabled",
       "CompatFlagsFromClsid",
-      "Extract"
-    ]
+      "Extract",
+      "ordinal:107",
+      "ordinal:519"
+    ],
+    "target": "urlmon.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/ieinstal.exe",
+    "symbols": [
+      "CharNextW",
+      "LoadStringW",
+      "PostQuitMessage"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/ieinstal.exe",
+    "symbols": [
+      "CryptCATAdminAcquireContext",
+      "CryptCATAdminAddCatalog",
+      "CryptCATAdminReleaseCatalogContext",
+      "CryptCATAdminReleaseContext"
+    ],
+    "target": "WINTRUST.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/ielowutil.exe",
-    "target": "KERNEL32.dll",
+    "symbols": [
+      "ordinal:466"
+    ],
+    "target": "iertutil.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/ielowutil.exe",
     "symbols": [
       "ActivateActCtx",
       "CloseHandle",
@@ -3098,40 +3486,14 @@
       "UnmapViewOfFile",
       "VirtualAlloc",
       "WaitForSingleObject"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/ielowutil.exe",
-    "target": "USER32.dll",
-    "symbols": [
-      "DispatchMessageW",
-      "MsgWaitForMultipleObjects",
-      "PeekMessageW",
-      "PostQuitMessage",
-      "TranslateMessage"
-    ]
-  },
-  {
-    "source": "bin/ielowutil.exe",
-    "target": "WININET.dll",
-    "symbols": [
-      "InternetGetCookieExW",
-      "InternetSetCookieExW"
-    ]
-  },
-  {
-    "source": "bin/ielowutil.exe",
-    "target": "iertutil.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/ielowutil.exe",
-    "target": "msvcrt.dll",
     "symbols": [
       "?terminate@@YAXXZ",
-      "_XcptFilter",
       "__C_specific_handler",
       "__set_app_type",
       "__setusermatherr",
@@ -3146,24 +3508,27 @@
       "_wcmdln",
       "_wcsnicmp",
       "_wtoi",
+      "_XcptFilter",
       "exit",
       "memset",
       "rand_s",
       "wcstok"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/ielowutil.exe",
-    "target": "ntdll.dll",
     "symbols": [
       "RtlCaptureContext",
       "RtlLookupFunctionEntry",
       "RtlVirtualUnwind"
-    ]
+    ],
+    "target": "ntdll.dll"
   },
   {
+    "kind": "static",
     "source": "bin/ielowutil.exe",
-    "target": "ole32.dll",
     "symbols": [
       "CLSIDFromString",
       "CoCreateInstance",
@@ -3172,11 +3537,69 @@
       "CoRegisterClassObject",
       "CoRevokeClassObject",
       "CoUninitialize"
-    ]
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/ielowutil.exe",
+    "symbols": [
+      "DispatchMessageW",
+      "MsgWaitForMultipleObjects",
+      "PeekMessageW",
+      "PostQuitMessage",
+      "TranslateMessage"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/ielowutil.exe",
+    "symbols": [
+      "InternetGetCookieExW",
+      "InternetSetCookieExW"
+    ],
+    "target": "WININET.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/ieproxy.dll",
-    "target": "KERNEL32.dll",
+    "symbols": [
+      "GetAce",
+      "GetKernelObjectSecurity",
+      "GetSecurityDescriptorDacl",
+      "GetSidIdentifierAuthority",
+      "GetSidSubAuthority",
+      "GetSidSubAuthorityCount"
+    ],
+    "target": "api-ms-win-downlevel-advapi32-l1-1-0.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/ieproxy.dll",
+    "symbols": [
+      "ParseURLW",
+      "PathCreateFromUrlW",
+      "PathIsURLW",
+      "QISearch",
+      "UrlApplySchemeW",
+      "UrlCanonicalizeW",
+      "UrlCreateFromPathW"
+    ],
+    "target": "api-ms-win-downlevel-shlwapi-l1-1-0.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/ieproxy.dll",
+    "symbols": [
+      "IUnknown_QueryService",
+      "IUnknown_SetSite"
+    ],
+    "target": "api-ms-win-downlevel-shlwapi-l2-1-0.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/ieproxy.dll",
     "symbols": [
       "CloseHandle",
       "CompareStringOrdinal",
@@ -3217,11 +3640,37 @@
       "Sleep",
       "TerminateProcess",
       "UnhandledExceptionFilter"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/ieproxy.dll",
-    "target": "RPCRT4.dll",
+    "symbols": [
+      "??2@YAPEAX_K@Z",
+      "??3@YAXPEAX@Z",
+      "__C_specific_handler",
+      "__CxxFrameHandler3",
+      "_amsg_exit",
+      "_initterm",
+      "_purecall",
+      "_vsnwprintf",
+      "_XcptFilter",
+      "free",
+      "iswalpha",
+      "malloc",
+      "memcmp",
+      "memcpy",
+      "memcpy_s",
+      "memset",
+      "wcschr",
+      "wcsstr"
+    ],
+    "target": "msvcrt.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/ieproxy.dll",
     "symbols": [
       "CStdStubBuffer_AddRef",
       "CStdStubBuffer_Connect",
@@ -3235,9 +3684,9 @@
       "IUnknown_AddRef_Proxy",
       "IUnknown_QueryInterface_Proxy",
       "IUnknown_Release_Proxy",
+      "NdrClientCall3",
       "NdrCStdStubBuffer2_Release",
       "NdrCStdStubBuffer_Release",
-      "NdrClientCall3",
       "NdrDllCanUnloadNow",
       "NdrDllGetClassObject",
       "NdrDllRegisterProxy",
@@ -3248,68 +3697,253 @@
       "NdrStubCall3",
       "NdrStubForwardingFunction",
       "RpcRaiseException"
-    ]
+    ],
+    "target": "RPCRT4.dll"
   },
   {
+    "kind": "delay-load",
     "source": "bin/ieproxy.dll",
-    "target": "api-ms-win-downlevel-advapi32-l1-1-0.dll",
     "symbols": [
-      "GetAce",
-      "GetKernelObjectSecurity",
-      "GetSecurityDescriptorDacl",
-      "GetSidIdentifierAuthority",
-      "GetSidSubAuthority",
-      "GetSidSubAuthorityCount"
-    ]
+      "CoCreateInstance",
+      "CoGetStdMarshalEx"
+    ],
+    "target": "api-ms-win-downlevel-ole32-l1-1-0.dll"
   },
   {
+    "kind": "delay-load",
     "source": "bin/ieproxy.dll",
-    "target": "api-ms-win-downlevel-shlwapi-l1-1-0.dll",
     "symbols": [
-      "ParseURLW",
-      "PathCreateFromUrlW",
-      "PathIsURLW",
-      "QISearch",
-      "UrlApplySchemeW",
-      "UrlCanonicalizeW",
-      "UrlCreateFromPathW"
-    ]
+      "CreateBitmap",
+      "CreatePalette",
+      "GetBitmapBits",
+      "GetEnhMetaFileBits",
+      "GetMetaFileBitsEx",
+      "GetObjectA",
+      "GetObjectType",
+      "GetPaletteEntries",
+      "SetEnhMetaFileBits",
+      "SetMetaFileBitsEx"
+    ],
+    "target": "GDI32.dll"
   },
   {
+    "kind": "delay-load",
     "source": "bin/ieproxy.dll",
-    "target": "api-ms-win-downlevel-shlwapi-l2-1-0.dll",
     "symbols": [
-      "IUnknown_QueryService",
-      "IUnknown_SetSite"
-    ]
+      "ordinal:44",
+      "ordinal:650",
+      "ordinal:655"
+    ],
+    "target": "iertutil.dll"
   },
   {
+    "kind": "delay-load",
     "source": "bin/ieproxy.dll",
-    "target": "msvcrt.dll",
     "symbols": [
-      "??2@YAPEAX_K@Z",
-      "??3@YAXPEAX@Z",
-      "_XcptFilter",
-      "__C_specific_handler",
-      "__CxxFrameHandler3",
-      "_amsg_exit",
-      "_initterm",
-      "_purecall",
-      "_vsnwprintf",
-      "free",
-      "iswalpha",
-      "malloc",
-      "memcmp",
-      "memcpy",
-      "memcpy_s",
-      "memset",
-      "wcschr",
-      "wcsstr"
-    ]
+      "CoAllowSetForegroundWindow",
+      "CoGetMarshalSizeMax",
+      "CoMarshalInterface",
+      "CoTaskMemFree",
+      "CoTaskMemRealloc",
+      "CoUnmarshalInterface",
+      "HBITMAP_UserFree",
+      "HBITMAP_UserFree64",
+      "HBITMAP_UserMarshal",
+      "HBITMAP_UserMarshal64",
+      "HBITMAP_UserSize",
+      "HBITMAP_UserSize64",
+      "HBITMAP_UserUnmarshal",
+      "HBITMAP_UserUnmarshal64",
+      "HGLOBAL_UserFree",
+      "HGLOBAL_UserFree64",
+      "HGLOBAL_UserMarshal",
+      "HGLOBAL_UserMarshal64",
+      "HGLOBAL_UserSize",
+      "HGLOBAL_UserSize64",
+      "HGLOBAL_UserUnmarshal",
+      "HGLOBAL_UserUnmarshal64",
+      "HICON_UserFree",
+      "HICON_UserFree64",
+      "HICON_UserMarshal",
+      "HICON_UserMarshal64",
+      "HICON_UserSize",
+      "HICON_UserSize64",
+      "HICON_UserUnmarshal",
+      "HICON_UserUnmarshal64",
+      "HMENU_UserFree",
+      "HMENU_UserFree64",
+      "HMENU_UserMarshal",
+      "HMENU_UserMarshal64",
+      "HMENU_UserSize",
+      "HMENU_UserSize64",
+      "HMENU_UserUnmarshal",
+      "HMENU_UserUnmarshal64",
+      "HWND_UserFree",
+      "HWND_UserFree64",
+      "HWND_UserMarshal",
+      "HWND_UserMarshal64",
+      "HWND_UserSize",
+      "HWND_UserSize64",
+      "HWND_UserUnmarshal",
+      "HWND_UserUnmarshal64",
+      "NdrProxyForwardingFunction10",
+      "NdrProxyForwardingFunction11",
+      "NdrProxyForwardingFunction12",
+      "NdrProxyForwardingFunction13",
+      "NdrProxyForwardingFunction14",
+      "NdrProxyForwardingFunction3",
+      "NdrProxyForwardingFunction4",
+      "NdrProxyForwardingFunction5",
+      "NdrProxyForwardingFunction6",
+      "NdrProxyForwardingFunction7",
+      "NdrProxyForwardingFunction8",
+      "NdrProxyForwardingFunction9",
+      "ObjectStublessClient10",
+      "ObjectStublessClient11",
+      "ObjectStublessClient12",
+      "ObjectStublessClient13",
+      "ObjectStublessClient14",
+      "ObjectStublessClient15",
+      "ObjectStublessClient16",
+      "ObjectStublessClient17",
+      "ObjectStublessClient18",
+      "ObjectStublessClient19",
+      "ObjectStublessClient20",
+      "ObjectStublessClient21",
+      "ObjectStublessClient22",
+      "ObjectStublessClient23",
+      "ObjectStublessClient24",
+      "ObjectStublessClient25",
+      "ObjectStublessClient26",
+      "ObjectStublessClient27",
+      "ObjectStublessClient28",
+      "ObjectStublessClient29",
+      "ObjectStublessClient3",
+      "ObjectStublessClient30",
+      "ObjectStublessClient31",
+      "ObjectStublessClient4",
+      "ObjectStublessClient5",
+      "ObjectStublessClient6",
+      "ObjectStublessClient7",
+      "ObjectStublessClient8",
+      "ObjectStublessClient9",
+      "ReleaseStgMedium"
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "delay-load",
+    "source": "bin/ieproxy.dll",
+    "symbols": [
+      "BSTR_UserFree64",
+      "BSTR_UserMarshal64",
+      "BSTR_UserSize64",
+      "BSTR_UserUnmarshal64",
+      "LPSAFEARRAY_UserFree64",
+      "LPSAFEARRAY_UserMarshal64",
+      "LPSAFEARRAY_UserSize64",
+      "LPSAFEARRAY_UserUnmarshal64",
+      "VARIANT_UserFree64",
+      "VARIANT_UserMarshal64",
+      "VARIANT_UserSize64",
+      "VARIANT_UserUnmarshal64",
+      "ordinal:2",
+      "ordinal:283",
+      "ordinal:284",
+      "ordinal:285",
+      "ordinal:286",
+      "ordinal:287",
+      "ordinal:288",
+      "ordinal:289",
+      "ordinal:290",
+      "ordinal:291",
+      "ordinal:292",
+      "ordinal:293",
+      "ordinal:294",
+      "ordinal:6",
+      "ordinal:7"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/ieproxy.dll",
+    "symbols": [
+      "PSPropertyBag_ReadDWORD",
+      "PSPropertyBag_ReadStrAlloc"
+    ],
+    "target": "PROPSYS.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/ieproxy.dll",
+    "symbols": [
+      "SHCreateItemFromParsingName",
+      "SHCreateShellItemArrayFromShellItem"
+    ],
+    "target": "SHELL32.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/ieproxy.dll",
+    "symbols": [
+      "AllowSetForegroundWindow",
+      "FindWindowExW",
+      "GetWindowThreadProcessId",
+      "PostMessageW",
+      "SendMessageTimeoutW"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/iexplore.exe",
-    "target": "KERNEL32.dll",
+    "symbols": [
+      "EventRegister",
+      "EventUnregister",
+      "EventWrite",
+      "EventWriteTransfer",
+      "RegCloseKey",
+      "RegGetValueW",
+      "RegOpenKeyExW",
+      "RegQueryValueExW"
+    ],
+    "target": "api-ms-win-downlevel-advapi32-l1-1-0.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/iexplore.exe",
+    "symbols": [
+      "CommandLineToArgvW",
+      "SetCurrentProcessExplicitAppUserModelID"
+    ],
+    "target": "api-ms-win-downlevel-shell32-l1-1-0.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/iexplore.exe",
+    "symbols": [
+      "StrStrIW"
+    ],
+    "target": "api-ms-win-downlevel-shlwapi-l1-1-0.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/iexplore.exe",
+    "symbols": [
+      "ordinal:139",
+      "ordinal:32",
+      "ordinal:650",
+      "ordinal:701",
+      "ordinal:796",
+      "ordinal:840",
+      "ordinal:9"
+    ],
+    "target": "iertutil.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/iexplore.exe",
     "symbols": [
       "CloseHandle",
       "CreateProcessW",
@@ -3350,62 +3984,14 @@
       "VirtualAlloc",
       "VirtualProtect",
       "VirtualQuery"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/iexplore.exe",
-    "target": "USER32.dll",
-    "symbols": [
-      "AllowSetForegroundWindow",
-      "FindWindowExW",
-      "GetWindowThreadProcessId",
-      "IsWindowEnabled",
-      "IsWindowVisible",
-      "SendMessageTimeoutW"
-    ]
-  },
-  {
-    "source": "bin/iexplore.exe",
-    "target": "api-ms-win-downlevel-advapi32-l1-1-0.dll",
-    "symbols": [
-      "EventRegister",
-      "EventUnregister",
-      "EventWrite",
-      "EventWriteTransfer",
-      "RegCloseKey",
-      "RegGetValueW",
-      "RegOpenKeyExW",
-      "RegQueryValueExW"
-    ]
-  },
-  {
-    "source": "bin/iexplore.exe",
-    "target": "api-ms-win-downlevel-shell32-l1-1-0.dll",
-    "symbols": [
-      "CommandLineToArgvW",
-      "SetCurrentProcessExplicitAppUserModelID"
-    ]
-  },
-  {
-    "source": "bin/iexplore.exe",
-    "target": "api-ms-win-downlevel-shlwapi-l1-1-0.dll",
-    "symbols": [
-      "StrStrIW"
-    ]
-  },
-  {
-    "source": "bin/iexplore.exe",
-    "target": "iertutil.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/iexplore.exe",
-    "target": "msvcrt.dll",
     "symbols": [
       "?terminate@@YAXXZ",
-      "_XcptFilter",
       "__C_specific_handler",
       "__set_app_type",
       "__setusermatherr",
@@ -3418,17 +4004,44 @@
       "_initterm",
       "_vsnwprintf",
       "_wcmdln",
+      "_XcptFilter",
       "exit",
       "iswspace",
       "memcpy",
       "memset",
       "rand_s",
       "wcsncmp"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/iexplore.exe",
+    "symbols": [
+      "AllowSetForegroundWindow",
+      "FindWindowExW",
+      "GetWindowThreadProcessId",
+      "IsWindowEnabled",
+      "IsWindowVisible",
+      "SendMessageTimeoutW"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/iexplore.exe",
+    "symbols": [
+      "ordinal:212",
+      "ordinal:251",
+      "ordinal:255",
+      "ordinal:256",
+      "ordinal:258"
+    ],
+    "target": "IEFRAME.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/jsdbgui.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "EventRegister",
       "EventUnregister",
@@ -3440,11 +4053,12 @@
       "RegOpenKeyExW",
       "RegQueryInfoKeyW",
       "RegSetValueExW"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsdbgui.dll",
-    "target": "GDI32.dll",
     "symbols": [
       "AbortDoc",
       "BitBlt",
@@ -3481,11 +4095,25 @@
       "StartPage",
       "StretchBlt",
       "TextOutW"
-    ]
+    ],
+    "target": "GDI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsdbgui.dll",
-    "target": "KERNEL32.dll",
+    "symbols": [
+      "ordinal:61",
+      "ordinal:64",
+      "ordinal:65",
+      "ordinal:650",
+      "ordinal:68",
+      "ordinal:70"
+    ],
+    "target": "iertutil.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/jsdbgui.dll",
     "symbols": [
       "ActivateActCtx",
       "CreateActCtxW",
@@ -3528,6 +4156,9 @@
       "LoadResource",
       "LocalFree",
       "LockResource",
+      "lstrcmpiW",
+      "lstrcmpW",
+      "lstrlenW",
       "MulDiv",
       "MultiByteToWideChar",
       "OutputDebugStringA",
@@ -3546,49 +4177,144 @@
       "UnhandledExceptionFilter",
       "VirtualAlloc",
       "VirtualFree",
-      "WideCharToMultiByte",
-      "lstrcmpW",
-      "lstrcmpiW",
-      "lstrlenW"
-    ]
+      "WideCharToMultiByte"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsdbgui.dll",
-    "target": "MSIMG32.dll",
     "symbols": [
       "TransparentBlt"
-    ]
+    ],
+    "target": "MSIMG32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsdbgui.dll",
-    "target": "OLEACC.dll",
+    "symbols": [
+      "??0exception@@QEAA@AEBQEBD@Z",
+      "??0exception@@QEAA@AEBQEBDH@Z",
+      "??0exception@@QEAA@AEBV0@@Z",
+      "??1exception@@UEAA@XZ",
+      "??1type_info@@UEAA@XZ",
+      "?what@exception@@UEBAPEBDXZ",
+      "__C_specific_handler",
+      "__CxxFrameHandler3",
+      "__dllonexit",
+      "_amsg_exit",
+      "_CxxThrowException",
+      "_errno",
+      "_initterm",
+      "_lock",
+      "_onexit",
+      "_purecall",
+      "_unlock",
+      "_vscprintf",
+      "_vscwprintf",
+      "_vsnwprintf",
+      "_wcsicmp",
+      "_wcslwr_s",
+      "_wcsnicmp",
+      "_XcptFilter",
+      "calloc",
+      "free",
+      "iswalnum",
+      "iswalpha",
+      "iswdigit",
+      "iswgraph",
+      "iswspace",
+      "iswxdigit",
+      "malloc",
+      "memcpy",
+      "memcpy_s",
+      "memmove_s",
+      "memset",
+      "realloc",
+      "swprintf_s",
+      "towupper",
+      "vsprintf_s",
+      "vswprintf_s",
+      "wcschr",
+      "wcscmp",
+      "wcscspn",
+      "wcsncpy_s",
+      "wcspbrk",
+      "wcsrchr",
+      "wcsspn",
+      "wcsstr"
+    ],
+    "target": "msvcrt.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/jsdbgui.dll",
+    "symbols": [
+      "CoCreateInstance",
+      "CoInitialize",
+      "CoTaskMemAlloc",
+      "CoTaskMemFree",
+      "CoTaskMemRealloc",
+      "CoUninitialize"
+    ],
+    "target": "ole32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/jsdbgui.dll",
     "symbols": [
       "CreateStdAccessibleObject",
       "LresultFromObject"
-    ]
+    ],
+    "target": "OLEACC.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsdbgui.dll",
-    "target": "OLEAUT32.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
+      "ordinal:10",
+      "ordinal:12",
+      "ordinal:147",
+      "ordinal:15",
+      "ordinal:16",
+      "ordinal:2",
+      "ordinal:23",
+      "ordinal:24",
+      "ordinal:277",
+      "ordinal:314",
+      "ordinal:4",
+      "ordinal:6",
+      "ordinal:7",
+      "ordinal:8",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsdbgui.dll",
-    "target": "SHLWAPI.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)",
       "StrCmpLogicalW",
       "StrCmpNW",
       "StrStrIW",
       "StrStrW",
-      "StrToIntW"
-    ]
+      "StrToIntW",
+      "ordinal:219"
+    ],
+    "target": "SHLWAPI.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsdbgui.dll",
-    "target": "USER32.dll",
+    "symbols": [
+      "CreateUri",
+      "ordinal:423"
+    ],
+    "target": "urlmon.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/jsdbgui.dll",
     "symbols": [
       "BeginPaint",
       "CallNextHookEx",
@@ -3689,8 +4415,8 @@
       "SetWindowLongPtrW",
       "SetWindowLongW",
       "SetWindowPos",
-      "SetWindowTextW",
       "SetWindowsHookExW",
+      "SetWindowTextW",
       "ShowWindow",
       "SystemParametersInfoW",
       "TrackMouseEvent",
@@ -3701,94 +4427,12 @@
       "UnregisterClassA",
       "UpdateWindow",
       "WindowFromPoint"
-    ]
+    ],
+    "target": "USER32.dll"
   },
   {
-    "source": "bin/jsdbgui.dll",
-    "target": "iertutil.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/jsdbgui.dll",
-    "target": "msvcrt.dll",
-    "symbols": [
-      "??0exception@@QEAA@AEBQEBD@Z",
-      "??0exception@@QEAA@AEBQEBDH@Z",
-      "??0exception@@QEAA@AEBV0@@Z",
-      "??1exception@@UEAA@XZ",
-      "??1type_info@@UEAA@XZ",
-      "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
-      "__C_specific_handler",
-      "__CxxFrameHandler3",
-      "__dllonexit",
-      "_amsg_exit",
-      "_errno",
-      "_initterm",
-      "_lock",
-      "_onexit",
-      "_purecall",
-      "_unlock",
-      "_vscprintf",
-      "_vscwprintf",
-      "_vsnwprintf",
-      "_wcsicmp",
-      "_wcslwr_s",
-      "_wcsnicmp",
-      "calloc",
-      "free",
-      "iswalnum",
-      "iswalpha",
-      "iswdigit",
-      "iswgraph",
-      "iswspace",
-      "iswxdigit",
-      "malloc",
-      "memcpy",
-      "memcpy_s",
-      "memmove_s",
-      "memset",
-      "realloc",
-      "swprintf_s",
-      "towupper",
-      "vsprintf_s",
-      "vswprintf_s",
-      "wcschr",
-      "wcscmp",
-      "wcscspn",
-      "wcsncpy_s",
-      "wcspbrk",
-      "wcsrchr",
-      "wcsspn",
-      "wcsstr"
-    ]
-  },
-  {
-    "source": "bin/jsdbgui.dll",
-    "target": "ole32.dll",
-    "symbols": [
-      "CoCreateInstance",
-      "CoInitialize",
-      "CoTaskMemAlloc",
-      "CoTaskMemFree",
-      "CoTaskMemRealloc",
-      "CoUninitialize"
-    ]
-  },
-  {
-    "source": "bin/jsdbgui.dll",
-    "target": "urlmon.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)",
-      "CreateUri"
-    ]
-  },
-  {
+    "kind": "static",
     "source": "bin/jsdebuggeride.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "RegCloseKey",
       "RegCreateKeyExW",
@@ -3798,11 +4442,12 @@
       "RegQueryInfoKeyW",
       "RegQueryValueExW",
       "RegSetValueExW"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsdebuggeride.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "CloseHandle",
       "CreateEventW",
@@ -3832,6 +4477,7 @@
       "LoadLibraryExW",
       "LoadResource",
       "LockResource",
+      "lstrcmpiW",
       "MultiByteToWideChar",
       "OutputDebugStringA",
       "QueryPerformanceCounter",
@@ -3845,52 +4491,13 @@
       "Sleep",
       "TerminateProcess",
       "TryEnterCriticalSection",
-      "UnhandledExceptionFilter",
-      "lstrcmpiW"
-    ]
+      "UnhandledExceptionFilter"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsdebuggeride.dll",
-    "target": "OLEAUT32.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/jsdebuggeride.dll",
-    "target": "SHLWAPI.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/jsdebuggeride.dll",
-    "target": "USER32.dll",
-    "symbols": [
-      "CharNextW",
-      "DispatchMessageW",
-      "MsgWaitForMultipleObjects",
-      "PeekMessageW",
-      "TranslateMessage",
-      "UnregisterClassA"
-    ]
-  },
-  {
-    "source": "bin/jsdebuggeride.dll",
-    "target": "WININET.dll",
-    "symbols": [
-      "InternetCloseHandle",
-      "InternetOpenUrlW",
-      "InternetOpenW",
-      "InternetReadFile",
-      "ReadUrlCacheEntryStream",
-      "RetrieveUrlCacheEntryStreamW",
-      "UnlockUrlCacheEntryStream"
-    ]
-  },
-  {
-    "source": "bin/jsdebuggeride.dll",
-    "target": "msvcrt.dll",
     "symbols": [
       "??0exception@@QEAA@AEBQEBD@Z",
       "??0exception@@QEAA@AEBQEBDH@Z",
@@ -3900,13 +4507,12 @@
       "??3@YAXPEAX@Z",
       "??_V@YAXPEAX@Z",
       "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
       "__C_specific_handler",
       "__CxxFrameHandler3",
       "__dllonexit",
       "_amsg_exit",
       "_callnewh",
+      "_CxxThrowException",
       "_errno",
       "_initterm",
       "_lock",
@@ -3918,6 +4524,7 @@
       "_wcslwr_s",
       "_wfopen_s",
       "_wtoi",
+      "_XcptFilter",
       "calloc",
       "fclose",
       "feof",
@@ -3937,11 +4544,12 @@
       "wcscmp",
       "wcsncpy_s",
       "wcsstr"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsdebuggeride.dll",
-    "target": "ole32.dll",
     "symbols": [
       "CoCreateInstance",
       "CoDisconnectObject",
@@ -3950,19 +4558,77 @@
       "CoTaskMemRealloc",
       "CreateStreamOnHGlobal",
       "StringFromCLSID"
-    ]
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsdebuggeride.dll",
-    "target": "urlmon.dll",
+    "symbols": [
+      "ordinal:10",
+      "ordinal:12",
+      "ordinal:149",
+      "ordinal:150",
+      "ordinal:2",
+      "ordinal:23",
+      "ordinal:24",
+      "ordinal:277",
+      "ordinal:314",
+      "ordinal:4",
+      "ordinal:6",
+      "ordinal:7",
+      "ordinal:8",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/jsdebuggeride.dll",
+    "symbols": [
+      "ordinal:219"
+    ],
+    "target": "SHLWAPI.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/jsdebuggeride.dll",
     "symbols": [
       "CoInternetCombineIUri",
       "CreateUri"
-    ]
+    ],
+    "target": "urlmon.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/jsdebuggeride.dll",
+    "symbols": [
+      "CharNextW",
+      "DispatchMessageW",
+      "MsgWaitForMultipleObjects",
+      "PeekMessageW",
+      "TranslateMessage",
+      "UnregisterClassA"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/jsdebuggeride.dll",
+    "symbols": [
+      "InternetCloseHandle",
+      "InternetOpenUrlW",
+      "InternetOpenW",
+      "InternetReadFile",
+      "ReadUrlCacheEntryStream",
+      "RetrieveUrlCacheEntryStreamW",
+      "UnlockUrlCacheEntryStream"
+    ],
+    "target": "WININET.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/jsprofilerui.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "RegCloseKey",
       "RegCreateKeyExW",
@@ -3971,11 +4637,12 @@
       "RegOpenKeyExW",
       "RegQueryInfoKeyW",
       "RegSetValueExW"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsprofilerui.dll",
-    "target": "GDI32.dll",
     "symbols": [
       "BitBlt",
       "CreateCompatibleBitmap",
@@ -3997,11 +4664,25 @@
       "SetLayout",
       "SetTextAlign",
       "SetTextColor"
-    ]
+    ],
+    "target": "GDI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsprofilerui.dll",
-    "target": "KERNEL32.dll",
+    "symbols": [
+      "CreateUri",
+      "ordinal:61",
+      "ordinal:64",
+      "ordinal:65",
+      "ordinal:68",
+      "ordinal:70"
+    ],
+    "target": "iertutil.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/jsprofilerui.dll",
     "symbols": [
       "ActivateActCtx",
       "CloseHandle",
@@ -4051,6 +4732,8 @@
       "LoadLibraryExW",
       "LoadResource",
       "LockResource",
+      "lstrcmpiW",
+      "lstrcmpW",
       "MulDiv",
       "MultiByteToWideChar",
       "OutputDebugStringA",
@@ -4069,36 +4752,117 @@
       "TerminateProcess",
       "UnhandledExceptionFilter",
       "VirtualAlloc",
-      "VirtualFree",
-      "lstrcmpW",
-      "lstrcmpiW"
-    ]
+      "VirtualFree"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsprofilerui.dll",
-    "target": "OLEACC.dll",
+    "symbols": [
+      "??0exception@@QEAA@AEBQEBDH@Z",
+      "??0exception@@QEAA@AEBV0@@Z",
+      "??1exception@@UEAA@XZ",
+      "??1type_info@@UEAA@XZ",
+      "?terminate@@YAXXZ",
+      "?what@exception@@UEBAPEBDXZ",
+      "__C_specific_handler",
+      "__CxxFrameHandler3",
+      "__dllonexit",
+      "_amsg_exit",
+      "_CxxThrowException",
+      "_errno",
+      "_initterm",
+      "_lock",
+      "_onexit",
+      "_purecall",
+      "_ultow_s",
+      "_unlock",
+      "_vscwprintf",
+      "_vsnwprintf",
+      "_wcsicmp",
+      "_wcslwr_s",
+      "_wfopen_s",
+      "_XcptFilter",
+      "atoi",
+      "calloc",
+      "fclose",
+      "fputs",
+      "fputws",
+      "free",
+      "iswspace",
+      "malloc",
+      "memcpy_s",
+      "memmove_s",
+      "memset",
+      "realloc",
+      "swprintf_s",
+      "vswprintf_s",
+      "wcschr",
+      "wcscmp",
+      "wcscpy_s",
+      "wcsncpy_s",
+      "wcsstr",
+      "wcstol"
+    ],
+    "target": "msvcrt.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/jsprofilerui.dll",
+    "symbols": [
+      "CoCreateInstance",
+      "CoTaskMemAlloc",
+      "CoTaskMemFree",
+      "CoTaskMemRealloc"
+    ],
+    "target": "ole32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/jsprofilerui.dll",
     "symbols": [
       "CreateStdAccessibleObject",
       "LresultFromObject"
-    ]
+    ],
+    "target": "OLEACC.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsprofilerui.dll",
-    "target": "OLEAUT32.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
+      "ordinal:10",
+      "ordinal:12",
+      "ordinal:147",
+      "ordinal:2",
+      "ordinal:277",
+      "ordinal:4",
+      "ordinal:6",
+      "ordinal:8",
+      "ordinal:84",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsprofilerui.dll",
-    "target": "SHLWAPI.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
+      "ordinal:219"
+    ],
+    "target": "SHLWAPI.dll"
   },
   {
+    "kind": "static",
     "source": "bin/jsprofilerui.dll",
-    "target": "USER32.dll",
+    "symbols": [
+      "ordinal:423"
+    ],
+    "target": "urlmon.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/jsprofilerui.dll",
     "symbols": [
       "AdjustWindowRectEx",
       "AppendMenuW",
@@ -4190,86 +4954,12 @@
       "TranslateMessage",
       "UnregisterClassA",
       "UpdateWindow"
-    ]
+    ],
+    "target": "USER32.dll"
   },
   {
-    "source": "bin/jsprofilerui.dll",
-    "target": "iertutil.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)",
-      "CreateUri"
-    ]
-  },
-  {
-    "source": "bin/jsprofilerui.dll",
-    "target": "msvcrt.dll",
-    "symbols": [
-      "??0exception@@QEAA@AEBQEBDH@Z",
-      "??0exception@@QEAA@AEBV0@@Z",
-      "??1exception@@UEAA@XZ",
-      "??1type_info@@UEAA@XZ",
-      "?terminate@@YAXXZ",
-      "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
-      "__C_specific_handler",
-      "__CxxFrameHandler3",
-      "__dllonexit",
-      "_amsg_exit",
-      "_errno",
-      "_initterm",
-      "_lock",
-      "_onexit",
-      "_purecall",
-      "_ultow_s",
-      "_unlock",
-      "_vscwprintf",
-      "_vsnwprintf",
-      "_wcsicmp",
-      "_wcslwr_s",
-      "_wfopen_s",
-      "atoi",
-      "calloc",
-      "fclose",
-      "fputs",
-      "fputws",
-      "free",
-      "iswspace",
-      "malloc",
-      "memcpy_s",
-      "memmove_s",
-      "memset",
-      "realloc",
-      "swprintf_s",
-      "vswprintf_s",
-      "wcschr",
-      "wcscmp",
-      "wcscpy_s",
-      "wcsncpy_s",
-      "wcsstr",
-      "wcstol"
-    ]
-  },
-  {
-    "source": "bin/jsprofilerui.dll",
-    "target": "ole32.dll",
-    "symbols": [
-      "CoCreateInstance",
-      "CoTaskMemAlloc",
-      "CoTaskMemFree",
-      "CoTaskMemRealloc"
-    ]
-  },
-  {
-    "source": "bin/jsprofilerui.dll",
-    "target": "urlmon.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
+    "kind": "static",
     "source": "bin/msdbg2.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "CloseHandle",
       "CreateFileW",
@@ -4282,10 +4972,10 @@
       "FlushFileBuffers",
       "FreeEnvironmentStringsW",
       "GetACP",
-      "GetCPInfo",
       "GetCommandLineA",
       "GetConsoleCP",
       "GetConsoleMode",
+      "GetCPInfo",
       "GetCurrentProcess",
       "GetCurrentProcessId",
       "GetCurrentThreadId",
@@ -4335,18 +5025,38 @@
       "WideCharToMultiByte",
       "WriteConsoleW",
       "WriteFile"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/msdbg2.dll",
-    "target": "OLEAUT32.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
+      "HWND_UserFree",
+      "HWND_UserMarshal",
+      "HWND_UserSize",
+      "HWND_UserUnmarshal"
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/msdbg2.dll",
-    "target": "RPCRT4.dll",
+    "symbols": [
+      "ordinal:283",
+      "ordinal:284",
+      "ordinal:285",
+      "ordinal:286",
+      "ordinal:287",
+      "ordinal:288",
+      "ordinal:289",
+      "ordinal:290"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/msdbg2.dll",
     "symbols": [
       "CStdStubBuffer_AddRef",
       "CStdStubBuffer_Connect",
@@ -4360,9 +5070,9 @@
       "IUnknown_AddRef_Proxy",
       "IUnknown_QueryInterface_Proxy",
       "IUnknown_Release_Proxy",
+      "NdrClientCall2",
       "NdrCStdStubBuffer2_Release",
       "NdrCStdStubBuffer_Release",
-      "NdrClientCall2",
       "NdrDllCanUnloadNow",
       "NdrDllGetClassObject",
       "NdrDllRegisterProxy",
@@ -4371,21 +5081,12 @@
       "NdrOleFree",
       "NdrStubCall2",
       "NdrStubForwardingFunction"
-    ]
+    ],
+    "target": "RPCRT4.dll"
   },
   {
-    "source": "bin/msdbg2.dll",
-    "target": "ole32.dll",
-    "symbols": [
-      "HWND_UserFree",
-      "HWND_UserMarshal",
-      "HWND_UserSize",
-      "HWND_UserUnmarshal"
-    ]
-  },
-  {
+    "kind": "static",
     "source": "bin/networkinspection.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "RegCloseKey",
       "RegCreateKeyExW",
@@ -4395,11 +5096,12 @@
       "RegQueryInfoKeyW",
       "RegQueryValueExW",
       "RegSetValueExW"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/networkinspection.dll",
-    "target": "GDI32.dll",
     "symbols": [
       "BitBlt",
       "CreateBitmap",
@@ -4426,11 +5128,27 @@
       "SetLayout",
       "SetTextColor",
       "SetViewportOrgEx"
-    ]
+    ],
+    "target": "GDI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/networkinspection.dll",
-    "target": "KERNEL32.dll",
+    "symbols": [
+      "CreateUri",
+      "ordinal:61",
+      "ordinal:64",
+      "ordinal:65",
+      "ordinal:650",
+      "ordinal:654",
+      "ordinal:68",
+      "ordinal:70"
+    ],
+    "target": "iertutil.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/networkinspection.dll",
     "symbols": [
       "ActivateActCtx",
       "CloseHandle",
@@ -4493,6 +5211,9 @@
       "LoadResource",
       "LocalFree",
       "LockResource",
+      "lstrcmpiW",
+      "lstrcmpW",
+      "lstrlenW",
       "MulDiv",
       "MultiByteToWideChar",
       "OutputDebugStringA",
@@ -4517,54 +5238,149 @@
       "VirtualFree",
       "WaitForMultipleObjects",
       "WaitForSingleObject",
-      "WideCharToMultiByte",
-      "lstrcmpW",
-      "lstrcmpiW",
-      "lstrlenW"
-    ]
+      "WideCharToMultiByte"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/networkinspection.dll",
-    "target": "MSIMG32.dll",
     "symbols": [
       "AlphaBlend"
-    ]
+    ],
+    "target": "MSIMG32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/networkinspection.dll",
-    "target": "OLEACC.dll",
+    "symbols": [
+      "??0exception@@QEAA@AEBQEBD@Z",
+      "??0exception@@QEAA@AEBQEBDH@Z",
+      "??0exception@@QEAA@AEBV0@@Z",
+      "??1exception@@UEAA@XZ",
+      "??1type_info@@UEAA@XZ",
+      "?what@exception@@UEBAPEBDXZ",
+      "__C_specific_handler",
+      "__CxxFrameHandler3",
+      "__dllonexit",
+      "_amsg_exit",
+      "_CxxThrowException",
+      "_errno",
+      "_initterm",
+      "_ismbcspace",
+      "_lock",
+      "_mbschr",
+      "_mbscspn",
+      "_mbsinc",
+      "_mbsspn",
+      "_onexit",
+      "_purecall",
+      "_unlock",
+      "_vscwprintf",
+      "_wcsicmp",
+      "_wcslwr_s",
+      "_wcsnicmp",
+      "_wcsupr_s",
+      "_wfopen_s",
+      "_wtoi",
+      "_XcptFilter",
+      "calloc",
+      "fclose",
+      "fputs",
+      "fputws",
+      "free",
+      "fwrite",
+      "iswspace",
+      "malloc",
+      "memcmp",
+      "memcpy_s",
+      "memmove_s",
+      "memset",
+      "qsort_s",
+      "realloc",
+      "swprintf_s",
+      "towupper",
+      "vswprintf_s",
+      "wcschr",
+      "wcscmp",
+      "wcscpy_s",
+      "wcscspn",
+      "wcsncpy_s",
+      "wcsrchr",
+      "wcsspn",
+      "wcsstr",
+      "wcstol"
+    ],
+    "target": "msvcrt.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/networkinspection.dll",
+    "symbols": [
+      "CoCreateInstance",
+      "CoTaskMemAlloc",
+      "CoTaskMemFree",
+      "CoTaskMemRealloc",
+      "CreateStreamOnHGlobal"
+    ],
+    "target": "ole32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/networkinspection.dll",
     "symbols": [
       "CreateStdAccessibleObject",
       "LresultFromObject"
-    ]
+    ],
+    "target": "OLEACC.dll"
   },
   {
+    "kind": "static",
     "source": "bin/networkinspection.dll",
-    "target": "OLEAUT32.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
+      "ordinal:10",
+      "ordinal:12",
+      "ordinal:2",
+      "ordinal:277",
+      "ordinal:4",
+      "ordinal:6",
+      "ordinal:7",
+      "ordinal:8",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/networkinspection.dll",
-    "target": "SHELL32.dll",
     "symbols": [
       "ShellExecuteW"
-    ]
+    ],
+    "target": "SHELL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/networkinspection.dll",
-    "target": "SHLWAPI.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)",
       "PathFindExtensionW",
       "PathIsFileSpecW",
-      "SHCreateStreamOnFileW"
-    ]
+      "SHCreateStreamOnFileW",
+      "ordinal:219"
+    ],
+    "target": "SHLWAPI.dll"
   },
   {
+    "kind": "static",
     "source": "bin/networkinspection.dll",
-    "target": "USER32.dll",
+    "symbols": [
+      "FindMimeFromData",
+      "QueryAssociations"
+    ],
+    "target": "urlmon.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/networkinspection.dll",
     "symbols": [
       "AppendMenuW",
       "BeginPaint",
@@ -4663,20 +5479,30 @@
       "UnregisterClassA",
       "UpdateWindow",
       "WindowFromPoint"
-    ]
+    ],
+    "target": "USER32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/networkinspection.dll",
-    "target": "VERSION.dll",
     "symbols": [
       "GetFileVersionInfoExW",
       "GetFileVersionInfoSizeExW",
       "VerQueryValueW"
-    ]
+    ],
+    "target": "VERSION.dll"
   },
   {
+    "kind": "static",
     "source": "bin/networkinspection.dll",
-    "target": "WININET.dll",
+    "symbols": [
+      "WICConvertBitmapSource"
+    ],
+    "target": "WindowsCodecs.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/networkinspection.dll",
     "symbols": [
       "DeleteUrlCacheEntryW",
       "FindFirstUrlCacheEntryW",
@@ -4687,107 +5513,12 @@
       "ReadUrlCacheEntryStream",
       "RetrieveUrlCacheEntryStreamW",
       "UnlockUrlCacheEntryStream"
-    ]
+    ],
+    "target": "WININET.dll"
   },
   {
-    "source": "bin/networkinspection.dll",
-    "target": "WindowsCodecs.dll",
-    "symbols": [
-      "WICConvertBitmapSource"
-    ]
-  },
-  {
-    "source": "bin/networkinspection.dll",
-    "target": "iertutil.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)",
-      "CreateUri"
-    ]
-  },
-  {
-    "source": "bin/networkinspection.dll",
-    "target": "msvcrt.dll",
-    "symbols": [
-      "??0exception@@QEAA@AEBQEBD@Z",
-      "??0exception@@QEAA@AEBQEBDH@Z",
-      "??0exception@@QEAA@AEBV0@@Z",
-      "??1exception@@UEAA@XZ",
-      "??1type_info@@UEAA@XZ",
-      "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
-      "__C_specific_handler",
-      "__CxxFrameHandler3",
-      "__dllonexit",
-      "_amsg_exit",
-      "_errno",
-      "_initterm",
-      "_ismbcspace",
-      "_lock",
-      "_mbschr",
-      "_mbscspn",
-      "_mbsinc",
-      "_mbsspn",
-      "_onexit",
-      "_purecall",
-      "_unlock",
-      "_vscwprintf",
-      "_wcsicmp",
-      "_wcslwr_s",
-      "_wcsnicmp",
-      "_wcsupr_s",
-      "_wfopen_s",
-      "_wtoi",
-      "calloc",
-      "fclose",
-      "fputs",
-      "fputws",
-      "free",
-      "fwrite",
-      "iswspace",
-      "malloc",
-      "memcmp",
-      "memcpy_s",
-      "memmove_s",
-      "memset",
-      "qsort_s",
-      "realloc",
-      "swprintf_s",
-      "towupper",
-      "vswprintf_s",
-      "wcschr",
-      "wcscmp",
-      "wcscpy_s",
-      "wcscspn",
-      "wcsncpy_s",
-      "wcsrchr",
-      "wcsspn",
-      "wcsstr",
-      "wcstol"
-    ]
-  },
-  {
-    "source": "bin/networkinspection.dll",
-    "target": "ole32.dll",
-    "symbols": [
-      "CoCreateInstance",
-      "CoTaskMemAlloc",
-      "CoTaskMemFree",
-      "CoTaskMemRealloc",
-      "CreateStreamOnHGlobal"
-    ]
-  },
-  {
-    "source": "bin/networkinspection.dll",
-    "target": "urlmon.dll",
-    "symbols": [
-      "FindMimeFromData",
-      "QueryAssociations"
-    ]
-  },
-  {
+    "kind": "static",
     "source": "bin/pdm.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "AddAce",
       "CopySid",
@@ -4822,11 +5553,12 @@
       "RegSetValueExW",
       "SetSecurityDescriptorDacl",
       "SetSecurityDescriptorSacl"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/pdm.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "CloseHandle",
       "CreateEventW",
@@ -4851,11 +5583,11 @@
       "FreeLibrary",
       "FreeLibraryAndExitThread",
       "GetACP",
-      "GetCPInfo",
       "GetCommandLineA",
       "GetComputerNameW",
       "GetConsoleCP",
       "GetConsoleMode",
+      "GetCPInfo",
       "GetCurrentProcess",
       "GetCurrentProcessId",
       "GetCurrentThread",
@@ -4906,6 +5638,7 @@
       "LoadResource",
       "LocalFree",
       "LockResource",
+      "lstrcmpiW",
       "MapViewOfFile",
       "MultiByteToWideChar",
       "OpenEventW",
@@ -4946,43 +5679,13 @@
       "WaitForSingleObject",
       "WideCharToMultiByte",
       "WriteConsoleW",
-      "WriteFile",
-      "lstrcmpiW"
-    ]
+      "WriteFile"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/pdm.dll",
-    "target": "OLEAUT32.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/pdm.dll",
-    "target": "USER32.dll",
-    "symbols": [
-      "CallWindowProcW",
-      "CharNextW",
-      "CreateWindowExW",
-      "DefWindowProcW",
-      "DestroyWindow",
-      "DispatchMessageW",
-      "GetClassInfoExW",
-      "GetWindowLongPtrW",
-      "IsWindow",
-      "LoadCursorW",
-      "MsgWaitForMultipleObjects",
-      "MsgWaitForMultipleObjectsEx",
-      "PeekMessageW",
-      "PostMessageW",
-      "RegisterClassExW",
-      "SetWindowLongPtrW",
-      "UnregisterClassW"
-    ]
-  },
-  {
-    "source": "bin/pdm.dll",
-    "target": "ole32.dll",
     "symbols": [
       "CLSIDFromString",
       "CoCreateInstance",
@@ -5002,11 +5705,79 @@
       "CoWaitForMultipleHandles",
       "CreateStreamOnHGlobal",
       "StringFromGUID2"
-    ]
+    ],
+    "target": "ole32.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/pdm.dll",
+    "symbols": [
+      "ordinal:10",
+      "ordinal:11",
+      "ordinal:12",
+      "ordinal:148",
+      "ordinal:149",
+      "ordinal:150",
+      "ordinal:17",
+      "ordinal:19",
+      "ordinal:2",
+      "ordinal:20",
+      "ordinal:277",
+      "ordinal:313",
+      "ordinal:4",
+      "ordinal:6",
+      "ordinal:7",
+      "ordinal:8",
+      "ordinal:9"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/pdm.dll",
+    "symbols": [
+      "CallWindowProcW",
+      "CharNextW",
+      "CreateWindowExW",
+      "DefWindowProcW",
+      "DestroyWindow",
+      "DispatchMessageW",
+      "GetClassInfoExW",
+      "GetWindowLongPtrW",
+      "IsWindow",
+      "LoadCursorW",
+      "MsgWaitForMultipleObjects",
+      "MsgWaitForMultipleObjectsEx",
+      "PeekMessageW",
+      "PostMessageW",
+      "RegisterClassExW",
+      "SetWindowLongPtrW",
+      "UnregisterClassW"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/pdm.dll",
+    "symbols": [
+      "GetFileVersionInfoSizeW",
+      "GetFileVersionInfoW",
+      "VerQueryValueW"
+    ],
+    "target": "VERSION.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/pdm.dll",
+    "symbols": [
+      "WTSEnumerateProcessesW",
+      "WTSFreeMemory"
+    ],
+    "target": "WTSAPI32.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/pdmproxy100.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "CloseHandle",
       "CreateFileW",
@@ -5019,10 +5790,10 @@
       "FlushFileBuffers",
       "FreeEnvironmentStringsW",
       "GetACP",
-      "GetCPInfo",
       "GetCommandLineA",
       "GetConsoleCP",
       "GetConsoleMode",
+      "GetCPInfo",
       "GetCurrentProcess",
       "GetCurrentProcessId",
       "GetCurrentThreadId",
@@ -5072,18 +5843,23 @@
       "WideCharToMultiByte",
       "WriteConsoleW",
       "WriteFile"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/pdmproxy100.dll",
-    "target": "OLEAUT32.dll",
     "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
+      "ordinal:283",
+      "ordinal:284",
+      "ordinal:285",
+      "ordinal:286"
+    ],
+    "target": "OLEAUT32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/pdmproxy100.dll",
-    "target": "RPCRT4.dll",
     "symbols": [
       "CStdStubBuffer_AddRef",
       "CStdStubBuffer_Connect",
@@ -5107,11 +5883,12 @@
       "NdrOleFree",
       "NdrStubCall2",
       "NdrStubForwardingFunction"
-    ]
+    ],
+    "target": "RPCRT4.dll"
   },
   {
+    "kind": "static",
     "source": "bin/perf_nt.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "CopySid",
       "EventRegister",
@@ -5122,11 +5899,12 @@
       "RegCloseKey",
       "RegOpenKeyExW",
       "RegQueryValueExW"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/perf_nt.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "CloseHandle",
       "CopyFileW",
@@ -5173,6 +5951,7 @@
       "LocalAlloc",
       "LockFileEx",
       "LockResource",
+      "lstrcmpiW",
       "MapViewOfFileEx",
       "MultiByteToWideChar",
       "OutputDebugStringA",
@@ -5197,51 +5976,13 @@
       "WaitForSingleObjectEx",
       "WakeConditionVariable",
       "WideCharToMultiByte",
-      "WriteFile",
-      "lstrcmpiW"
-    ]
+      "WriteFile"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/perf_nt.dll",
-    "target": "SHELL32.dll",
-    "symbols": [
-      "SHGetFolderPathW"
-    ]
-  },
-  {
-    "source": "bin/perf_nt.dll",
-    "target": "SHLWAPI.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)",
-      "PathCombineW",
-      "PathFileExistsW",
-      "PathFindExtensionW",
-      "PathIsDirectoryW",
-      "PathIsUNCW",
-      "PathRemoveFileSpecW",
-      "PathStripPathW",
-      "PathStripToRootW",
-      "SHCreateStreamOnFileW"
-    ]
-  },
-  {
-    "source": "bin/perf_nt.dll",
-    "target": "USER32.dll",
-    "symbols": [
-      "CharLowerW",
-      "UnregisterClassA"
-    ]
-  },
-  {
-    "source": "bin/perf_nt.dll",
-    "target": "XmlLite.dll",
-    "symbols": [
-      "CreateXmlReader"
-    ]
-  },
-  {
-    "source": "bin/perf_nt.dll",
-    "target": "msvcrt.dll",
     "symbols": [
       "??0bad_cast@@QEAA@AEBV0@@Z",
       "??0bad_cast@@QEAA@PEBD@Z",
@@ -5254,15 +5995,13 @@
       "??1type_info@@UEAA@XZ",
       "?terminate@@YAXXZ",
       "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
-      "__C_specific_handler",
-      "__CxxFrameHandler3",
       "___lc_codepage_func",
       "___lc_handle_func",
       "___mb_cur_max_func",
+      "__C_specific_handler",
       "__crtGetStringTypeW",
       "__crtLCMapStringW",
+      "__CxxFrameHandler3",
       "__dllonexit",
       "__mb_cur_max",
       "__pctype_func",
@@ -5270,6 +6009,7 @@
       "_aligned_malloc",
       "_amsg_exit",
       "_callnewh",
+      "_CxxThrowException",
       "_errno",
       "_i64tow",
       "_i64tow_s",
@@ -5291,6 +6031,7 @@
       "_wcsnicmp",
       "_wfsopen",
       "_wtof",
+      "_XcptFilter",
       "abort",
       "calloc",
       "ceil",
@@ -5343,32 +6084,127 @@
       "wcsstr",
       "wcstok_s",
       "wcstol"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/perf_nt.dll",
-    "target": "ntdll.dll",
     "symbols": [
       "RtlCaptureContext",
       "RtlLengthSid",
       "RtlLookupFunctionEntry",
       "RtlVirtualUnwind"
-    ]
+    ],
+    "target": "ntdll.dll"
   },
   {
+    "kind": "static",
+    "source": "bin/perf_nt.dll",
+    "symbols": [
+      "SHGetFolderPathW"
+    ],
+    "target": "SHELL32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/perf_nt.dll",
+    "symbols": [
+      "PathCombineW",
+      "PathFileExistsW",
+      "PathFindExtensionW",
+      "PathIsDirectoryW",
+      "PathIsUNCW",
+      "PathRemoveFileSpecW",
+      "PathStripPathW",
+      "PathStripToRootW",
+      "SHCreateStreamOnFileW",
+      "ordinal:12"
+    ],
+    "target": "SHLWAPI.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/perf_nt.dll",
+    "symbols": [
+      "CharLowerW",
+      "UnregisterClassA"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/perf_nt.dll",
+    "symbols": [
+      "CreateXmlReader"
+    ],
+    "target": "XmlLite.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/perf_nt.dll",
+    "symbols": [
+      "ImageDirectoryEntryToData",
+      "ImageRvaToVa",
+      "SymCleanup",
+      "SymFindFileInPathW",
+      "SymGetModuleInfoW64",
+      "SymGetOptions",
+      "SymGetSearchPathW",
+      "SymInitialize",
+      "SymLoadModuleExW",
+      "SymRegisterCallbackW64",
+      "SymSetOptions",
+      "SymSetSearchPathW",
+      "SymSrvGetFileIndexInfoW",
+      "SymUnloadModule64"
+    ],
+    "target": "dbghelp.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/perf_nt.dll",
+    "symbols": [
+      "CoCreateInstance",
+      "CoInitializeEx",
+      "CoUninitialize"
+    ],
+    "target": "ole32.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/perf_nt.dll",
+    "symbols": [
+      "ordinal:6",
+      "ordinal:7"
+    ],
+    "target": "OLEAUT32.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/perf_nt.dll",
+    "symbols": [
+      "GetFileVersionInfoExW",
+      "GetFileVersionInfoSizeExW",
+      "VerQueryValueW"
+    ],
+    "target": "VERSION.dll"
+  },
+  {
+    "kind": "static",
     "source": "bin/perfcore.dll",
-    "target": "ADVAPI32.dll",
     "symbols": [
       "CloseTrace",
       "EventRegister",
       "EventUnregister",
       "OpenTraceW",
       "ProcessTrace"
-    ]
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/perfcore.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
       "DeleteCriticalSection",
       "EnterCriticalSection",
@@ -5398,18 +6234,12 @@
       "Sleep",
       "TerminateProcess",
       "UnhandledExceptionFilter"
-    ]
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/perfcore.dll",
-    "target": "OLEAUT32.dll",
-    "symbols": [
-      "(ordinal-only import; name unavailable)"
-    ]
-  },
-  {
-    "source": "bin/perfcore.dll",
-    "target": "msvcrt.dll",
     "symbols": [
       "??0exception@@QEAA@AEBQEBD@Z",
       "??0exception@@QEAA@AEBQEBDH@Z",
@@ -5418,13 +6248,12 @@
       "??1exception@@UEAA@XZ",
       "??1type_info@@UEAA@XZ",
       "?what@exception@@UEBAPEBDXZ",
-      "_CxxThrowException",
-      "_XcptFilter",
       "__C_specific_handler",
       "__CxxFrameHandler3",
       "__dllonexit",
       "_amsg_exit",
       "_callnewh",
+      "_CxxThrowException",
       "_initterm",
       "_iob",
       "_lock",
@@ -5433,6 +6262,7 @@
       "_unlock",
       "_wcsdup",
       "_wcsicmp",
+      "_XcptFilter",
       "fprintf",
       "free",
       "ldiv",
@@ -5445,255 +6275,349 @@
       "towlower",
       "vfprintf",
       "wcschr"
-    ]
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/perfcore.dll",
-    "target": "ntdll.dll",
     "symbols": [
       "RtlCaptureContext",
       "RtlLookupFunctionEntry",
       "RtlVirtualUnwind"
-    ]
+    ],
+    "target": "ntdll.dll"
   },
   {
+    "kind": "static",
     "source": "bin/perfcore.dll",
-    "target": "ole32.dll",
     "symbols": [
       "CoCreateInstance"
-    ]
+    ],
+    "target": "ole32.dll"
   },
   {
-    "source": "bin/sqmapi.dll",
-    "target": "ADVAPI32.dll",
+    "kind": "static",
+    "source": "bin/perfcore.dll",
     "symbols": [
-      "ConvertSidToStringSidW\t800019f0",
-      "ConvertStringSecurityDescriptorToSecurityDescriptorW\t80004330",
-      "CreateWellKnownSid\t800013a0",
-      "CryptAcquireContextW\t800021a0",
-      "CryptGenRandom\t80001360",
-      "CryptReleaseContext\t80001370",
-      "GetFileSecurityW\t80006340",
-      "GetSecurityDescriptorDacl\t80001350",
-      "GetSecurityDescriptorOwner\t800064e0",
-      "GetTokenInformation\t80001250",
-      "GetTraceEnableFlags\t001f",
-      "GetTraceEnableLevel\t0022",
-      "GetTraceLoggerHandle\t0023",
-      "ImpersonateLoggedOnUser\t80001510",
-      "InitializeSecurityDescriptor\t800012f0",
-      "OpenProcessToken\t80001270",
-      "OpenThreadToken\t80001220",
-      "RegCloseKey\t800013b0",
-      "RegCreateKeyExW\t80001cf0",
-      "RegDeleteKeyW\t80006fe0",
-      "RegDeleteValueW\t80001470",
-      "RegEnumKeyExW\t80001bd0",
-      "RegEnumKeyW\t800014d0",
-      "RegEnumValueW\t80001c40",
-      "RegOpenKeyExW\t800013d0",
-      "RegQueryInfoKeyW\t80001ad0",
-      "RegQueryValueExW\t800013f0",
-      "RegSetValueExW\t80001d50",
-      "RegisterTraceGuidsW\t0021",
-      "RevertToSelf\t80001230",
-      "SetEntriesInAclW\t80006190",
-      "SetFileSecurityW\t80006320",
-      "SetNamedSecurityInfoW\t8000cdb0",
-      "SetSecurityDescriptorDacl\t80001300",
-      "TraceMessage\tffffffff",
-      "UnregisterTraceGuids\t0020"
-    ]
+      "ordinal:149",
+      "ordinal:150",
+      "ordinal:2",
+      "ordinal:6"
+    ],
+    "target": "OLEAUT32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/sqmapi.dll",
-    "target": "KERNEL32.dll",
     "symbols": [
-      "CloseHandle\t8000152c",
-      "CompareFileTime\t80002ecc",
-      "CompareStringW\t80001b20",
-      "CopyFileW\t8000d1a4",
-      "CreateDirectoryW\t80003608",
-      "CreateEventW\t80002e6c",
-      "CreateFileMappingW\t80003030",
-      "CreateFileW\t80002e54",
-      "CreateMutexW\t80001988",
-      "CreateThread\t80001dac",
-      "DelayLoadFailureHook\t8004da0c",
-      "DeleteCriticalSection\t0056",
-      "DeleteFileW\t800035e0",
-      "DisableThreadLibraryCalls\t80001cd0",
-      "DuplicateHandle\t80002d5c",
-      "EnterCriticalSection\tffffffff",
-      "ExpandEnvironmentStringsW\t80001c5c",
-      "FileTimeToSystemTime\t80003400",
-      "FindClose\t80002db8",
-      "FindFirstFileW\t80002dc4",
-      "FindNextFileW\t80002dd0",
-      "FindResourceW\t800033b8",
-      "FreeLibrary\t80001b98",
-      "FreeLibraryAndExitThread\t80004870",
-      "FreeResource\t8000d0f0",
-      "GetCurrentProcess\t800013b0",
-      "GetCurrentProcessId\t80001410",
-      "GetCurrentThread\t800013e0",
-      "GetCurrentThreadId\t80001250",
-      "GetEnvironmentVariableW\t80003510",
-      "GetFileAttributesExW\t80003424",
-      "GetFileAttributesW\t80003418",
-      "GetFileSize\t80002ea0",
-      "GetFileSizeEx\t8000334c",
-      "GetLastError\t800014e0",
-      "GetLongPathNameW\t800096e0",
-      "GetModuleFileNameW\t80001cf0",
-      "GetModuleHandleExW\t80002d80",
-      "GetNativeSystemInfo\t80003590",
-      "GetProcAddress\t80001d30",
-      "GetSystemDefaultLCID\t80002e0c",
-      "GetSystemDirectoryW\t80002b08",
-      "GetSystemTime\t80001be0",
-      "GetSystemTimeAsFileTime\t80001550",
-      "GetSystemWow64DirectoryW\t800265d4",
-      "GetTempFileNameW\t8003e408",
-      "GetTempPathW\t8000d020",
-      "GetThreadPriority\t80001b68",
-      "GetTickCount\t80001230",
-      "GetUserGeoID\t80045330",
-      "GetVersionExW\t800019b0",
-      "GlobalFree\t80002f80",
-      "InitializeCriticalSection\t0049",
-      "InitializeCriticalSectionAndSpinCount\t80001448",
-      "LeaveCriticalSection\t005f",
-      "LoadLibraryExA\t80003564",
-      "LoadLibraryExW\t80002ebc",
-      "LoadLibraryW\t80003550",
-      "LoadResource\t80003388",
-      "LocalAlloc\t80001350",
-      "LocalFree\t80001340",
-      "LockResource\t80003398",
-      "MapViewOfFile\t80001d70",
-      "OpenFileMappingW\t80003378",
-      "OpenMutexW\t80025030",
-      "OutputDebugStringA\t80001cb4",
-      "QueryPerformanceCounter\t80001390",
-      "ReadFile\t80002e60",
-      "ReleaseMutex\t80001020",
-      "ResetEvent\t80001460",
-      "RtlCaptureContext\t8003e3e0",
-      "RtlLookupFunctionEntry\t8003e390",
-      "RtlVirtualUnwind\t8003e3a4",
-      "SetErrorMode\t800035b8",
-      "SetEvent\t80001454",
-      "SetFileAttributesW\t80003614",
-      "SetFilePointer\t80002e84",
-      "SetFilePointerEx\t80024e10",
-      "SetLastError\t800014f0",
-      "SetThreadPriority\t80001a80",
-      "SetUnhandledExceptionFilter\t80002be4",
-      "SizeofResource\t800033a8",
-      "Sleep\t80001010",
-      "SystemTimeToFileTime\t80001bf0",
-      "TerminateProcess\t80003900",
-      "UnhandledExceptionFilter\t8005b774",
-      "UnmapViewOfFile\t800013c0",
-      "VerSetConditionMask\t0054",
-      "VerifyVersionInfoW\t800028fc",
-      "VirtualAlloc\t800013f0",
-      "VirtualFree\t80001bb8",
-      "VirtualProtect\t80001a90",
-      "WaitForMultipleObjectsEx\t80001abc",
-      "WaitForSingleObject\t8000102c",
-      "WideCharToMultiByte\t80002d20",
-      "WriteFile\t80002e78",
-      "lstrlenW\t80001510"
-    ]
+      "ConvertSidToStringSidW",
+      "ConvertStringSecurityDescriptorToSecurityDescriptorW",
+      "CreateWellKnownSid",
+      "CryptAcquireContextW",
+      "CryptGenRandom",
+      "CryptReleaseContext",
+      "GetFileSecurityW",
+      "GetSecurityDescriptorDacl",
+      "GetSecurityDescriptorOwner",
+      "GetTokenInformation",
+      "GetTraceEnableFlags",
+      "GetTraceEnableLevel",
+      "GetTraceLoggerHandle",
+      "ImpersonateLoggedOnUser",
+      "InitializeSecurityDescriptor",
+      "OpenProcessToken",
+      "OpenThreadToken",
+      "RegCloseKey",
+      "RegCreateKeyExW",
+      "RegDeleteKeyW",
+      "RegDeleteValueW",
+      "RegEnumKeyExW",
+      "RegEnumKeyW",
+      "RegEnumValueW",
+      "RegisterTraceGuidsW",
+      "RegOpenKeyExW",
+      "RegQueryInfoKeyW",
+      "RegQueryValueExW",
+      "RegSetValueExW",
+      "RevertToSelf",
+      "SetEntriesInAclW",
+      "SetFileSecurityW",
+      "SetNamedSecurityInfoW",
+      "SetSecurityDescriptorDacl",
+      "TraceMessage",
+      "UnregisterTraceGuids"
+    ],
+    "target": "ADVAPI32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/sqmapi.dll",
-    "target": "RPCRT4.dll",
     "symbols": [
-      "RpcStringFreeW\t8000af94",
-      "UuidCreateSequential\t800305b0",
-      "UuidToStringW\t8000b000"
-    ]
+      "CloseHandle",
+      "CompareFileTime",
+      "CompareStringW",
+      "CopyFileW",
+      "CreateDirectoryW",
+      "CreateEventW",
+      "CreateFileMappingW",
+      "CreateFileW",
+      "CreateMutexW",
+      "CreateThread",
+      "DelayLoadFailureHook",
+      "DeleteCriticalSection",
+      "DeleteFileW",
+      "DisableThreadLibraryCalls",
+      "DuplicateHandle",
+      "EnterCriticalSection",
+      "ExpandEnvironmentStringsW",
+      "FileTimeToSystemTime",
+      "FindClose",
+      "FindFirstFileW",
+      "FindNextFileW",
+      "FindResourceW",
+      "FreeLibrary",
+      "FreeLibraryAndExitThread",
+      "FreeResource",
+      "GetCurrentProcess",
+      "GetCurrentProcessId",
+      "GetCurrentThread",
+      "GetCurrentThreadId",
+      "GetEnvironmentVariableW",
+      "GetFileAttributesExW",
+      "GetFileAttributesW",
+      "GetFileSize",
+      "GetFileSizeEx",
+      "GetLastError",
+      "GetLongPathNameW",
+      "GetModuleFileNameW",
+      "GetModuleHandleExW",
+      "GetNativeSystemInfo",
+      "GetProcAddress",
+      "GetSystemDefaultLCID",
+      "GetSystemDirectoryW",
+      "GetSystemTime",
+      "GetSystemTimeAsFileTime",
+      "GetSystemWow64DirectoryW",
+      "GetTempFileNameW",
+      "GetTempPathW",
+      "GetThreadPriority",
+      "GetTickCount",
+      "GetUserGeoID",
+      "GetVersionExW",
+      "GlobalFree",
+      "InitializeCriticalSection",
+      "InitializeCriticalSectionAndSpinCount",
+      "LeaveCriticalSection",
+      "LoadLibraryExA",
+      "LoadLibraryExW",
+      "LoadLibraryW",
+      "LoadResource",
+      "LocalAlloc",
+      "LocalFree",
+      "LockResource",
+      "lstrlenW",
+      "MapViewOfFile",
+      "OpenFileMappingW",
+      "OpenMutexW",
+      "OutputDebugStringA",
+      "QueryPerformanceCounter",
+      "ReadFile",
+      "ReleaseMutex",
+      "ResetEvent",
+      "RtlCaptureContext",
+      "RtlLookupFunctionEntry",
+      "RtlVirtualUnwind",
+      "SetErrorMode",
+      "SetEvent",
+      "SetFileAttributesW",
+      "SetFilePointer",
+      "SetFilePointerEx",
+      "SetLastError",
+      "SetThreadPriority",
+      "SetUnhandledExceptionFilter",
+      "SizeofResource",
+      "Sleep",
+      "SystemTimeToFileTime",
+      "TerminateProcess",
+      "UnhandledExceptionFilter",
+      "UnmapViewOfFile",
+      "VerifyVersionInfoW",
+      "VerSetConditionMask",
+      "VirtualAlloc",
+      "VirtualFree",
+      "VirtualProtect",
+      "WaitForMultipleObjectsEx",
+      "WaitForSingleObject",
+      "WideCharToMultiByte",
+      "WriteFile"
+    ],
+    "target": "KERNEL32.dll"
   },
   {
+    "kind": "static",
     "source": "bin/sqmapi.dll",
-    "target": "USER32.dll",
     "symbols": [
-      "DispatchMessageW\t80001520",
-      "GetSystemMetrics\t800035a0",
-      "MsgWaitForMultipleObjects\t80003090",
-      "PeekMessageW\t800010c0",
-      "TranslateMessage\t800011c0"
-    ]
+      "??1type_info@@UEAA@XZ",
+      "__badioinfo",
+      "__C_specific_handler",
+      "__CxxFrameHandler",
+      "__mb_cur_max",
+      "__pioinfo",
+      "_amsg_exit",
+      "_callnewh",
+      "_CxxThrowException",
+      "_errno",
+      "_fileno",
+      "_initterm",
+      "_purecall",
+      "_read",
+      "_strtoui64",
+      "_vsnprintf",
+      "_vsnwprintf",
+      "_wcsicmp",
+      "_wcsnicmp",
+      "_wfopen",
+      "_wtoi",
+      "_wtoi64",
+      "_XcptFilter",
+      "calloc",
+      "ceilf",
+      "fclose",
+      "fread",
+      "free",
+      "fseek",
+      "fwprintf",
+      "fwrite",
+      "isdigit",
+      "isleadbyte",
+      "iswalpha",
+      "iswctype",
+      "isxdigit",
+      "localeconv",
+      "malloc",
+      "mbtowc",
+      "memcpy",
+      "memset",
+      "rand",
+      "realloc",
+      "srand",
+      "time",
+      "ungetc",
+      "wcschr",
+      "wcsncmp",
+      "wcsrchr",
+      "wcsstr",
+      "wcstombs",
+      "wctomb"
+    ],
+    "target": "msvcrt.dll"
   },
   {
+    "kind": "static",
     "source": "bin/sqmapi.dll",
-    "target": "msvcrt.dll",
     "symbols": [
-      "??1type_info@@UEAA@XZ\t10154180",
-      "_CxxThrowException\t10124198",
-      "_XcptFilter\t1015fefc",
-      "__C_specific_handler\tffffffff",
-      "__CxxFrameHandler\t10124734",
-      "__badioinfo\t1018f5e0",
-      "__mb_cur_max\t1018ef48",
-      "__pioinfo\t1018e620",
-      "_amsg_exit\t101677e4",
-      "_callnewh\t10156f5c",
-      "_errno\t101035bc",
-      "_fileno\t101019d0",
-      "_initterm\t10103cd0",
-      "_purecall\t10161710",
-      "_read\t10113698",
-      "_strtoui64\t10129ad0",
-      "_vsnprintf\t10104794",
-      "_vsnwprintf\t101034b0",
-      "_wcsicmp\t101019f0",
-      "_wcsnicmp\t10103900",
-      "_wfopen\t10116514",
-      "_wtoi\t10106458",
-      "_wtoi64\t1010fccc",
-      "calloc\t10103c5c",
-      "ceilf\t101014d0",
-      "fclose\t10109c80",
-      "fread\t101166a0",
-      "free\t101011a0",
-      "fseek\t10116920",
-      "fwprintf\t10128fb8",
-      "fwrite\t10115244",
-      "isdigit\t10106550",
-      "isleadbyte\t1010d1c8",
-      "iswalpha\t10103cc0",
-      "iswctype\t101039c0",
-      "isxdigit\t1012a154",
-      "localeconv\t1010919c",
-      "malloc\t10101364",
-      "mbtowc\t10106710",
-      "memcpy\t10101100",
-      "memset\t10101060",
-      "rand\t10101694",
-      "realloc\t1010387c",
-      "srand\t101052ec",
-      "time\t1010536c",
-      "ungetc\t10176db4",
-      "wcschr\t10103990",
-      "wcsncmp\t10103650",
-      "wcsrchr\t10103c28",
-      "wcsstr\t101022b8",
-      "wcstombs\t1012a40c",
-      "wctomb\t1014d164"
-    ]
+      "NtQuerySystemTime",
+      "RtlAllocateHeap",
+      "RtlFreeHeap",
+      "RtlGetVersion"
+    ],
+    "target": "ntdll.dll"
   },
   {
+    "kind": "static",
     "source": "bin/sqmapi.dll",
-    "target": "ntdll.dll",
     "symbols": [
-      "NtQuerySystemTime\t80003140",
-      "RtlAllocateHeap\t80005630",
-      "RtlFreeHeap\t800054c0",
-      "RtlGetVersion\t80014cb8"
-    ]
+      "RpcStringFreeW",
+      "UuidCreateSequential",
+      "UuidToStringW"
+    ],
+    "target": "RPCRT4.dll"
+  },
+  {
+    "kind": "static",
+    "source": "bin/sqmapi.dll",
+    "symbols": [
+      "DispatchMessageW",
+      "GetSystemMetrics",
+      "MsgWaitForMultipleObjects",
+      "PeekMessageW",
+      "TranslateMessage"
+    ],
+    "target": "USER32.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/sqmapi.dll",
+    "symbols": [
+      "ordinal:10",
+      "ordinal:11",
+      "ordinal:13",
+      "ordinal:14",
+      "ordinal:20",
+      "ordinal:22",
+      "ordinal:23"
+    ],
+    "target": "Cabinet.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/sqmapi.dll",
+    "symbols": [
+      "CertFreeCertificateChain",
+      "CertFreeCertificateContext",
+      "CertGetCertificateChain",
+      "CertVerifyCertificateChainPolicy"
+    ],
+    "target": "CRYPT32.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/sqmapi.dll",
+    "symbols": [
+      "CoCreateGuid",
+      "CoCreateInstance",
+      "CoInitialize",
+      "CoInitializeEx",
+      "CoUninitialize",
+      "StringFromGUID2"
+    ],
+    "target": "ole32.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/sqmapi.dll",
+    "symbols": [
+      "WinHttpAddRequestHeaders",
+      "WinHttpCloseHandle",
+      "WinHttpConnect",
+      "WinHttpCrackUrl",
+      "WinHttpGetDefaultProxyConfiguration",
+      "WinHttpGetIEProxyConfigForCurrentUser",
+      "WinHttpGetProxyForUrl",
+      "WinHttpOpen",
+      "WinHttpOpenRequest",
+      "WinHttpQueryHeaders",
+      "WinHttpQueryOption",
+      "WinHttpReadData",
+      "WinHttpReceiveResponse",
+      "WinHttpSendRequest",
+      "WinHttpSetCredentials",
+      "WinHttpSetOption",
+      "WinHttpSetStatusCallback",
+      "WinHttpSetTimeouts",
+      "WinHttpTimeFromSystemTime",
+      "WinHttpWriteData"
+    ],
+    "target": "WINHTTP.dll"
+  },
+  {
+    "kind": "delay-load",
+    "source": "bin/sqmapi.dll",
+    "symbols": [
+      "CreateXmlReader",
+      "CreateXmlWriter"
+    ],
+    "target": "XmlLite.dll"
   }
 ]
