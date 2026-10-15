@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from pe import parse_pe_path
+from pe import import_name_rva, parse_pe_path
 
 ROOT = Path(__file__).resolve().parents[2]
 BIN = ROOT / "bin"
@@ -46,6 +46,10 @@ def test_iexplore(failures: list[str]) -> None:
     expect(all(s.by_ordinal for s in image.delay_imports), "iexplore.exe delay-load ordinals", failures)
     pdbs = [d.pdb_path for d in image.debug if d.pdb_path]
     expect(pdbs == ["iexplore.pdb"], "iexplore.exe CodeView PDB name", failures)
+    security = next(d for d in image.data_directories if d.name == "Security")
+    expect(security.address_kind == "file_offset", "iexplore.exe Security is a file offset", failures)
+    expect(security.rva == 0xC3C00, "iexplore.exe Security file offset", failures)
+    expect(security.rva + security.size <= path.stat().st_size, "iexplore.exe certificate table in file", failures)
 
 
 def test_iediagcmd(failures: list[str]) -> None:
@@ -93,11 +97,18 @@ def test_mui_and_exports(failures: list[str]) -> None:
     expect(all(name and name.startswith("Sqm") for name in (e.name for e in sqm.exports)), "sqmapi.dll Sqm* exports", failures)
 
 
+def test_import_name_rva(failures: list[str]) -> None:
+    expect(import_name_rva(0x00001000, False) == 0x1000, "PE32 named RVA", failures)
+    expect(import_name_rva(0x80000010, True) == 0x80000010, "PE32+ preserves bit 31 in named RVA", failures)
+    expect(import_name_rva(0x0000000000002000, True) == 0x2000, "PE32+ low named RVA", failures)
+
+
 def main() -> int:
     failures: list[str] = []
     test_iexplore(failures)
     test_iediagcmd(failures)
     test_mui_and_exports(failures)
+    test_import_name_rva(failures)
     if failures:
         print("FAIL")
         for item in failures:
