@@ -40,13 +40,13 @@ To guarantee legal and technical defensibility while achieving 1:1 behavioral an
 
 **Objective:** Establish a deterministic, auditable inventory of every input artifact and extract baseline PE/COFF structural evidence without fabricating unverified code.
 
-- [x] **0.1 Recursive Cryptographic Inventory:** Hash all 57 files (30,617,822 bytes) in `bin/` using SHA-256 and record sizes, magic bytes, and file classifications in `analysis/report/inventory.md` and `analysis/report/generated/inventory.json` via `analysis/tools/inventory.py`.
-- [x] **0.2 PE/COFF Structural Extraction:** Parse all 49 PE images (28 x86-64 native code images, 1 i386 CLR image, 20 i386 `.mui` resource satellites) with GNU `objdump -x` and retain authoritative raw outputs in `analysis/report/generated/*.objdump.txt`.
-- [x] **0.3 Static API & Dependency Mapping:** Extract static Import Address Tables (IAT) and Export Address Tables (EAT) across all 49 PE images into `analysis/report/api-map.md`, `analysis/report/dependencies.md`, and `analysis/report/generated/dependencies.json`.
-- [x] **0.4 Reverse Engineering Assistant (REA) Integration Baseline:** Validate `rea-agents@6.5.0` adapter workflows, capture verified PE header evidence for `bin/iexplore.exe` (`analysis/report/rea/iexplore-file-headers.json`), and capture complete instruction disassembly for `bin/iediagcmd.exe` (`analysis/report/rea/iediagcmd-disassembly.json`).
-- [x] **0.5 Per-Module Evidence Ledgers:** Initialize all 49 module directories under `src/<module>/` with `README.md` (verified image metadata, sections, imports/exports) and placeholder `interfaces.h`.
+- [x] **0.1 Recursive Cryptographic Inventory:** Hash all 57 files (30,617,822 bytes) in `bin/` using SHA-256 and record sizes, magic bytes, and file classifications in `analysis/report/inventory.md`, `analysis/report/generated/inventory.json`, and `analysis/report/generated/hashes.json` via `analysis/tools/inventory.py`. Non-PE kinds (XML, RTF, ICO, UTF-16LE text, text) are classified from magic bytes.
+- [x] **0.2 PE/COFF Structural Extraction:** Parse all 49 PE images (28 x86-64 native code images, 1 i386 CLR image, 20 i386 `.mui` resource satellites) with GNU `objdump -x` (raw outputs in `analysis/report/generated/*.objdump.txt`) and the stdlib parser `analysis/tools/pe.py` (`pe-struct.json`). CodeView `RSDS` PDB filename/GUID/Age tuples for all 29 code images are in `analysis/report/generated/debug-rsds.json`.
+- [x] **0.3 Static API & Dependency Mapping:** Extract static and delay-load Import Address Tables (IAT) and Export Address Tables (EAT) across all 49 PE images into `analysis/report/api-map.md`, `analysis/report/dependencies.md`, and `analysis/report/generated/dependencies.json`, including concrete ordinals for ordinal-only thunks.
+- [x] **0.4 Reverse Engineering Assistant (REA) Integration Baseline:** Validate `rea-agents@6.5.0` adapter workflows, capture verified PE header evidence for `bin/iexplore.exe` (`analysis/report/rea/iexplore-file-headers.json`), and capture complete instruction disassembly for `bin/iediagcmd.exe` (`analysis/report/rea/iediagcmd-disassembly.json`). Reproduction helper: `analysis/tools/rea_baseline.py`.
+- [x] **0.5 Per-Module Evidence Ledgers:** Initialize all 49 module directories under `src/<module>/` with `README.md` (verified image metadata, sections, data directories, imports/exports, delay-load, PDB) and placeholder `interfaces.h` commenting observed export names/ordinals without invented prototypes.
 
-**Exit Criteria (Met):** 100% file hash coverage, 100% PE header/section/static-table extraction, zero modified bytes in `bin/`.
+**Exit Criteria (Met):** 100% file hash coverage, 100% PE header/section/static-table extraction, zero modified bytes in `bin/`. Coverage is re-checked by `analysis/tools/verify_phase0.py` and `analysis/tools/test_pe.py`.
 
 ---
 

@@ -1,0 +1,344 @@
+[
+  {
+    "kind": "PE/COFF",
+    "path": "bin/D3DCompiler_47.dll",
+    "sha256": "f5fb4ba15e86d47f708d2ef2876de09400ab2e84d0e06df224134f178dbe870f",
+    "size": 4158464
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/DiagnosticsHub.DataWarehouse.dll",
+    "sha256": "d6371d20de031d63297012546fd04767b55866beacd1f56600786991c3fa3344",
+    "size": 666624
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/DiagnosticsHub.ScriptedSandboxPlugin.dll",
+    "sha256": "d74c75ced0f3257797edf7050195938cae23765125688f758a8fccb099a69b42",
+    "size": 276480
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/DiagnosticsHub_is.dll",
+    "sha256": "7d75d8efc5107b64c2f0acfc6e7a33937ebacb1027b2c3f96bc1876878185da0",
+    "size": 50176
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/DiagnosticsTap.dll",
+    "sha256": "92ca2180dc18f21bb9b394bbb3bbff040d90564e3d984b13bd6d7a3f24b359eb",
+    "size": 244224
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/F12.dll",
+    "sha256": "efe153059d169ce0ad4f68b8e0c43ca8eb8a86ff4dc234a8529bae0059d602db",
+    "size": 1421312
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/F12Resources.dll",
+    "sha256": "150a7ca97018977d0ca28fc217b4e4e3e5fdf3b822381192f4bc0473c48ec010",
+    "size": 10949120
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/F12Tools.dll",
+    "sha256": "cad6f7aeb3a63aa1064d8343fb767b9c3e64a2dd59e5e65e52e75ac8eefdecec",
+    "size": 372224
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/IEShims.dll",
+    "sha256": "e9b0cfa86136da976a12c4ca981e1be1e9d6e6ec43250c0b4939ddd59732638e",
+    "size": 386560
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/JSProfilerCore.dll",
+    "sha256": "a4929d0a664ca0e1ef9d0ab3ec16914e75ddb655cc42490038a8db183b23124e",
+    "size": 67072
+  },
+  {
+    "kind": "text",
+    "path": "bin/LICENSE",
+    "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e",
+    "size": 1211
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/MemoryAnalyzer.dll",
+    "sha256": "eeff728c1f190f8febe04ad5312d7bdec285b7fe1bdd1f77684320d51202de3a",
+    "size": 1862144
+  },
+  {
+    "kind": "text",
+    "path": "bin/README.md",
+    "sha256": "c96b7d56b5a1480fd334bae7673e861a01cc78a4c512725f7bccd0a03efb5236",
+    "size": 8
+  },
+  {
+    "kind": "UTF-16LE text",
+    "path": "bin/SIGNUP/install.ins",
+    "sha256": "ec5ae4ddd0aae63ee166652936b1bfe59854390ca7df01fed1990929e40fcaf3",
+    "size": 464
+  },
+  {
+    "kind": "XML",
+    "path": "bin/Timeline.cpu.xml",
+    "sha256": "6a05bc74d95f48895dda770375378a89a93d0f0c84a613a7aac05685d75d68bf",
+    "size": 3197
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/Timeline.dll",
+    "sha256": "e8149b60852195407bb0a42cab61d248ac28756b0f3acdf67e982572ff1f2b5b",
+    "size": 219136
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/Timeline_is.dll",
+    "sha256": "cc3298491463bf23bae8b0d3d45d0899cfb314f3985aec52911223f58941dd49",
+    "size": 171520
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/en-US/DiagnosticsTap.dll.mui",
+    "sha256": "80a8a6a8268be25d2f76062762c13cf60b12d9087a584d2d9598f76238d95582",
+    "size": 10752
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/en-US/F12.dll.mui",
+    "sha256": "f8c24aa5a2484fc79868318a369e0720a7b9732fc3c30c66b55adc89257c3185",
+    "size": 4096
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/en-US/F12Resources.dll.mui",
+    "sha256": "cc10f91770ed7912ba4bee7e0bdd9baf4457d712d0e588124e1369882f63ec2c",
+    "size": 61440
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/en-US/F12Tools.dll.mui",
+    "sha256": "ab2fd90a44e96c5dcc5d7e9a356171ee7e2ebd59bddf34bc5d0d50dcf56d9fa7",
+    "size": 2048
+  },
+  {
+    "kind": "RTF",
+    "path": "bin/en-US/eula.rtf",
+    "sha256": "ca7ad7f3dba78901811c07e63cec293b7bcdbfc70474c082a4a59e649d2b6e59",
+    "size": 118526
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/en-US/iedvtool.dll.mui",
+    "sha256": "5b618f61a73caefa226009a279ff9123059da35f7ab3df6d45bc221d95091a61",
+    "size": 29184
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/en-US/ieinstal.exe.mui",
+    "sha256": "7c689bc49a601adacc3d0d7d6c907137a0c59f61db39b608eabc90ab4d0dd331",
+    "size": 2048
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/en-US/iexplore.exe.mui",
+    "sha256": "95e1b6eda49d05d1fddb708dd13193318da4a973fc40ece3c97f7149c0035047",
+    "size": 5120
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/en-US/jsdbgui.dll.mui",
+    "sha256": "744e27245e2c201e58e0209d69af96a16c340f49914ac599c8a822d3bf730095",
+    "size": 15872
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/en-US/jsprofilerui.dll.mui",
+    "sha256": "c914c207d2fcfb6c4e10b23fef3abc6c9bc5b3ecaa02bc837cc24b8e0071fb34",
+    "size": 8192
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/en-US/networkinspection.dll.mui",
+    "sha256": "87893a75653b43472a409ad492e9e318c2e14d0c226f78c9daa30199e5b5e14e",
+    "size": 30720
+  },
+  {
+    "kind": "XML",
+    "path": "bin/ie9props.propdesc",
+    "sha256": "104037eb7aaa8b9231b9443ea135c5c72664b69de6eaf2ad603294c3bc1df6aa",
+    "size": 2843
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/iediagcmd.exe",
+    "sha256": "412df2da4d524e6b78ed6c7bc595224643574510fba194ee940e495d981a6510",
+    "size": 359632
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/iedvtool.dll",
+    "sha256": "f188b636065cfa5bdae6c6c4b2ae3fe1df7ff2b700c2144b1291dee7f5f9f912",
+    "size": 950784
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/ieinstal.exe",
+    "sha256": "2cf44880a0da18c284d20ce9049bd76007ae5eaf046cf2ddfdadf7ff5f7a649c",
+    "size": 492032
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/ielowutil.exe",
+    "sha256": "7099cea38e986d13f1a882a9ccd0ecf5666ff1c6d807abdc4bbe90ab90963769",
+    "size": 222720
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/ieproxy.dll",
+    "sha256": "7bfc8614acfacf4f06887e8e518a5647749a066b0a9832e2edb489022091866c",
+    "size": 805376
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/iexplore.exe",
+    "sha256": "cff801d6dc847bb832d0077ce38ddb66ef5b4637ff947bbdbc228eef10494f97",
+    "size": 810376
+  },
+  {
+    "kind": "ICO",
+    "path": "bin/images/bing.ico",
+    "sha256": "b6f0864dba0dc78bf4d551073d793493169659bd2d45349b9b5ccfce4cdeed23",
+    "size": 5430
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/jsdbgui.dll",
+    "sha256": "a786eaf21f6bc5bbd9bf5a2b6d744e8082df267e83170ac0475db1c976ebe26a",
+    "size": 565248
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/jsdebuggeride.dll",
+    "sha256": "a4ad21edbb7891e1e89c056b970a67955c2eb1c10aaaf90bc1062869a52b722e",
+    "size": 142336
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/jsprofilerui.dll",
+    "sha256": "2dce1ffc22f877cb632dda8dc0fd662d1ad0bad08c72420ab0a08f54f7c911bf",
+    "size": 628736
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/msdbg2.dll",
+    "sha256": "ee4065d7ddfb9e588a81fa1e2a760c01f6e8275581d46381a1ee5e168c38a8d0",
+    "size": 400968
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/networkinspection.dll",
+    "sha256": "27094ed77aa2c833920c38b27a2dd9806d95680d99179dbb5ff75e09e12c8100",
+    "size": 1217024
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/pdm.dll",
+    "sha256": "ca795fedc2b655890a19f868f145cc6db0aae797e1d6faf7b2b8ed7ac75723a5",
+    "size": 542272
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/pdmproxy100.dll",
+    "sha256": "a3e0fd851f31be04f0bf268038501f26c5a552311967e42fc4ec7f8a4761fe3e",
+    "size": 105568
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/perf_nt.dll",
+    "sha256": "bfe21d6f04d75fe22185d544dd1af570365b0d026886c20a6a2cbc069509079d",
+    "size": 1477120
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/perfcore.dll",
+    "sha256": "b41c4d0cb9e42d7d9020184944f05fa23873ad039454a53247691f4b0a0daf7a",
+    "size": 161280
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/pt-BR/DiagnosticsTap.dll.mui",
+    "sha256": "babe3f87e99ab4e1c94d86bf7fc1f9f39bdbf55cb657eaff1a68b896bace3266",
+    "size": 10752
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/pt-BR/F12.dll.mui",
+    "sha256": "3d3ed24c2e1a4cbb77dfc2e0353167437c3e0b1731c75bdc32492b88f5f18d82",
+    "size": 4096
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/pt-BR/F12Resources.dll.mui",
+    "sha256": "115f9ecee1a7aa22006cb2624c35ff9003f059bc9854ce0fdf926baa258e75a1",
+    "size": 71168
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/pt-BR/F12Tools.dll.mui",
+    "sha256": "c85eb99e9010e0f7b9979b1db4cb7bc0c8d2a724da6d657afe8ab6bdffce5070",
+    "size": 2048
+  },
+  {
+    "kind": "RTF",
+    "path": "bin/pt-BR/eula.rtf",
+    "sha256": "0cb224965b76fdeb845d540f582ccaf2501f3d86cd8a86ffc4195ce8a9a14275",
+    "size": 116663
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/pt-BR/iedvtool.dll.mui",
+    "sha256": "ef6d9914cd61394d8390247ea5afc1dea5f304d120b12ecfee819d196e30bd04",
+    "size": 32256
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/pt-BR/ieinstal.exe.mui",
+    "sha256": "13d7a8ae39eb2957ed74118512b2d9ba2ef767f8f16f2d8952e3c68e7304c3ae",
+    "size": 2048
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/pt-BR/iexplore.exe.mui",
+    "sha256": "c876fe0ef3dc0a57e2cbdb65d95c2325260089dae01a40a353a0aa3270b2cc17",
+    "size": 5632
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/pt-BR/jsdbgui.dll.mui",
+    "sha256": "08b086eb3f014d6976c059ce8ecc7e11a3a2808dcebcb1fd54bc8b206cd084ff",
+    "size": 17408
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/pt-BR/jsprofilerui.dll.mui",
+    "sha256": "1f16f68130d535869e6b04e9db34233f72076cb0d26301e18bd888d25514ea11",
+    "size": 8704
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/pt-BR/networkinspection.dll.mui",
+    "sha256": "364460952d947ba9e369e552dbe90b2ec972b48283c8e1ff1a96ca6c32f97565",
+    "size": 33280
+  },
+  {
+    "kind": "PE/COFF",
+    "path": "bin/sqmapi.dll",
+    "sha256": "ab65e97c8405660a881163957ef1fc29df0e1627eef04b282b3f6825eb78e4c2",
+    "size": 286088
+  }
+]
