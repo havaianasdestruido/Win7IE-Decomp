@@ -1,0 +1,263 @@
+[
+  {
+    "age": 1,
+    "guid": "{0de2d03a-b741-4d2d-854c-e241e9cb9547}",
+    "path": "bin/D3DCompiler_47.dll",
+    "pdb": "D3DCompiler_47.pdb",
+    "rva": "0xa61d4",
+    "size": 43,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{daf2d9e2-1320-469b-ae3b-4ad57ae91efd}",
+    "path": "bin/DiagnosticsHub.DataWarehouse.dll",
+    "pdb": "DiagnosticsHub.DataWarehouse.pdb",
+    "rva": "0x101d4",
+    "size": 57,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{b33dc13a-e8a3-4b84-a010-453ef55b1987}",
+    "path": "bin/DiagnosticsHub.ScriptedSandboxPlugin.dll",
+    "pdb": "DiagnosticsHub.ScriptedSandboxPlugin.pdb",
+    "rva": "0x7d14",
+    "size": 65,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{e7592bb7-8c4c-4ad0-9b40-78b504087787}",
+    "path": "bin/DiagnosticsHub_is.dll",
+    "pdb": "DiagnosticsHub_is.pdb",
+    "rva": "0x33c4",
+    "size": 46,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{086d780a-9101-4c4a-8d05-e8fe5008b0b3}",
+    "path": "bin/DiagnosticsTap.dll",
+    "pdb": "DiagnosticsTap.pdb",
+    "rva": "0x68d4",
+    "size": 43,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{f74f6868-1c3b-4e08-8e2d-4b80e1c500f5}",
+    "path": "bin/F12.dll",
+    "pdb": "F12.pdb",
+    "rva": "0x17b04",
+    "size": 32,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{cd02fc09-8566-4906-96ba-20186c6e5eb1}",
+    "path": "bin/F12Resources.dll",
+    "pdb": "F12Resources.pdb",
+    "rva": "0x10e4",
+    "size": 41,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{73061466-84b7-4d95-95ed-99ea8456bd50}",
+    "path": "bin/F12Tools.dll",
+    "pdb": "F12Tools.pdb",
+    "rva": "0x84e4",
+    "size": 37,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 2,
+    "guid": "{c7864889-1788-4b43-aa26-d7144202cc65}",
+    "path": "bin/IEShims.dll",
+    "pdb": "ieshims.pdb",
+    "rva": "0x498bc",
+    "size": 36,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{794b2482-bdc1-4620-b368-9fbbc23cb7cc}",
+    "path": "bin/JSProfilerCore.dll",
+    "pdb": "JSProfilerCore.pdb",
+    "rva": "0x24d4",
+    "size": 43,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{9a1c7e3f-2b35-4d85-b841-81cef20fb76b}",
+    "path": "bin/MemoryAnalyzer.dll",
+    "pdb": "MemoryAnalyzer.pdb",
+    "rva": "0x264d4",
+    "size": 43,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{3437ca15-0dc8-4df1-806f-2db464f45a9b}",
+    "path": "bin/Timeline.dll",
+    "pdb": "Timeline.pdb",
+    "rva": "0x6204",
+    "size": 37,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{6969ebc8-6f90-4453-a784-ce12347d2995}",
+    "path": "bin/Timeline_is.dll",
+    "pdb": "Timeline_is.pdb",
+    "rva": "0x5df4",
+    "size": 40,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{d05f4244-aec2-4af8-993a-6b567a1d7109}",
+    "path": "bin/iediagcmd.exe",
+    "pdb": "IEDiagCmd.pdb",
+    "rva": "0x3f768",
+    "size": 38,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{d8bd9126-6a76-465a-96be-a5069b0ccde9}",
+    "path": "bin/iedvtool.dll",
+    "pdb": "iedvtool.pdb",
+    "rva": "0x10234",
+    "size": 37,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{2adeaf47-0733-4602-b8dc-510ef9b93e16}",
+    "path": "bin/ieinstal.exe",
+    "pdb": "ieinstal.pdb",
+    "rva": "0x4074",
+    "size": 37,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{a1d74ea3-8cc4-4738-b0bc-f9df48ce34c1}",
+    "path": "bin/ielowutil.exe",
+    "pdb": "ielowutil.pdb",
+    "rva": "0x1404",
+    "size": 38,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 2,
+    "guid": "{6f5b54f8-297b-4664-8ed2-7d23330a9dde}",
+    "path": "bin/ieproxy.dll",
+    "pdb": "IEProxy.pdb",
+    "rva": "0xaaecc",
+    "size": 36,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 2,
+    "guid": "{5879a6c9-5fd6-458f-9f1f-d8b123594b0c}",
+    "path": "bin/iexplore.exe",
+    "pdb": "iexplore.pdb",
+    "rva": "0x4700",
+    "size": 37,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{bddb1188-bc87-44ac-8eaa-784cbb23cf36}",
+    "path": "bin/jsdbgui.dll",
+    "pdb": "jsdbgui.pdb",
+    "rva": "0x8954",
+    "size": 36,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{2b38c405-0855-42a7-9e7d-b6ad7c810244}",
+    "path": "bin/jsdebuggeride.dll",
+    "pdb": "jsdebuggeride.pdb",
+    "rva": "0x3e94",
+    "size": 42,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{76225630-8a60-412b-aef7-99ba9596e32f}",
+    "path": "bin/jsprofilerui.dll",
+    "pdb": "jsprofilerui.pdb",
+    "rva": "0x4a34",
+    "size": 41,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 5,
+    "guid": "{e8bb7f70-6ef1-46a9-ba9e-5d16f04ed23a}",
+    "path": "bin/msdbg2.dll",
+    "pdb": "msdbg2.pdb",
+    "rva": "0x4ca00",
+    "size": 35,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{b8fe57b1-09f6-4bf0-99bb-a06076d0d2a5}",
+    "path": "bin/networkinspection.dll",
+    "pdb": "networkinspection.pdb",
+    "rva": "0x7b64",
+    "size": 46,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 5,
+    "guid": "{c1b59d08-a5e1-4ddf-b539-11892abc92d8}",
+    "path": "bin/pdm.dll",
+    "pdb": "pdm.pdb",
+    "rva": "0x65380",
+    "size": 32,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 2,
+    "guid": "{70f9ca98-532d-44ee-8962-20fd53cad805}",
+    "path": "bin/pdmproxy100.dll",
+    "pdb": "pdmproxy100.pdb",
+    "rva": "0x133f0",
+    "size": 40,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{546f1b0e-d073-4cd6-9f79-80af96bd2c0b}",
+    "path": "bin/perf_nt.dll",
+    "pdb": "perf_nt.pdb",
+    "rva": "0x2bf04",
+    "size": 36,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 1,
+    "guid": "{782e15bb-c64c-4dd5-aad0-dc26096dab00}",
+    "path": "bin/perfcore.dll",
+    "pdb": "perfcore.pdb",
+    "rva": "0x3cd4",
+    "size": 37,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  },
+  {
+    "age": 2,
+    "guid": "{9f7012f3-ae5c-40be-bb57-e511b8250e54}",
+    "path": "bin/sqmapi.dll",
+    "pdb": "sqmapi.pdb",
+    "rva": "0x3b1d0",
+    "size": 35,
+    "type": "IMAGE_DEBUG_TYPE_CODEVIEW"
+  }
+]
