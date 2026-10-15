@@ -32,6 +32,7 @@ Outputs (all outside `bin/`):
 - `analysis/report/generated/inventory.json` — per-file identity + PE summary
 - `analysis/report/generated/pe-struct.json` — full parsed PE structure
 - `analysis/report/generated/dependencies.json` — static and delay-load edges
+- `analysis/report/generated/debug-rsds.json` — CodeView RSDS PDB filename/GUID/Age tuples
 - `analysis/report/generated/*.objdump.txt` — authoritative GNU objdump `-x` text
 - `analysis/report/inventory.md`, `api-map.md`, `dependencies.md`
 - `src/<module>/README.md` and `src/<module>/interfaces.h`
