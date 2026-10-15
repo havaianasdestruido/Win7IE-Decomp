@@ -16,6 +16,8 @@ REA was inspected and used at version 6.5.0. Its verified GNU objdump adapter bo
 
 ## Deliverable map
 
+- `../../README.md`: project root overview and documentation index.
+- `../../TODO.md`: phased roadmap for faithful 1:1 decompilation and clean-room reconstruction.
 - `inventory.md`: all inputs, sizes, hashes, format, architecture, status.
 - `methodology.md`: environment, commands, REA assessment/use, limitations.
 - `module-analysis.md`: evidence-backed subsystem summary.
