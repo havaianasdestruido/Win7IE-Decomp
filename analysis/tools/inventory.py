@@ -304,11 +304,12 @@ def render_module_readme(item: dict) -> str:
         section_rows.append(
             f"| `{section.name}` | 0x{section.virtual_size:x} | 0x{section.size_of_raw_data:x} | `0x{image.image_base + section.virtual_address:x}` | 0x{section.pointer_to_raw_data:x} | {flags} |"
         )
-    directories = [
-        f"| `{directory.name}` | `0x{directory.rva:x}` | 0x{directory.size:x} |"
-        for directory in image.data_directories
-        if directory.rva or directory.size
-    ]
+    directories = []
+    for directory in image.data_directories:
+        if not (directory.rva or directory.size):
+            continue
+        kind = "file offset" if directory.address_kind == "file_offset" else "RVA"
+        directories.append(f"| `{directory.name}` | `0x{directory.rva:x}` | {kind} | 0x{directory.size:x} |")
     static = grouped_symbols(image.imports)
     delayed = grouped_symbols(image.delay_imports)
     import_lines = [f"- `{dll}`: {len(names)} imports" for dll, names in static.items()] or ["- None recovered."]
@@ -347,9 +348,9 @@ def render_module_readme(item: dict) -> str:
             "",
             "## Data directories (non-empty)",
             "",
-            "| Name | RVA | Size |",
-            "|---|---|---:|",
-            *(directories or ["| — | — | — |"]),
+            "| Name | Address | Kind | Size |",
+            "|---|---|---|---:|",
+            *(directories or ["| — | — | — | — |"]),
             "",
             "## Static imports",
             "",
@@ -463,6 +464,7 @@ def debug_rsds_index(pe_records: list[dict]) -> list[dict]:
             rows.append(
                 {
                     "path": item["path"],
+                    "sha256": item["sha256"],
                     "pdb": record.pdb_path,
                     "guid": record.guid,
                     "age": record.age,
