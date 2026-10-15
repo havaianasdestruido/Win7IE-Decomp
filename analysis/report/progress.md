@@ -26,4 +26,4 @@ Updated: 2026-10-14.
 5. Establish an isolated Windows test image with matching IE dependencies; capture registry, filesystem, COM, process, and network effects without exposing production systems.
 6. Only after signatures/behavior are validated, create clean-room compatibility targets and CMake builds.
 
-No module is marked fully decompiled or behaviorally validated.
+No module is marked fully decompiled or behaviorally validated. For the complete, phase-divided checklist required for a faithful 1:1 decompilation and clean-room reconstruction across all 57 corpus artifacts, see [`TODO.md`](../../TODO.md) (cited in the root [`README.md`](../../README.md)).
