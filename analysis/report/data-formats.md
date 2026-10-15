@@ -10,7 +10,7 @@ All 49 executable/resource images begin with DOS `MZ` and parse as PE/COFF:
 | Managed CLI EXE | 1 | PE32 | `IMAGE_FILE_MACHINE_I386` | `0x400000` |
 | MUI resource satellites | 20 | PE32 | `IMAGE_FILE_MACHINE_I386` | resource-only, entry RVA 0 |
 
-Section names, virtual addresses, virtual/raw sizes, file offsets, and characteristics are recorded per module in `src/<module>/README.md` and `generated/pe-struct.json`. Non-empty data directories (export, import, resource, exception `.pdata`, security, reloc, debug, load config, IAT, delay-import, CLR) are listed explicitly.
+Section names, virtual addresses, virtual/raw sizes, file offsets, and characteristics are recorded per module in `src/<module>/README.md` and `generated/pe-struct.json`. Non-empty data directories (export, import, resource, exception `.pdata`, security, reloc, debug, load config, IAT, delay-import, CLR) are listed explicitly. The Security directory `VirtualAddress` field is a **file offset** (certificate table), not an RVA; `iediagcmd.exe` is the canonical example where Security file offset `0x54000` coincides numerically with the BaseReloc RVA.
 
 `iediagcmd.exe` has CLR runtime directory RVA `0x2008`, size `0x48`; its native import table names only `mscoree.dll!_CorExeMain`. This verifies a CLI/CLR bootstrap but does not by itself recover assembly types.
 

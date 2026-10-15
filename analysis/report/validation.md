@@ -10,6 +10,8 @@
 - Confirmed the previous objdump-regex section parser was wrong (IAT descriptor rows such as `00007510` were emitted as sections). The stdlib parser now matches the `Sections:` table in raw objdump.
 - Confirmed ordinal-only IAT entries now carry concrete ordinals (`OLEAUT32.dll` 217 thunks, `iertutil.dll` 73, `SHLWAPI.dll` 14, plus `urlmon`, `IEFRAME`, `COMCTL32`, `SHELL32`, `MSHTML`).
 - Confirmed delay-load descriptors on `iexplore.exe`, `IEShims.dll`, `ieproxy.dll`, `pdm.dll`, `perf_nt.dll`, and `sqmapi.dll`.
+- Confirmed `IMAGE_DIRECTORY_ENTRY_SECURITY` is stored as a file offset (`iexplore.exe` `0xc3c00`; `iediagcmd.exe` `0x54000`, numerically equal to its BaseReloc RVA).
+- Confirmed PE32+ named-import thunks keep bit 31 (`import_name_rva(0x80000010, pe32plus=True) == 0x80000010`).
 - CodeView `RSDS` records recovered for all 29 code images; 20 `.mui` satellites have no debug directory.
 
 ## Not performed
