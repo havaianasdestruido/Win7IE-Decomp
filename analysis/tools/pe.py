@@ -146,6 +146,7 @@ class DataDirectory:
     name: str
     rva: int
     size: int
+    address_kind: str = "rva"  # IMAGE_DIRECTORY_ENTRY_SECURITY is a file offset.
 
 
 @dataclass
@@ -389,7 +390,9 @@ def parse_pe(data: bytes) -> PeImage:
         rva = _u32(data, dirs_off + i * 8)
         size = _u32(data, dirs_off + i * 8 + 4)
         name = DATA_DIRECTORY_NAMES[i] if i < len(DATA_DIRECTORY_NAMES) else f"Directory{i}"
-        directories.append(DataDirectory(name=name, rva=rva, size=size))
+        # Certificate table is a file offset, not an RVA (PE/COFF spec).
+        address_kind = "file_offset" if name == "Security" else "rva"
+        directories.append(DataDirectory(name=name, rva=rva, size=size, address_kind=address_kind))
 
     section_off = opt + size_of_optional
     sections: list[Section] = []
@@ -463,6 +466,12 @@ def parse_pe_path(path: Path) -> PeImage:
     return parse_pe(path.read_bytes())
 
 
+def import_name_rva(thunk: int, pe32plus: bool) -> int:
+    """Return the Import-By-Name RVA stored in a non-ordinal thunk."""
+    ordinal_bit = 1 << (63 if pe32plus else 31)
+    return thunk & (ordinal_bit - 1)
+
+
 def _parse_thunk_symbols(reader: _Reader, thunk_rva: int, dll: str, delayed: bool) -> list[ImportedSymbol]:
     image = reader.image
     width = 8 if image.is_pe32plus else 4
@@ -489,7 +498,7 @@ def _parse_thunk_symbols(reader: _Reader, thunk_rva: int, dll: str, delayed: boo
                 )
             )
         else:
-            name_rva = thunk & 0x7FFFFFFF
+            name_rva = import_name_rva(thunk, image.is_pe32plus)
             name_off = reader.rva_to_off(name_rva)
             if name_off is None:
                 symbols.append(
