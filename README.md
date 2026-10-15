@@ -57,7 +57,11 @@ The reference corpus in `bin/` is **strictly read-only** and comprises **57 file
 │   │   └── rea/                       # Captured `rea-agents@6.5.0` header and disassembly artifacts
 │   └── tools/
 │       ├── README.md                  # Tooling documentation
-│       └── inventory.py               # Reproducible corpus hasher, PE parser, and ledger generator
+│       ├── pe.py                      # Stdlib PE32/PE32+ structural parser
+│       ├── inventory.py               # Corpus hasher, objdump retainer, and ledger generator
+│       ├── test_pe.py                 # Locked PE structural facts
+│       ├── verify_phase0.py           # 57/49 coverage and hash-lock verifier
+│       └── rea_baseline.py            # REA 6.5.0 objdump-adapter reproduction
 └── src/
     └── <module>/                      # 49 per-image clean-room evidence ledgers (`README.md` + `interfaces.h`)
 ```
@@ -69,7 +73,9 @@ The reference corpus in `bin/` is **strictly read-only** and comprises **57 file
 To regenerate the cryptographic inventory, PE structural tables (`analysis/report/generated/`), and per-module evidence skeletons (`src/<module>/`) without modifying `bin/`:
 
 ```sh
+python3 analysis/tools/test_pe.py
 python3 analysis/tools/inventory.py
+python3 analysis/tools/verify_phase0.py
 ```
 
 For the full multi-phase plan from structural baseline to complete 1:1 clean-room source reconstruction and dynamic verification, consult **[`TODO.md`](./TODO.md)**.
